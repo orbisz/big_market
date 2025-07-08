@@ -116,6 +116,9 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRuleReq.setStrategyId(strategyId);
         strategyRuleReq.setRuleModel(ruleModel);
         StrategyRule strategyRuleRes = strategyRuleDao.queryStrategyRule(strategyRuleReq);
+        if (strategyRuleRes == null) {
+            throw new RuntimeException("策略规则查询结果为空，请检查数据库或查询条件");
+        }
         return StrategyRuleEntity.builder()
                 .strategyId(strategyRuleRes.getStrategyId())
                 .awardId(strategyRuleRes.getAwardId())
@@ -127,6 +130,11 @@ public class StrategyRepository implements IStrategyRepository {
     }
 
     @Override
+    public String queryStrategyRuleValue(Long strategyId, String ruleModel) {
+        return queryStrategyRuleValue(strategyId, null, ruleModel);
+
+
+    }
     public String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel) {
         StrategyRule strategyRule = new StrategyRule();
         strategyRule.setStrategyId(strategyId);
@@ -137,21 +145,21 @@ public class StrategyRepository implements IStrategyRepository {
 
     }
 
-    @Override
-    public StrategyRuleEntity queryStrategyRuleValue(Long strategyId, String ruleModel) {
-        StrategyRule strategyRuleReq = new StrategyRule();
-        strategyRuleReq.setStrategyId(strategyId);
-        strategyRuleReq.setRuleModel(ruleModel);
-        StrategyRule strategyRuleRes = strategyRuleDao.queryStrategyRule(strategyRuleReq);
-        return StrategyRuleEntity.builder()
-                .strategyId(strategyRuleRes.getStrategyId())
-                .awardId(strategyRuleRes.getAwardId())
-                .ruleType(strategyRuleRes.getRuleType())
-                .ruleModel(strategyRuleRes.getRuleModel())
-                .ruleValue(strategyRuleRes.getRuleValue())
-                .ruleDesc(strategyRuleRes.getRuleDesc())
-                .build();
-    }
+//    @Override
+//    public StrategyRuleEntity queryStrategyRuleValue(Long strategyId, String ruleModel) {
+//        StrategyRule strategyRuleReq = new StrategyRule();
+//        strategyRuleReq.setStrategyId(strategyId);
+//        strategyRuleReq.setRuleModel(ruleModel);
+//        StrategyRule strategyRuleRes = strategyRuleDao.queryStrategyRule(strategyRuleReq);
+//        return StrategyRuleEntity.builder()
+//                .strategyId(strategyRuleRes.getStrategyId())
+//                .awardId(strategyRuleRes.getAwardId())
+//                .ruleType(strategyRuleRes.getRuleType())
+//                .ruleModel(strategyRuleRes.getRuleModel())
+//                .ruleValue(strategyRuleRes.getRuleValue())
+//                .ruleDesc(strategyRuleRes.getRuleDesc())
+//                .build();
+//    }
 
     @Override
     public StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId) {
