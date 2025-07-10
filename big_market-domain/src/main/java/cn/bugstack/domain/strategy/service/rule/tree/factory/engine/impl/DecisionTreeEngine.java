@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * @author Fuzhengwei bugstack.cn @小傅哥
  * @description 决策树引擎
  * @create 2024-01-27 11:34
  */
@@ -38,11 +39,12 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
         while (null != nextNode) {
             // 获取决策节点
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
+            String ruleValue = ruleTreeNode.getRuleValue();
 
             // 决策节点计算
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId);
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleValue);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
-            strategyAwardData = logicEntity.getStrategyAwardData();
+            strategyAwardData = logicEntity.getStrategyAwardVO();
             log.info("决策树引擎【{}】treeId:{} node:{} code:{}", ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode, ruleLogicCheckTypeVO.getCode());
 
             // 获取下个节点
@@ -55,13 +57,17 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
     public String nextNode(String matterValue, List<RuleTreeNodeLineVO> treeNodeLineVOList) {
+        //1,没有线即没有下一个节点，返回null
         if (null == treeNodeLineVOList || treeNodeLineVOList.isEmpty()) return null;
+        //2.遍历每个节点
         for (RuleTreeNodeLineVO nodeLine : treeNodeLineVOList) {
             if (decisionLogic(matterValue, nodeLine)) {
                 return nodeLine.getRuleNodeTo();
             }
         }
-        throw new RuntimeException("决策树引擎，nextNode 计算失败，未找到可执行节点！");
+        //3.执行到这，说明有线连接到下一个节点，但是每个节点都无法到达，属于特殊情况，直接抛异常
+        //throw new RuntimeException("决策树引擎，nextNode 计算失败，未找到可执行节点！");
+        return null;
     }
 
     public boolean decisionLogic(String matterValue, RuleTreeNodeLineVO nodeLine) {
@@ -79,3 +85,4 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
 }
+

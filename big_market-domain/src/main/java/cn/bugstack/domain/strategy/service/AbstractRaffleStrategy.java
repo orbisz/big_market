@@ -5,6 +5,7 @@ import cn.bugstack.domain.strategy.model.entity.RaffleFactorEntity;
 import cn.bugstack.domain.strategy.model.entity.RuleActionEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.armory.IStrategyDispatch;
 import cn.bugstack.domain.strategy.service.rule.chain.ILogicChain;
@@ -19,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
  * 抽奖策略抽象类，定义抽奖的标准流程
  */
 @Slf4j
-public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
+public abstract class AbstractRaffleStrategy implements IRaffleStrategy,IRaffleStock {
 
     // 策略仓储服务 -> domain层像一个大厨，仓储层提供米面粮油
     protected IStrategyRepository repository;
@@ -30,12 +31,13 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
     // 抽奖的决策树 -> 负责抽奖中到抽奖后的规则过滤，如抽奖到A奖品ID，之后要做次数的判断和库存的扣减等。
     protected final DefaultTreeFactory defaultTreeFactory;
 
-    public AbstractRaffleStrategy(IStrategyDispatch strategyDispatch, IStrategyRepository repository, DefaultChainFactory defaultChainFactory, DefaultTreeFactory defaultTreeFactory) {
-        this.strategyDispatch = strategyDispatch;
+    public AbstractRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch, DefaultChainFactory defaultChainFactory, DefaultTreeFactory defaultTreeFactory) {
         this.repository = repository;
+        this.strategyDispatch = strategyDispatch;
         this.defaultChainFactory = defaultChainFactory;
         this.defaultTreeFactory = defaultTreeFactory;
     }
+
 
     //    @Override
 //    public AbstractRaffleStrategy(IStrategyRepository repository, IStrategyDispatch strategyDispatch) {
@@ -92,6 +94,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
      */
     public abstract DefaultTreeFactory.StrategyAwardVO raffleLogicTree(String userId, Long strategyId, Integer awardId);
 
+    public abstract StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException;
 
-
+    public abstract void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }
