@@ -12,7 +12,7 @@ import javax.annotation.Resource;
  * 兜底节点
  */
 @Slf4j
-@Component("default")
+@Component("rule_default")
 public class DefaultLogicChain extends AbstractLogicChain {
 
     @Resource

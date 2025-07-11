@@ -6,16 +6,18 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 抽奖因子实体
+ * @description 策略条件实体
+ * @create 2023-12-23 09:10
  */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class RaffleFactorEntity {
+public class StrategyConditionEntity {
+
     /** 用户ID */
     private String userId;
     /** 策略ID */
-    private Long strategyId;
+    private Integer strategyId;
 
 }
