@@ -1,5 +1,5 @@
 CONTAINER_NAME=big_market
-IMAGE_NAME=system/big_market:1.0-SNAPSHOT
+IMAGE_NAME=orbiszx/big_market:1.0-SNAPSHOT
 PORT=8091
 
 echo "容器部署开始 ${CONTAINER_NAME}"

@@ -4,7 +4,7 @@ version: '3.8'
 # 你需要修改system为你自身系统的仓库名
 services:
   big-market-app:
-    image: orbisz/big-market-app:1.0
+    image: orbiszx/big-market-app:1.0
     container_name: big-market-app
     restart: always
     ports:
@@ -32,14 +32,14 @@ services:
         max-file: "3"
   big-market-front-app:
     container_name: big-market-front-app
-    image: fuzhengwei/big-market-front-app:1.0
+    image: orbiszx/big-market-front-app:1.0
     restart: always
     networks:
       - my-network
     ports:
       - 3000:3000
     environment:
-      - API_HOST_URL=http://127.0.0.1:8091
+      - API_HOST_URL=http://121.4.26.112:8091
       - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     healthcheck:
       test: [ "CMD", "wget", "--spider", "-q", "http://0.0.0.0:3000/" ]
