@@ -1526,3 +1526,170 @@ java.lang.NullPointerException: Cannot invoke "cn.bugstack.infrastructure.persis
 25-07-11.11:10:41.175 [http-nio-8091-exec-3] INFO  RaffleController       - 随机抽奖完成 strategyId: 100006 response: {"code":"0000","data":{"awardId":105,"awardIndex":5},"info":"成功"}
 25-07-11.11:10:46.372 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 25-07-11.11:10:46.384 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-11.17:18:07.208 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on DESKTOP-0RF5ELK with PID 34472 (D:\Java_project\big_market\big_market-app\target\classes started by zhangxiuyu in D:\Java_project\big_market)
+25-07-11.17:18:07.210 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-11.17:18:07.860 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-11.17:18:07.862 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-11.17:18:07.886 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+25-07-11.17:18:08.506 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-07-11.17:18:08.513 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-07-11.17:18:08.513 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-11.17:18:08.513 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-11.17:18:08.623 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-11.17:18:08.623 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1378 ms
+25-07-11.17:18:09.025 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-11.17:18:09.275 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.17:18:09.290 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.17:18:09.835 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-11.17:18:09.853 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-07-11.17:18:09.864 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-07-11.17:18:09.874 [main            ] INFO  Application            - Started Application in 3.076 seconds (JVM running for 3.695)
+25-07-11.17:18:10.085 [RMI TCP Connection(2)-10.193.235.153] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-11.17:18:10.085 [RMI TCP Connection(2)-10.193.235.153] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-11.17:18:10.085 [RMI TCP Connection(3)-10.193.235.153] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-11.17:18:10.085 [RMI TCP Connection(2)-10.193.235.153] INFO  DispatcherServlet      - Completed initialization in 0 ms
+25-07-11.17:18:10.368 [RMI TCP Connection(3)-10.193.235.153] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-11.19:39:37.372 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on DESKTOP-0RF5ELK with PID 26372 (D:\Java_project\big_market\big_market-app\target\classes started by zhangxiuyu in D:\Java_project\big_market)
+25-07-11.19:39:37.374 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-11.19:39:38.068 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-11.19:39:38.070 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-11.19:39:38.098 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+25-07-11.19:39:38.759 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-07-11.19:39:38.767 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-07-11.19:39:38.767 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-11.19:39:38.767 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-11.19:39:38.879 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-11.19:39:38.880 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1470 ms
+25-07-11.19:39:39.318 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-11.19:39:39.588 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.19:39:39.604 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.19:39:40.176 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-11.19:39:40.195 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-07-11.19:39:40.206 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-07-11.19:39:40.217 [main            ] INFO  Application            - Started Application in 3.241 seconds (JVM running for 3.871)
+25-07-11.19:39:40.485 [RMI TCP Connection(2)-10.193.235.153] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-11.19:39:40.485 [RMI TCP Connection(2)-10.193.235.153] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-11.19:39:40.485 [RMI TCP Connection(1)-10.193.235.153] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-11.19:39:40.486 [RMI TCP Connection(2)-10.193.235.153] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-11.19:39:40.765 [RMI TCP Connection(1)-10.193.235.153] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-11.20:08:59.187 [http-nio-8091-exec-9] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:08:59.187 [http-nio-8091-exec-8] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:08:59.465 [http-nio-8091-exec-9] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:08:59.465 [http-nio-8091-exec-8] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:09:13.466 [http-nio-8091-exec-10] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:09:13.466 [http-nio-8091-exec-11] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:09:13.484 [http-nio-8091-exec-10] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:09:13.484 [http-nio-8091-exec-11] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:09:14.416 [http-nio-8091-exec-13] INFO  RaffleController       - 抽奖策略装配开始 strategyId：100006
+25-07-11.20:09:14.439 [http-nio-8091-exec-13] INFO  RaffleController       - 抽奖策略装配完成 strategyId：100006 response: {"code":"0000","data":true,"info":"成功"}
+25-07-11.20:09:15.716 [http-nio-8091-exec-14] INFO  RaffleController       - 抽奖策略装配开始 strategyId：100006
+25-07-11.20:09:15.731 [http-nio-8091-exec-14] INFO  RaffleController       - 抽奖策略装配完成 strategyId：100006 response: {"code":"0000","data":true,"info":"成功"}
+25-07-11.20:09:18.778 [http-nio-8091-exec-16] INFO  RaffleController       - 随机抽奖开始 strategyId: 100006
+25-07-11.20:09:18.785 [http-nio-8091-exec-16] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: system strategyId: 100006 ruleModel: rule_default awardId: 105
+25-07-11.20:09:18.785 [http-nio-8091-exec-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 105 rule_default
+25-07-11.20:09:18.798 [http-nio-8091-exec-16] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:system strategyId:100006 awardId:105
+25-07-11.20:09:18.801 [http-nio-8091-exec-16] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:system strategyId:100006 awardId:105
+25-07-11.20:09:18.825 [http-nio-8091-exec-16] INFO  DecisionTreeEngine     - 决策树引擎【规则树-兜底奖励】treeId:tree_luck_award node:rule_stock code:0001
+25-07-11.20:09:18.825 [http-nio-8091-exec-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 105 null
+25-07-11.20:09:18.829 [http-nio-8091-exec-16] INFO  RaffleController       - 随机抽奖完成 strategyId: 100006 response: {"code":"0000","data":{"awardId":105,"awardIndex":5},"info":"成功"}
+25-07-11.20:14:54.238 [http-nio-8091-exec-19] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:14:54.238 [http-nio-8091-exec-20] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:14:54.250 [http-nio-8091-exec-19] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:14:54.250 [http-nio-8091-exec-20] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:15:13.103 [http-nio-8091-exec-21] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:15:13.104 [http-nio-8091-exec-22] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:15:13.105 [http-nio-8091-exec-21] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:15:13.105 [http-nio-8091-exec-22] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:15:14.165 [http-nio-8091-exec-23] INFO  RaffleController       - 抽奖策略装配开始 strategyId：100006
+25-07-11.20:15:14.179 [http-nio-8091-exec-23] INFO  RaffleController       - 抽奖策略装配完成 strategyId：100006 response: {"code":"0000","data":true,"info":"成功"}
+25-07-11.20:16:42.250 [http-nio-8091-exec-28] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:16:42.250 [http-nio-8091-exec-29] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:16:42.259 [http-nio-8091-exec-29] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:16:42.259 [http-nio-8091-exec-28] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:22:13.086 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-11.20:22:13.101 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-07-11.20:28:54.559 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on DESKTOP-0RF5ELK with PID 18816 (D:\Java_project\big_market\big_market-app\target\classes started by zhangxiuyu in D:\Java_project\big_market)
+25-07-11.20:28:54.561 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-11.20:28:55.160 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-11.20:28:55.163 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-11.20:28:55.184 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+25-07-11.20:28:55.754 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-07-11.20:28:55.763 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-07-11.20:28:55.763 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-11.20:28:55.763 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-11.20:28:55.877 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-11.20:28:55.877 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1285 ms
+25-07-11.20:28:56.272 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-11.20:28:56.508 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.20:28:56.524 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-11.20:28:57.037 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-11.20:28:57.056 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-07-11.20:28:57.068 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-07-11.20:28:57.080 [main            ] INFO  Application            - Started Application in 2.913 seconds (JVM running for 3.427)
+25-07-11.20:28:57.508 [RMI TCP Connection(1)-10.193.235.153] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-07-11.20:28:57.516 [RMI TCP Connection(3)-10.193.235.153] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-11.20:28:57.516 [RMI TCP Connection(3)-10.193.235.153] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-11.20:28:57.517 [RMI TCP Connection(3)-10.193.235.153] INFO  DispatcherServlet      - Completed initialization in 1 ms
+25-07-11.20:28:57.772 [RMI TCP Connection(1)-10.193.235.153] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-07-11.20:30:20.832 [http-nio-8091-exec-2] INFO  RaffleController       - 随机抽奖开始 strategyId: 100006
+25-07-11.20:30:20.888 [http-nio-8091-exec-2] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: system strategyId: 100006 ruleModel: rule_default awardId: 105
+25-07-11.20:30:20.888 [http-nio-8091-exec-2] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 105 rule_default
+25-07-11.20:30:20.935 [http-nio-8091-exec-2] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:system strategyId:100006 awardId:105
+25-07-11.20:30:20.939 [http-nio-8091-exec-2] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:system strategyId:100006 awardId:105
+25-07-11.20:30:20.957 [http-nio-8091-exec-2] INFO  DecisionTreeEngine     - 决策树引擎【规则树-兜底奖励】treeId:tree_luck_award node:rule_stock code:0001
+25-07-11.20:30:20.958 [http-nio-8091-exec-2] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 105 null
+25-07-11.20:30:21.067 [http-nio-8091-exec-2] INFO  RaffleController       - 随机抽奖完成 strategyId: 100006 response: {"code":"0000","data":{"awardId":105,"awardIndex":5},"info":"成功"}
+25-07-11.20:30:31.830 [http-nio-8091-exec-4] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:30:31.838 [http-nio-8091-exec-4] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:33:57.794 [http-nio-8091-exec-6] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:33:57.795 [http-nio-8091-exec-3] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:33:57.804 [http-nio-8091-exec-3] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:33:57.804 [http-nio-8091-exec-6] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:34:08.182 [http-nio-8091-exec-7] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:34:08.185 [http-nio-8091-exec-7] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:34:08.187 [http-nio-8091-exec-8] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:34:08.190 [http-nio-8091-exec-8] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:34:12.695 [http-nio-8091-exec-10] INFO  RaffleController       - 随机抽奖开始 strategyId: 100006
+25-07-11.20:34:12.702 [http-nio-8091-exec-10] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: system strategyId: 100006 ruleModel: rule_default awardId: 106
+25-07-11.20:34:12.702 [http-nio-8091-exec-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 106 rule_default
+25-07-11.20:34:12.779 [http-nio-8091-exec-10] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:system strategyId:100006 awardId:106
+25-07-11.20:34:12.780 [http-nio-8091-exec-10] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock_1 node:rule_lock code:0000
+25-07-11.20:34:12.780 [http-nio-8091-exec-10] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:system strategyId:100006 awardId:106
+25-07-11.20:34:12.782 [http-nio-8091-exec-10] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:system strategyId:100006 awardId:106
+25-07-11.20:34:12.783 [http-nio-8091-exec-10] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock_1 node:rule_stock code:0001
+25-07-11.20:34:12.783 [http-nio-8091-exec-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 106 null
+25-07-11.20:34:12.789 [http-nio-8091-exec-10] INFO  RaffleController       - 随机抽奖完成 strategyId: 100006 response: {"code":"0000","data":{"awardId":106,"awardIndex":6},"info":"成功"}
+25-07-11.20:40:42.129 [http-nio-8091-exec-13] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:40:42.134 [http-nio-8091-exec-12] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：0
+25-07-11.20:40:42.139 [http-nio-8091-exec-13] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:40:42.142 [http-nio-8091-exec-12] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：0 response: {"code":"0000","data":[],"info":"成功"}
+25-07-11.20:40:48.654 [http-nio-8091-exec-15] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:40:48.658 [http-nio-8091-exec-15] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:40:48.660 [http-nio-8091-exec-16] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:40:48.661 [http-nio-8091-exec-16] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:40:49.410 [http-nio-8091-exec-18] INFO  RaffleController       - 抽奖策略装配开始 strategyId：100006
+25-07-11.20:40:49.430 [http-nio-8091-exec-18] INFO  RaffleController       - 抽奖策略装配完成 strategyId：100006 response: {"code":"0000","data":true,"info":"成功"}
+25-07-11.20:40:53.006 [http-nio-8091-exec-19] INFO  RaffleController       - 随机抽奖开始 strategyId: 100006
+25-07-11.20:40:53.013 [http-nio-8091-exec-19] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: system strategyId: 100006 ruleModel: rule_default awardId: 106
+25-07-11.20:40:53.013 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 106 rule_default
+25-07-11.20:40:53.017 [http-nio-8091-exec-19] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId:system strategyId:100006 awardId:106
+25-07-11.20:40:53.017 [http-nio-8091-exec-19] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock_1 node:rule_lock code:0000
+25-07-11.20:40:53.017 [http-nio-8091-exec-19] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:system strategyId:100006 awardId:106
+25-07-11.20:40:53.019 [http-nio-8091-exec-19] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:system strategyId:100006 awardId:106
+25-07-11.20:40:53.022 [http-nio-8091-exec-19] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock_1 node:rule_stock code:0001
+25-07-11.20:40:53.022 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 106 null
+25-07-11.20:40:53.023 [http-nio-8091-exec-19] INFO  RaffleController       - 随机抽奖完成 strategyId: 100006 response: {"code":"0000","data":{"awardId":106,"awardIndex":6},"info":"成功"}
+25-07-11.20:41:06.630 [http-nio-8091-exec-20] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:41:06.635 [http-nio-8091-exec-20] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:41:06.637 [http-nio-8091-exec-21] INFO  RaffleController       - 查询抽奖奖品列表配开始 strategyId：100006
+25-07-11.20:41:06.639 [http-nio-8091-exec-21] INFO  RaffleController       - 查询抽奖奖品列表配置完成 strategyId：100006 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","sort":1},{"awardId":102,"awardTitle":"7等奖","sort":2},{"awardId":103,"awardTitle":"6等奖","sort":3},{"awardId":104,"awardTitle":"5等奖","sort":4},{"awardId":105,"awardTitle":"4等奖","sort":5},{"awardId":106,"awardSubtitle":"抽奖1次后解锁","awardTitle":"3等奖","sort":6},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"2等奖","sort":7},{"awardId":108,"awardSubtitle":"抽奖2次后解锁","awardTitle":"1等奖","sort":8}],"info":"成功"}
+25-07-11.20:41:10.408 [http-nio-8091-exec-22] INFO  RaffleController       - 随机抽奖开始 strategyId: 100006
+25-07-11.20:41:10.414 [http-nio-8091-exec-22] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: system strategyId: 100006 ruleModel: rule_default awardId: 105
+25-07-11.20:41:10.414 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 system 100006 105 rule_default
+25-07-11.20:41:10.419 [http-nio-8091-exec-22] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:system strategyId:100006 awardId:105
+25-07-11.20:41:10.420 [http-nio-8091-exec-22] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:system strategyId:100006 awardId:105
+25-07-11.20:41:10.421 [http-nio-8091-exec-22] INFO  DecisionTreeEngine     - 决策树引擎【规则树-兜底奖励】treeId:tree_luck_award node:rule_stock code:0001
+25-07-11.20:41:10.421 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 system 100006 105 null
+25-07-11.20:41:10.422 [http-nio-8091-exec-22] INFO  RaffleController       - 随机抽奖完成 strategyId: 100006 response: {"code":"0000","data":{"awardId":105,"awardIndex":5},"info":"成功"}
+25-07-11.20:43:32.529 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-07-11.20:43:32.540 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
