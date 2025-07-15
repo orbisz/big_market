@@ -1,9 +1,10 @@
 package cn.bugstack.infrastructure.persistent.dao;
 
 import cn.bugstack.infrastructure.persistent.po.RaffleActivityOrder;
-import cn.bugstack.router.annotation.DBRouter;
-import cn.bugstack.router.annotation.DBRouterStrategy;
+import cn.bugstack.middleware.db.router.annotation.DBRouter;
+import cn.bugstack.middleware.db.router.annotation.DBRouterStrategy;
 import org.apache.ibatis.annotations.Mapper;
+
 import java.util.List;
 
 /**
@@ -21,4 +22,5 @@ public interface IRaffleActivityOrderDao {
     List<RaffleActivityOrder> queryRaffleActivityOrderByUserId(String userId);
 
 }
+
 
