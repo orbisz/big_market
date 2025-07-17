@@ -148,6 +148,13 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>3.12.0</version>  <!-- 或者最新版本 -->
             </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-amqp -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-amqp</artifactId>
+                <version>3.2.0</version>
+            </dependency>
+
 
 
             <!-- 工程模块 -->

@@ -1,15 +1,16 @@
 package cn.bugstack.infrastructure.persistent.redis;
 
 import org.redisson.api.*;
+import org.springframework.data.mapping.AccessOptions;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Redis 服务 - Redisson
  *
- * @author Fuzhengwei bugstack.cn @小傅哥
  */
 @Service("redissonService")
 public class RedissonService implements IRedisService {
@@ -171,7 +172,9 @@ public class RedissonService implements IRedisService {
         return redissonClient.getBucket(key).trySet("lock");
     }
 
-
+    @Override
+    public Boolean setNx(String key, long expired, TimeUnit timeUnit) {
+        return redissonClient.getBucket(key).trySet("lock", expired, timeUnit);
+    }
 
 }
-
