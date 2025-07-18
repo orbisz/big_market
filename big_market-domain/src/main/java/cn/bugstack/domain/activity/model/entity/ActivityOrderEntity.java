@@ -78,4 +78,3 @@ public class ActivityOrderEntity {
     private String outBusinessNo;
 
 }
-

@@ -1,0 +1,82 @@
+25-07-17.10:47:20.157 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-07-17.21:43:57.714 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.727 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.740 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.751 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.765 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.776 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.790 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.805 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.819 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.834 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.846 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.860 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.874 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.888 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.902 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.916 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.931 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.943 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.958 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.969 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:50:31.645 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=56s922ms869µs400ns).
+25-07-17.21:52:30.818 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m34s215ms517µs600ns).
+25-07-17.22:04:03.834 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=11m33s15ms803µs500ns).
+25-07-17.22:18:55.259 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=14m51s426ms118µs400ns).
+25-07-17.22:18:55.294 [AMQP Connection 127.0.0.1:5672] ERROR ForgivingExceptionHandler - An unexpected connection driver error occurred
+java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:294)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+25-07-17.22:18:55.295 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70)
+	at org.springframework.amqp.rabbit.connection.RabbitAccessor.convertRabbitAccessException(RabbitAccessor.java:113)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2237)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.initialize(RabbitAdmin.java:693)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1946)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
+	at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:417)
+	at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:437)
+	at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:823)
+	at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1035)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.DataOutputStream.flush(DataOutputStream.java:128)
+	at com.rabbitmq.client.impl.SocketFrameHandler.flush(SocketFrameHandler.java:197)
+	at com.rabbitmq.client.impl.AMQConnection.flush(AMQConnection.java:636)
+	at com.rabbitmq.client.impl.AMQCommand.transmit(AMQCommand.java:134)
+	at com.rabbitmq.client.impl.AMQChannel.quiescingTransmit(AMQChannel.java:455)
+	at com.rabbitmq.client.impl.AMQChannel.quiescingTransmit(AMQChannel.java:434)
+	at com.rabbitmq.client.impl.AMQChannel.quiescingRpc(AMQChannel.java:351)
+	at com.rabbitmq.client.impl.AMQChannel.rpc(AMQChannel.java:342)
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:282)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclare(ChannelN.java:968)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclare(ChannelN.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162)
+	at jdk.proxy2/jdk.proxy2.$Proxy173.queueDeclare(Unknown Source)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.declareQueues(RabbitAdmin.java:831)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.lambda$initialize$12(RabbitAdmin.java:695)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.invokeAction(RabbitTemplate.java:2270)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2231)
+	... 8 common frames omitted
+25-07-17.22:19:44.998 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m280ms99µs200ns).
+25-07-17.23:29:01.691 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=3m56s908ms434µs).
+25-07-17.23:39:14.491 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=10m12s800ms370µs600ns).

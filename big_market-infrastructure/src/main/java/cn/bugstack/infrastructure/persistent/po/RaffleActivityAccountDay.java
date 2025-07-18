@@ -1,14 +1,21 @@
 package cn.bugstack.infrastructure.persistent.po;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 /**
- * 抽奖活动账户表-日次数
+ * @description 抽奖活动账户表-日次数
  */
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class RaffleActivityAccountDay {
+
     /** 自增ID */
     private String id;
     /** 用户ID */

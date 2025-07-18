@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * 策略仓储接口
  */
-public interface IStrategyRepository {
+public interface  IStrategyRepository {
 
 
     List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId);

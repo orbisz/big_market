@@ -35,15 +35,15 @@
         <!-- 系统模块 -->
         <dependency>
             <groupId>cn.bugstack</groupId>
-            <artifactId>big_market-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>cn.bugstack</groupId>
             <artifactId>big_market-types</artifactId>
         </dependency>
         <dependency>
             <groupId>cn.bugstack</groupId>
             <artifactId>big_market-domain</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.bugstack</groupId>
+            <artifactId>big_market-api</artifactId>
         </dependency>
     </dependencies>
 

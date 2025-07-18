@@ -1,0 +1,452 @@
+25-07-17.00:16:36.985 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 33252 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.00:16:36.988 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-07-17.00:16:38.590 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.00:16:38.595 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.00:16:38.664 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+25-07-17.00:16:41.041 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.00:16:41.959 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.00:16:42.000 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.00:16:47.262 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.00:16:47.424 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.00:16:47.584 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3cf70afa:0/SimpleConnection@3d763ae5 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56706]
+25-07-17.00:16:47.770 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 11.514 seconds (JVM running for 13.022)
+25-07-17.00:16:48.640 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.00:16:49.097 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.00:16:49.435 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-07-17.00:16:49.504 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.00:16:49.583 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.00:16:49.770 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.00:16:49.776 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.00:18:41.019 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 39428 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.00:18:41.022 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-07-17.00:18:42.505 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.00:18:42.509 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.00:18:42.566 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+25-07-17.00:18:44.909 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.00:18:45.777 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.00:18:45.810 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.00:18:50.050 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.00:18:50.283 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.00:18:50.385 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3063be68:0/SimpleConnection@7940b729 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57180]
+25-07-17.00:18:50.597 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 10.363 seconds (JVM running for 11.679)
+25-07-17.00:18:51.337 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.00:18:51.659 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.00:18:51.799 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-07-17.00:18:51.846 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.00:18:51.891 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.00:18:52.595 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.00:18:52.597 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.00:22:50.012 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 4540 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.00:22:50.013 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-07-17.00:22:51.467 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.00:22:51.474 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.00:22:51.538 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+25-07-17.00:22:53.966 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.00:22:54.823 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.00:22:54.857 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.00:22:59.422 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.00:22:59.587 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.00:22:59.653 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3063be68:0/SimpleConnection@7940b729 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 51739]
+25-07-17.00:22:59.772 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 10.579 seconds (JVM running for 12.116)
+25-07-17.00:23:00.423 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.00:23:00.748 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.00:23:00.898 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-07-17.00:23:00.967 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.00:23:01.036 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.00:23:01.763 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.00:23:01.765 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.10:47:06.856 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 22772 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.10:47:06.857 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-07-17.10:47:08.395 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.10:47:08.398 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.10:47:08.463 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+25-07-17.10:47:10.897 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.10:47:11.727 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.10:47:11.756 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.10:47:16.774 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.10:47:16.927 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.10:47:17.025 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#66dd04e2:0/SimpleConnection@59cb10e0 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 60298]
+25-07-17.10:47:17.131 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 10.919 seconds (JVM running for 12.571)
+25-07-17.10:47:17.973 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.10:47:18.353 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.10:47:18.574 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-07-17.10:47:18.654 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:18.654 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:18.663 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:18.783 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.10:47:18.829 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.10:47:19.019 [main            ] INFO  RaffleOrderTest        - 测试结果：099380317837
+25-07-17.10:47:19.031 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.031 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.040 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.074 [main            ] INFO  RaffleOrderTest        - 测试结果：612141943895
+25-07-17.10:47:19.088 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.088 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.097 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.146 [main            ] INFO  RaffleOrderTest        - 测试结果：853839756138
+25-07-17.10:47:19.160 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.160 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.169 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.214 [main            ] INFO  RaffleOrderTest        - 测试结果：933189136062
+25-07-17.10:47:19.226 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.227 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.235 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.269 [main            ] INFO  RaffleOrderTest        - 测试结果：651942048518
+25-07-17.10:47:19.281 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.282 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.289 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.321 [main            ] INFO  RaffleOrderTest        - 测试结果：061539268009
+25-07-17.10:47:19.334 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.334 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.342 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.374 [main            ] INFO  RaffleOrderTest        - 测试结果：266579644246
+25-07-17.10:47:19.386 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.386 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.394 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.425 [main            ] INFO  RaffleOrderTest        - 测试结果：146850987089
+25-07-17.10:47:19.437 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.437 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.444 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.472 [main            ] INFO  RaffleOrderTest        - 测试结果：929836422432
+25-07-17.10:47:19.482 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.482 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.489 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.520 [main            ] INFO  RaffleOrderTest        - 测试结果：084057984250
+25-07-17.10:47:19.530 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.530 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.536 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.567 [main            ] INFO  RaffleOrderTest        - 测试结果：724277890544
+25-07-17.10:47:19.577 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.578 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.583 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.611 [main            ] INFO  RaffleOrderTest        - 测试结果：833285531313
+25-07-17.10:47:19.622 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.622 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.630 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.658 [main            ] INFO  RaffleOrderTest        - 测试结果：700179947039
+25-07-17.10:47:19.668 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.668 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.674 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.705 [main            ] INFO  RaffleOrderTest        - 测试结果：287337177679
+25-07-17.10:47:19.715 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.715 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.720 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.748 [main            ] INFO  RaffleOrderTest        - 测试结果：740580513034
+25-07-17.10:47:19.757 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.757 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.762 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.790 [main            ] INFO  RaffleOrderTest        - 测试结果：589803036141
+25-07-17.10:47:19.799 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.799 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.805 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.838 [main            ] INFO  RaffleOrderTest        - 测试结果：583287260577
+25-07-17.10:47:19.845 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.845 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.850 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.875 [main            ] INFO  RaffleOrderTest        - 测试结果：439580477955
+25-07-17.10:47:19.884 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.884 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:19.888 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-07-17.10:47:19.912 [main            ] INFO  RaffleOrderTest        - 测试结果：276270329646
+25-07-17.10:47:19.922 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.10:47:19.922 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-07-17.10:47:20.156 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:activity_sku_stock_zero message:{"data":9011,"id":"63735936663","timestamp":1752720439925}
+25-07-17.10:47:20.157 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-07-17.10:47:20.172 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  ActivitySkuStockZeroCustomer - 监听活动sku库存消耗为0消息 topic: activity_sku_stock_zero message: {"data":9011,"id":"63735936663","timestamp":1752720439925}
+25-07-17.10:49:51.202 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.10:49:51.847 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.10:49:51.850 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.21:38:51.442 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 21908 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.21:38:51.443 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.21:38:52.987 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.21:38:52.992 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.21:38:53.060 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+25-07-17.21:38:55.306 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.21:38:56.033 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:38:56.063 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:39:00.369 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.21:39:00.563 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.21:39:00.685 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#7507d96c:0/SimpleConnection@51eafec0 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54134]
+25-07-17.21:39:00.782 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 9.99 seconds (JVM running for 11.513)
+25-07-17.21:39:01.431 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.21:39:01.773 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.21:39:02.009 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.21:39:02.791 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.21:39:02.794 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.21:42:06.016 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 32944 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.21:42:06.019 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.21:42:07.491 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.21:42:07.495 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.21:42:07.559 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+25-07-17.21:42:10.010 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.21:42:10.777 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:42:10.813 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:42:15.796 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.21:42:15.993 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.21:42:16.083 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4a5fab78:0/SimpleConnection@433db56d [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54351]
+25-07-17.21:42:16.250 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 10.906 seconds (JVM running for 12.12)
+25-07-17.21:42:16.965 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.21:42:17.238 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.21:42:17.313 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.21:42:18.239 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.21:42:18.241 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.21:43:47.710 [main            ] INFO  RaffleActivityAccountQuotaServiceTest - Starting RaffleActivityAccountQuotaServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 28292 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.21:43:47.713 [main            ] INFO  RaffleActivityAccountQuotaServiceTest - The following 1 profile is active: "dev"
+25-07-17.21:43:49.113 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.21:43:49.118 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.21:43:49.177 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+25-07-17.21:43:51.359 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.21:43:52.070 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:43:52.101 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:43:56.461 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.21:43:56.565 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.21:43:56.614 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#7a247711:0/SimpleConnection@21dd91da [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54646]
+25-07-17.21:43:56.701 [main            ] INFO  RaffleActivityAccountQuotaServiceTest - Started RaffleActivityAccountQuotaServiceTest in 9.661 seconds (JVM running for 10.872)
+25-07-17.21:43:57.289 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.21:43:57.583 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.21:43:57.683 [main            ] INFO  RaffleActivityAccountQuotaServiceTest - 装配活动：true
+25-07-17.21:43:57.710 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.714 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.726 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.727 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.740 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.740 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.751 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.751 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.765 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.765 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.776 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.776 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.790 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.790 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.804 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.805 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.818 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.819 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.834 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.834 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.846 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.846 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.860 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.860 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.874 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.874 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.888 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.888 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.901 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.902 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.915 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.916 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.931 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.931 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.943 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.943 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.957 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.958 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:43:57.969 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+25-07-17.21:43:57.969 [main            ] WARN  RaffleActivityAccountQuotaServiceTest - 活动库存不足
+25-07-17.21:44:03.985 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.21:44:04.737 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.21:44:04.739 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.21:44:12.597 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 7188 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.21:44:12.600 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.21:44:14.188 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.21:44:14.192 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.21:44:14.253 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+25-07-17.21:44:16.607 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.21:44:17.425 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:44:17.458 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:44:22.234 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.21:44:22.389 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.21:44:22.445 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#514dc5f4:0/SimpleConnection@35d53cd8 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54821]
+25-07-17.21:44:22.524 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 10.713 seconds (JVM running for 12.106)
+25-07-17.21:44:23.185 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.21:44:23.481 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.21:44:23.546 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.21:44:24.522 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.21:44:24.524 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.21:48:41.257 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 12368 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.21:48:41.259 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.21:48:42.965 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.21:48:42.968 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.21:48:43.053 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 0 Redis repository interfaces.
+25-07-17.21:48:50.426 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.21:48:51.236 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:48:51.268 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:48:57.266 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.21:48:57.428 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.21:48:57.490 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5100c143:0/SimpleConnection@5dd12c19 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55264]
+25-07-17.21:48:57.599 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 30.309 seconds (JVM running for 33.208)
+25-07-17.21:48:58.500 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.21:48:58.817 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.21:48:58.890 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.21:48:59.610 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.21:48:59.615 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.21:49:13.641 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 23948 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.21:49:13.643 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.21:49:15.213 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.21:49:15.216 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.21:49:15.282 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
+25-07-17.21:49:17.770 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.21:49:18.565 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:49:18.608 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:49:23.810 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.21:49:23.959 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.21:49:24.035 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#625f5712:0/SimpleConnection@14745c3c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55358]
+25-07-17.21:49:24.150 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 11.276 seconds (JVM running for 12.864)
+25-07-17.21:49:25.032 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.21:49:25.336 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.21:50:31.645 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=56s922ms869µs400ns).
+25-07-17.21:50:31.716 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.21:50:32.658 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.21:50:32.661 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.21:50:39.299 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 5268 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.21:50:39.300 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.21:50:40.870 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.21:50:40.873 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.21:50:40.937 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 0 Redis repository interfaces.
+25-07-17.21:50:43.468 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.21:50:44.318 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:50:44.354 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.21:50:49.412 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.21:50:49.560 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.21:50:49.617 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#625f5712:0/SimpleConnection@14745c3c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55503]
+25-07-17.21:50:49.721 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 11.148 seconds (JVM running for 12.759)
+25-07-17.21:50:50.572 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.21:50:50.853 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.21:52:30.818 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m34s215ms517µs600ns).
+25-07-17.22:04:03.834 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=11m33s15ms803µs500ns).
+25-07-17.22:04:18.431 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  SimpleMessageListenerContainer - Restarting Consumer@6a905513: tags=[[amq.ctag-OaLAI7rhsv605_m0tPrYmA]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@127.0.0.1:5672/,1), conn: Proxy@60256d1b Shared Rabbit Connection: SimpleConnection@14745c3c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55503], acknowledgeMode=AUTO local queue size=0
+25-07-17.22:04:18.435 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.22:04:18.453 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#625f5712:1/SimpleConnection@d4101ef [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56242]
+25-07-17.22:18:55.259 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=14m51s426ms118µs400ns).
+25-07-17.22:18:55.294 [AMQP Connection 127.0.0.1:5672] ERROR ForgivingExceptionHandler - An unexpected connection driver error occurred
+java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:322)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:347)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:800)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readUnsignedByte(DataInputStream.java:294)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:184)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:665)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+25-07-17.22:18:55.295 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70)
+	at org.springframework.amqp.rabbit.connection.RabbitAccessor.convertRabbitAccessException(RabbitAccessor.java:113)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2237)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.initialize(RabbitAdmin.java:693)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1946)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketException: 浣犵殑涓绘満涓殑杞欢涓浜嗕竴涓凡寤虹珛鐨勮繛鎺ャ��
+	at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:417)
+	at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:437)
+	at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:823)
+	at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1035)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at java.base/java.io.DataOutputStream.flush(DataOutputStream.java:128)
+	at com.rabbitmq.client.impl.SocketFrameHandler.flush(SocketFrameHandler.java:197)
+	at com.rabbitmq.client.impl.AMQConnection.flush(AMQConnection.java:636)
+	at com.rabbitmq.client.impl.AMQCommand.transmit(AMQCommand.java:134)
+	at com.rabbitmq.client.impl.AMQChannel.quiescingTransmit(AMQChannel.java:455)
+	at com.rabbitmq.client.impl.AMQChannel.quiescingTransmit(AMQChannel.java:434)
+	at com.rabbitmq.client.impl.AMQChannel.quiescingRpc(AMQChannel.java:351)
+	at com.rabbitmq.client.impl.AMQChannel.rpc(AMQChannel.java:342)
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:282)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclare(ChannelN.java:968)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclare(ChannelN.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1162)
+	at jdk.proxy2/jdk.proxy2.$Proxy173.queueDeclare(Unknown Source)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.declareQueues(RabbitAdmin.java:831)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.lambda$initialize$12(RabbitAdmin.java:695)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.invokeAction(RabbitTemplate.java:2270)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2231)
+	... 8 common frames omitted
+25-07-17.22:18:55.297 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.22:18:55.316 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#625f5712:2/SimpleConnection@5a1009ad [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56907]
+25-07-17.22:18:55.334 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.22:18:55.337 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.22:18:55.340 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.22:19:02.326 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 9044 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.22:19:02.328 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.22:19:03.982 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.22:19:03.986 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.22:19:04.058 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
+25-07-17.22:19:06.503 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.22:19:07.333 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.22:19:07.373 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.22:19:13.305 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.22:19:13.448 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.22:19:13.529 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2211e731:0/SimpleConnection@4be5b9b1 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56985]
+25-07-17.22:19:13.649 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 12.095 seconds (JVM running for 13.638)
+25-07-17.22:19:14.398 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.22:19:14.718 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.22:19:44.998 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m280ms99µs200ns).
+25-07-17.23:25:23.979 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 8700 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.23:25:23.981 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.23:25:25.762 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.23:25:25.768 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.23:25:25.846 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 0 Redis repository interfaces.
+25-07-17.23:25:28.219 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.23:25:29.089 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.23:25:29.122 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.23:25:33.194 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.23:25:33.358 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.23:25:33.449 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2211e731:0/SimpleConnection@4be5b9b1 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 61403]
+25-07-17.23:25:33.556 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 10.415 seconds (JVM running for 12.865)
+25-07-17.23:25:34.426 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.23:25:34.783 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.23:29:01.691 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=3m56s908ms434µs).
+25-07-17.23:39:14.491 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=10m12s800ms370µs600ns).
+25-07-17.23:39:14.507 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  SimpleMessageListenerContainer - Restarting Consumer@5570ee6d: tags=[[amq.ctag-yYWS_dDEHhEYTGrUqKpxPw]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@127.0.0.1:5672/,1), conn: Proxy@2f7d8a7c Shared Rabbit Connection: SimpleConnection@4be5b9b1 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 61403], acknowledgeMode=AUTO local queue size=0
+25-07-17.23:39:14.527 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.23:39:14.576 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2211e731:1/SimpleConnection@5bd8f5ef [delegate=amqp://admin@127.0.0.1:5672/, localPort= 64396]
+25-07-17.23:39:14.625 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.23:39:15.608 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.23:39:15.615 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.23:49:47.793 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 18040 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.23:49:47.794 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.23:49:49.461 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.23:49:49.468 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.23:49:49.555 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 0 Redis repository interfaces.
+25-07-17.23:49:51.869 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.23:49:52.632 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.23:49:52.666 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.23:49:58.172 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.23:49:58.348 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.23:49:58.441 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#32caae19:0/SimpleConnection@51eafec0 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 60622]
+25-07-17.23:49:58.612 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 11.467 seconds (JVM running for 13.22)
+25-07-17.23:49:59.481 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.23:49:59.872 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.23:49:59.942 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.23:50:00.599 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.23:50:00.602 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-17.23:52:40.818 [main            ] INFO  RaffleActivityPartakeServiceTest - Starting RaffleActivityPartakeServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 14264 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-17.23:52:40.821 [main            ] INFO  RaffleActivityPartakeServiceTest - The following 1 profile is active: "dev"
+25-07-17.23:52:42.257 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-17.23:52:42.263 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-17.23:52:42.331 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+25-07-17.23:52:44.590 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-17.23:52:45.397 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.23:52:45.432 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-17.23:52:49.564 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-17.23:52:49.718 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-17.23:52:49.786 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4a5fab78:0/SimpleConnection@8a11a19 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 60812]
+25-07-17.23:52:49.899 [main            ] INFO  RaffleActivityPartakeServiceTest - Started RaffleActivityPartakeServiceTest in 9.715 seconds (JVM running for 11.051)
+25-07-17.23:52:50.596 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-17.23:52:50.857 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-17.23:52:50.920 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-17.23:52:51.895 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-17.23:52:51.896 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
