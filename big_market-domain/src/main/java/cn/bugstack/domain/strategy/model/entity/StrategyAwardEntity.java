@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.checkerframework.checker.index.qual.PolyUpperBound;
 
 import java.math.BigDecimal;
 
@@ -32,5 +33,7 @@ public class StrategyAwardEntity {
     private BigDecimal awardRate;
     /** 排序 */
     private Integer sort;
+    /** 规则模型。rule配置的模型同步到此类，便于使用*/
+    private String ruleModels;
 
 }
