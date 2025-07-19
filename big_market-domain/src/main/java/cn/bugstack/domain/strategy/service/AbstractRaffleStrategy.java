@@ -77,10 +77,13 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy,IRaffleS
         StrategyAwardEntity strategyAward = repository.queryStrategyAwardEntity(strategyId, awardId);
         return RaffleAwardEntity.builder()
                 .awardId(awardId)
+                .awardTitle(strategyAward.getAwardTitle())
                 .awardConfig(awardConfig)
                 .sort(strategyAward.getSort())
                 .build();
     }
+
+
 
     /**
      * 抽奖计算，责任链抽象方法
@@ -101,7 +104,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy,IRaffleS
      */
     public abstract DefaultTreeFactory.StrategyAwardVO raffleLogicTree(String userId, Long strategyId, Integer awardId);
 
-    public abstract StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException;
+    //public abstract StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException;
 
-    public abstract void updateStrategyAwardStock(Long strategyId, Integer awardId);
+    //public abstract void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }

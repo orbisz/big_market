@@ -19,26 +19,21 @@ public interface  IStrategyRepository {
 
     List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId);
 
-    //void storeStrategyAwardSearchRateTable(String key, Integer rateRange, HashMap<Integer, Integer> shuffleStrategyAwardSearchRateTable);
-
     void storeStrategyAwardSearchRateTable(String key, Integer rateRange, Map<Integer, Integer> strategyAwardSearchRateTable);
 
     Integer getStrategyAwardAssemble(String key, Integer rateKey);
 
     int getRateRange(Long strategyId);
+
     int getRateRange(String key);
 
-    //Integer getStrategyAwardAssemble(Long strategyId, int rateKey);
-    //Integer getStrategyAwardAssemble(String key, Integer rateKey);
     StrategyEntity queryStrategyEntityByStrategyId(Long strategyId);
 
     StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleModel);
 
+    String queryStrategyRuleValue(Long strategyId, String ruleModel);
+
     String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
-
-    String queryStrategyRuleValue(Long strategyId,String ruleModel);
-
-    //StrategyRuleEntity queryStrategyRuleValue(Long strategyId, String ruleModel);
 
     StrategyAwardRuleModelVO queryStrategyAwardRuleModelVO(Long strategyId, Integer awardId);
 
@@ -48,8 +43,15 @@ public interface  IStrategyRepository {
      * @param treeId 规则树ID
      * @return 树结构信息
      */
-
     RuleTreeVO queryRuleTreeVOByTreeId(String treeId);
+
+    /**
+     * 缓存奖品库存
+     *
+     * @param cacheKey   key
+     * @param awardCount 库存值
+     */
+    void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
 
     /**
      * 缓存key，decr 方式扣减库存
@@ -58,14 +60,7 @@ public interface  IStrategyRepository {
      * @return 扣减结果
      */
     Boolean subtractionAwardStock(String cacheKey);
-    /**
-     * 缓存奖品库存
-     *
-     * @param cacheKey   key
-     * @param awardCount 库存值
-     */
 
-    void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
     /**
      * 写入奖品库存消费队列
      *
@@ -82,9 +77,34 @@ public interface  IStrategyRepository {
      * 更新奖品库存消耗
      *
      * @param strategyId 策略ID
-     * @param awardId 奖品ID
+     * @param awardId    奖品ID
      */
     void updateStrategyAwardStock(Long strategyId, Integer awardId);
 
+    /**
+     * 根据策略ID+奖品ID的唯一值组合，查询奖品信息
+     *
+     * @param strategyId 策略ID
+     * @param awardId    奖品ID
+     * @return 奖品信息
+     */
     StrategyAwardEntity queryStrategyAwardEntity(Long strategyId, Integer awardId);
+
+    /**
+     * 查询策略ID
+     *
+     * @param activityId 活动ID
+     * @return 策略ID
+     */
+    Long queryStrategyIdByActivityId(Long activityId);
+
+    /**
+     * 查询用户抽奖次数 - 当天的；策略ID:活动ID 1:1 的配置，可以直接用 strategyId 查询。
+     *
+     * @param userId     用户ID
+     * @param strategyId 策略ID
+     * @return 用户今日参与次数
+     */
+    Integer queryTodayUserRaffleCount(String userId, Long strategyId);
+
 }

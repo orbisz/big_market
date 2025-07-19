@@ -6,6 +6,7 @@ import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @description 活动仓储接口
@@ -44,6 +45,7 @@ public interface IActivityRepository {
 
     void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
 
+    List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId);
 
 
 }
