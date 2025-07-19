@@ -27,9 +27,11 @@ public interface IActivityRepository {
 
     void activitySkuStockConsumeSendQueue(ActivitySkuStockKeyVO activitySkuStockKeyVO);
 
-    ActivitySkuStockKeyVO takeQueueValue();
+    //ActivitySkuStockKeyVO takeQueueValue();
+    ActivitySkuStockKeyVO takeQueueValue(Long sku);
 
-    void clearQueueValue();
+    //void clearQueueValue();
+    void clearQueueValue(Long sku);
 
     void updateActivitySkuStock(Long sku);
 
@@ -49,4 +51,11 @@ public interface IActivityRepository {
 
 
     Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId);
+
+    /**
+     * 查询所有的sku
+     * @return sku编号列表
+     */
+    List<Long> querySkuList();
+
 }
