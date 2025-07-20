@@ -1,108 +1,542 @@
-/*
- Navicat Premium Data Transfer
+# ************************************************************
+# Sequel Ace SQL dump
+# 版本号： 20050
+#
+# https://sequel-ace.com/
+# https://github.com/Sequel-Ace/Sequel-Ace
+#
+# 主机: 127.0.0.1 (MySQL 5.6.39)
+# 数据库: big_market_02
+# 生成时间: 2024-04-30 10:18:59 +0000
+# ************************************************************
 
- Source Server         : 127.0.0.1
- Source Server Type    : MySQL
- Source Server Version : 50639
- Source Host           : localhost:3306
- Source Schema         : road-map
 
- Target Server Type    : MySQL
- Target Server Version : 50639
- File Encoding         : 65001
-
- Date: 15/07/2023 09:26:39
-*/
-
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 SET NAMES utf8mb4;
-SET FOREIGN_KEY_CHECKS = 0;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE='NO_AUTO_VALUE_ON_ZERO', SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-CREATE database if NOT EXISTS `xfg_frame_archetype` default character set utf8mb4 collate utf8mb4_0900_ai_ci;
-use `xfg_frame_archetype`;
+CREATE database if NOT EXISTS `big_market_02` default character set utf8mb4;
+use `big_market_02`;
 
--- ----------------------------
--- Table structure for employee
--- ----------------------------
-DROP TABLE IF EXISTS `employee`;
-CREATE TABLE `employee` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `employee_number` varchar(16) NOT NULL DEFAULT '' COMMENT '雇员ID',
-  `employee_name` varchar(32) NOT NULL DEFAULT '' COMMENT '雇员姓名',
-  `employee_level` varchar(8) NOT NULL DEFAULT '' COMMENT '雇员级别',
-  `employee_title` varchar(16) NOT NULL DEFAULT '' COMMENT '雇员岗位Title',
-  `create_time` datetime NOT NULL COMMENT '创建时间',
-  `update_time` datetime NOT NULL COMMENT '更新时间',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `idx_employee_number` (`employee_number`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
+# 转储表 raffle_activity_account
+# ------------------------------------------------------------
 
--- ----------------------------
--- Records of employee
--- ----------------------------
-BEGIN;
-INSERT INTO `employee` VALUES (1, '10000001', 'sXvfDpsWnJdLsCVk64tJgw==', 'T-3', '中级工程师', '2023-07-14 15:26:26', '2023-07-14 15:26:26');
-INSERT INTO `employee` VALUES (2, '10000010', 'sXvfDpsWnJdLsCVk64tJgw==', 'T2', '见习工程师', '2023-07-14 15:34:40', '2023-07-14 15:34:40');
-INSERT INTO `employee` VALUES (3, '10000011', 'sXvfDpsWnJdLsCVk64tJgw==', 'T2', '见习工程师', '2023-07-14 15:34:40', '2023-07-14 15:34:40');
-INSERT INTO `employee` VALUES (4, '10000012', 'sXvfDpsWnJdLsCVk64tJgw==', 'T2', '见习工程师', '2023-07-14 15:34:40', '2023-07-14 15:34:40');
-INSERT INTO `employee` VALUES (5, '10000013', 'sXvfDpsWnJdLsCVk64tJgw==', 'T2', '见习工程师', '2023-07-14 15:34:40', '2023-07-14 15:34:40');
-INSERT INTO `employee` VALUES (6, '10000014', 'sXvfDpsWnJdLsCVk64tJgw==', 'T2', '见习工程师', '2023-07-14 15:34:40', '2023-07-14 15:34:40');
-INSERT INTO `employee` VALUES (9, '10000002', 'sXvfDpsWnJdLsCVk64tJgw==', 'T2', '见习工程师', '2023-07-15 07:42:52', '2023-07-15 07:42:52');
-INSERT INTO `employee` VALUES (22, '10000015', 'hMCgLG6WV3CsNBQ1UD6PEQ==', 'T2', '见习工程师', '2023-07-15 08:02:31', '2023-07-15 08:02:31');
-INSERT INTO `employee` VALUES (23, '10000016', 'hMCgLG6WV3CsNBQ1UD6PEQ==', 'T2', '见习工程师', '2023-07-15 08:02:31', '2023-07-15 08:02:31');
-INSERT INTO `employee` VALUES (24, '10000017', 'hMCgLG6WV3CsNBQ1UD6PEQ==', 'T2', '见习工程师', '2023-07-15 08:02:31', '2023-07-15 08:02:31');
-INSERT INTO `employee` VALUES (39, '10000022', 'GyG+V0r6mBCNsdusuKl03g==', 'T1', '实习工程师', '2023-07-15 09:17:49', '2023-07-15 09:17:49');
-COMMIT;
+DROP TABLE IF EXISTS `raffle_activity_account`;
 
--- ----------------------------
--- Table structure for employee_salary
--- ----------------------------
-DROP TABLE IF EXISTS `employee_salary`;
-CREATE TABLE `employee_salary` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `employee_number` varchar(16) NOT NULL DEFAULT '' COMMENT '雇员编号',
-  `salary_total_amount` decimal(8,2) NOT NULL COMMENT '薪资总额',
-  `salary_merit_amount` decimal(8,2) NOT NULL COMMENT '绩效工资',
-  `salary_base_amount` decimal(8,2) NOT NULL COMMENT '基础工资',
-  `create_time` datetime NOT NULL COMMENT '创建时间',
-  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
-  PRIMARY KEY (`id`),
-  KEY `idx_employee_number` (`employee_number`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+CREATE TABLE `raffle_activity_account` (
+                                           `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                           `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                           `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                           `total_count` int(8) NOT NULL COMMENT '总次数',
+                                           `total_count_surplus` int(8) NOT NULL COMMENT '总次数-剩余',
+                                           `day_count` int(8) NOT NULL COMMENT '日次数',
+                                           `day_count_surplus` int(8) NOT NULL COMMENT '日次数-剩余',
+                                           `month_count` int(8) NOT NULL COMMENT '月次数',
+                                           `month_count_surplus` int(8) NOT NULL COMMENT '月次数-剩余',
+                                           `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                           `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+                                           PRIMARY KEY (`id`),
+                                           UNIQUE KEY `uq_user_id_activity_id` (`user_id`,`activity_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动账户表';
 
--- ----------------------------
--- Records of employee_salary
--- ----------------------------
-BEGIN;
-INSERT INTO `employee_salary` VALUES (1, '10000001', 5100.00, 1020.00, 4080.00, '2023-07-14 16:09:06', '2023-07-14 16:09:06');
-INSERT INTO `employee_salary` VALUES (2, '10000010', 5000.00, 1000.00, 4000.00, '2023-07-14 16:17:10', '2023-07-14 16:17:10');
-INSERT INTO `employee_salary` VALUES (3, '10000011', 5000.00, 1000.00, 4000.00, '2023-07-14 16:17:10', '2023-07-14 16:17:10');
-INSERT INTO `employee_salary` VALUES (4, '10000012', 5000.00, 1000.00, 4000.00, '2023-07-14 16:17:10', '2023-07-14 16:17:10');
-INSERT INTO `employee_salary` VALUES (5, '10000013', 5000.00, 1000.00, 4000.00, '2023-07-14 16:17:10', '2023-07-14 16:17:10');
-INSERT INTO `employee_salary` VALUES (6, '10000014', 5000.00, 1000.00, 4000.00, '2023-07-14 16:17:10', '2023-07-14 16:17:10');
-INSERT INTO `employee_salary` VALUES (8, '10000022', 100.00, 10.00, 90.00, '2023-07-15 09:17:49', '2023-07-15 09:17:49');
-COMMIT;
+LOCK TABLES `raffle_activity_account` WRITE;
+/*!40000 ALTER TABLE `raffle_activity_account` DISABLE KEYS */;
 
--- ----------------------------
--- Table structure for employee_salary_adjust
--- ----------------------------
-DROP TABLE IF EXISTS `employee_salary_adjust`;
-CREATE TABLE `employee_salary_adjust` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `employee_number` varchar(16) NOT NULL DEFAULT '' COMMENT '雇员编号',
-  `adjust_order_id` varchar(32) NOT NULL DEFAULT '' COMMENT '调薪单号',
-  `adjust_total_amount` decimal(8,2) NOT NULL COMMENT '总额调薪',
-  `adjust_base_amount` decimal(8,2) NOT NULL COMMENT '基础调薪',
-  `adjust_merit_amount` decimal(8,2) NOT NULL COMMENT '绩效调薪',
-  `create_time` datetime NOT NULL COMMENT '创建时间',
-  `update_time` datetime NOT NULL COMMENT '更新时间',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `idx_order_id` (`adjust_order_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+INSERT INTO `raffle_activity_account` (`id`, `user_id`, `activity_id`, `total_count`, `total_count_surplus`, `day_count`, `day_count_surplus`, `month_count`, `month_count_surplus`, `create_time`, `update_time`)
+VALUES
+    (2,'xiaofuge',100301,4,3,4,3,4,3,'2024-03-23 12:40:56','2024-03-23 13:16:40');
 
--- ----------------------------
--- Records of employee_salary_adjust
--- ----------------------------
-BEGIN;
-INSERT INTO `employee_salary_adjust` VALUES (1, '10000001', '109089990198888811', 1000.00, 800.00, 200.00, '2023-07-14 16:55:53', '2023-07-14 16:55:53');
-INSERT INTO `employee_salary_adjust` VALUES (2, '10000001', '100908977676001', 100.00, 20.00, 80.00, '2023-07-14 21:57:39', '2023-07-14 21:57:39');
-COMMIT;
+/*!40000 ALTER TABLE `raffle_activity_account` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# 转储表 raffle_activity_account_day
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `raffle_activity_account_day`;
+
+CREATE TABLE `raffle_activity_account_day` (
+                                               `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                               `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                               `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                               `day` varchar(10) NOT NULL COMMENT '日期（yyyy-mm-dd）',
+                                               `day_count` int(8) NOT NULL COMMENT '日次数',
+                                               `day_count_surplus` int(8) NOT NULL COMMENT '日次数-剩余',
+                                               `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                               `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                               PRIMARY KEY (`id`),
+                                               UNIQUE KEY `uq_user_id_activity_id_day` (`user_id`,`activity_id`,`day`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动账户表-日次数';
+
+
+
+# 转储表 raffle_activity_account_month
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `raffle_activity_account_month`;
+
+CREATE TABLE `raffle_activity_account_month` (
+                                                 `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                                 `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                                 `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                                 `month` varchar(7) NOT NULL COMMENT '月（yyyy-mm）',
+                                                 `month_count` int(8) NOT NULL COMMENT '月次数',
+                                                 `month_count_surplus` int(8) NOT NULL COMMENT '月次数-剩余',
+                                                 `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                                 `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                                 PRIMARY KEY (`id`),
+                                                 UNIQUE KEY `uq_user_id_activity_id_month` (`user_id`,`activity_id`,`month`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动账户表-月次数';
+
+
+
+# 转储表 raffle_activity_order_000
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `raffle_activity_order_000`;
+
+CREATE TABLE `raffle_activity_order_000` (
+                                             `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                             `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                             `sku` bigint(12) NOT NULL COMMENT '商品sku',
+                                             `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                             `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                             `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                             `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                             `order_time` datetime NOT NULL COMMENT '下单时间',
+                                             `total_count` int(8) NOT NULL COMMENT '总次数',
+                                             `day_count` int(8) NOT NULL COMMENT '日次数',
+                                             `month_count` int(8) NOT NULL COMMENT '月次数',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
+                                             `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                             `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+                                             PRIMARY KEY (`id`),
+                                             UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
+                                             KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
+
+
+
+# 转储表 raffle_activity_order_001
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `raffle_activity_order_001`;
+
+CREATE TABLE `raffle_activity_order_001` (
+                                             `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                             `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                             `sku` bigint(12) NOT NULL COMMENT '商品sku',
+                                             `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                             `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                             `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                             `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                             `order_time` datetime NOT NULL COMMENT '下单时间',
+                                             `total_count` int(8) NOT NULL COMMENT '总次数',
+                                             `day_count` int(8) NOT NULL COMMENT '日次数',
+                                             `month_count` int(8) NOT NULL COMMENT '月次数',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
+                                             `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                             `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+                                             PRIMARY KEY (`id`),
+                                             UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
+                                             KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
+
+LOCK TABLES `raffle_activity_order_001` WRITE;
+/*!40000 ALTER TABLE `raffle_activity_order_001` DISABLE KEYS */;
+
+INSERT INTO `raffle_activity_order_001` (`id`, `user_id`, `sku`, `activity_id`, `activity_name`, `strategy_id`, `order_id`, `order_time`, `total_count`, `day_count`, `month_count`, `state`, `out_business_no`, `create_time`, `update_time`)
+VALUES
+    (3,'xiaofuge',9011,100301,'测试活动',100006,'383240888158','2024-03-23 04:38:23',1,1,1,'completed','700091009111','2024-03-23 12:38:23','2024-03-23 12:38:23');
+
+/*!40000 ALTER TABLE `raffle_activity_order_001` ENABLE KEYS */;
+UNLOCK TABLES;
+
+
+# 转储表 raffle_activity_order_002
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `raffle_activity_order_002`;
+
+CREATE TABLE `raffle_activity_order_002` (
+                                             `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                             `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                             `sku` bigint(12) NOT NULL COMMENT '商品sku',
+                                             `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                             `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                             `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                             `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                             `order_time` datetime NOT NULL COMMENT '下单时间',
+                                             `total_count` int(8) NOT NULL COMMENT '总次数',
+                                             `day_count` int(8) NOT NULL COMMENT '日次数',
+                                             `month_count` int(8) NOT NULL COMMENT '月次数',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
+                                             `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                             `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+                                             PRIMARY KEY (`id`),
+                                             UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
+                                             KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
+
+
+
+# 转储表 raffle_activity_order_003
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `raffle_activity_order_003`;
+
+CREATE TABLE `raffle_activity_order_003` (
+                                             `id` bigint(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                             `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                             `sku` bigint(12) NOT NULL COMMENT '商品sku',
+                                             `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                             `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                             `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                             `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                             `order_time` datetime NOT NULL COMMENT '下单时间',
+                                             `total_count` int(8) NOT NULL COMMENT '总次数',
+                                             `day_count` int(8) NOT NULL COMMENT '日次数',
+                                             `month_count` int(8) NOT NULL COMMENT '月次数',
+                                             `state` varchar(16) NOT NULL DEFAULT 'complete' COMMENT '订单状态（complete）',
+                                             `out_business_no` varchar(64) NOT NULL COMMENT '业务仿重ID - 外部透传的，确保幂等',
+                                             `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                             `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+                                             PRIMARY KEY (`id`),
+                                             UNIQUE KEY `uq_order_id` (`order_id`),
+                                             UNIQUE KEY `uq_out_business_no` (`out_business_no`),
+                                             KEY `idx_user_id_activity_id` (`user_id`,`activity_id`,`state`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='抽奖活动单';
+
+
+
+# 转储表 task
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `task`;
+
+CREATE TABLE `task` (
+                        `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                        `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                        `topic` varchar(32) NOT NULL COMMENT '消息主题',
+                        `message_id` varchar(11) DEFAULT NULL COMMENT '消息编号',
+                        `message` varchar(512) NOT NULL COMMENT '消息主体',
+                        `state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '任务状态；create-创建、completed-完成、fail-失败',
+                        `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                        `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                        PRIMARY KEY (`id`),
+                        UNIQUE KEY `uq_message_id` (`message_id`),
+                        KEY `idx_state` (`state`),
+                        KEY `idx_create_time` (`update_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='任务表，发送MQ';
+
+
+
+# 转储表 user_award_record_000
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_award_record_000`;
+
+CREATE TABLE `user_award_record_000` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '抽奖订单ID【作为幂等使用】',
+                                         `award_id` int(11) NOT NULL COMMENT '奖品ID',
+                                         `award_title` varchar(128) NOT NULL COMMENT '奖品标题（名称）',
+                                         `award_time` datetime NOT NULL COMMENT '中奖时间',
+                                         `award_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '奖品状态；create-创建、completed-发奖完成',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id` (`user_id`),
+                                         KEY `idx_activity_id` (`activity_id`),
+                                         KEY `idx_award_id` (`strategy_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户中奖记录表';
+
+
+
+# 转储表 user_award_record_001
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_award_record_001`;
+
+CREATE TABLE `user_award_record_001` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '抽奖订单ID【作为幂等使用】',
+                                         `award_id` int(11) NOT NULL COMMENT '奖品ID',
+                                         `award_title` varchar(128) NOT NULL COMMENT '奖品标题（名称）',
+                                         `award_time` datetime NOT NULL COMMENT '中奖时间',
+                                         `award_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '奖品状态；create-创建、completed-发奖完成',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id` (`user_id`),
+                                         KEY `idx_activity_id` (`activity_id`),
+                                         KEY `idx_award_id` (`strategy_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户中奖记录表';
+
+
+
+# 转储表 user_award_record_002
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_award_record_002`;
+
+CREATE TABLE `user_award_record_002` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '抽奖订单ID【作为幂等使用】',
+                                         `award_id` int(11) NOT NULL COMMENT '奖品ID',
+                                         `award_title` varchar(128) NOT NULL COMMENT '奖品标题（名称）',
+                                         `award_time` datetime NOT NULL COMMENT '中奖时间',
+                                         `award_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '奖品状态；create-创建、completed-发奖完成',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id` (`user_id`),
+                                         KEY `idx_activity_id` (`activity_id`),
+                                         KEY `idx_award_id` (`strategy_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户中奖记录表';
+
+
+
+# 转储表 user_award_record_003
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_award_record_003`;
+
+CREATE TABLE `user_award_record_003` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '抽奖订单ID【作为幂等使用】',
+                                         `award_id` int(11) NOT NULL COMMENT '奖品ID',
+                                         `award_title` varchar(128) NOT NULL COMMENT '奖品标题（名称）',
+                                         `award_time` datetime NOT NULL COMMENT '中奖时间',
+                                         `award_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '奖品状态；create-创建、completed-发奖完成',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id` (`user_id`),
+                                         KEY `idx_activity_id` (`activity_id`),
+                                         KEY `idx_award_id` (`strategy_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户中奖记录表';
+
+
+
+# 转储表 user_behavior_rebate_order_001
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_behavior_rebate_order_001`;
+
+CREATE TABLE `user_behavior_rebate_order_001` (
+                                                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                                  `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                                  `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                                  `behavior_type` varchar(16) NOT NULL COMMENT '行为类型（sign 签到、openai_pay 支付）',
+                                                  `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
+                                                  `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
+                                                  `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
+                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                                  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                                  PRIMARY KEY (`id`),
+                                                  UNIQUE KEY `uq_order_id` (`order_id`),
+                                                  UNIQUE KEY `uq_biz_id` (`biz_id`),
+                                                  KEY `idx_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户行为返利流水订单表';
+
+
+
+# 转储表 user_behavior_rebate_order_002
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_behavior_rebate_order_002`;
+
+CREATE TABLE `user_behavior_rebate_order_002` (
+                                                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                                  `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                                  `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                                  `behavior_type` varchar(16) NOT NULL COMMENT '行为类型（sign 签到、openai_pay 支付）',
+                                                  `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
+                                                  `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
+                                                  `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
+                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                                  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                                  PRIMARY KEY (`id`),
+                                                  UNIQUE KEY `uq_order_id` (`order_id`),
+                                                  UNIQUE KEY `uq_biz_id` (`biz_id`),
+                                                  KEY `idx_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户行为返利流水订单表';
+
+
+
+# 转储表 user_behavior_rebate_order_003
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_behavior_rebate_order_003`;
+
+CREATE TABLE `user_behavior_rebate_order_003` (
+                                                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                                  `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                                  `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                                  `behavior_type` varchar(16) NOT NULL COMMENT '行为类型（sign 签到、openai_pay 支付）',
+                                                  `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
+                                                  `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
+                                                  `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
+                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                                  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                                  PRIMARY KEY (`id`),
+                                                  UNIQUE KEY `uq_order_id` (`order_id`),
+                                                  UNIQUE KEY `uq_biz_id` (`biz_id`),
+                                                  KEY `idx_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户行为返利流水订单表';
+
+
+
+# 转储表 user_behavior_rebate_order_004
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_behavior_rebate_order_004`;
+
+CREATE TABLE `user_behavior_rebate_order_004` (
+                                                  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '自增ID',
+                                                  `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                                  `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                                  `behavior_type` varchar(16) NOT NULL COMMENT '行为类型（sign 签到、openai_pay 支付）',
+                                                  `rebate_desc` varchar(128) NOT NULL COMMENT '返利描述',
+                                                  `rebate_type` varchar(16) NOT NULL COMMENT '返利类型（sku 活动库存充值商品、integral 用户活动积分）',
+                                                  `rebate_config` varchar(32) NOT NULL COMMENT '返利配置【sku值，积分值】',
+                                                  `biz_id` varchar(64) NOT NULL COMMENT '业务ID - 拼接的唯一值',
+                                                  `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                                  `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                                  PRIMARY KEY (`id`),
+                                                  UNIQUE KEY `uq_order_id` (`order_id`),
+                                                  UNIQUE KEY `uq_biz_id` (`biz_id`),
+                                                  KEY `idx_user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户行为返利流水订单表';
+
+
+
+# 转储表 user_raffle_order_000
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_raffle_order_000`;
+
+CREATE TABLE `user_raffle_order_000` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                         `order_time` datetime NOT NULL COMMENT '下单时间',
+                                         `order_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '订单状态；create-创建、used-已使用、cancel-已作废',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id_activity_id` (`user_id`,`activity_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户抽奖订单表';
+
+
+
+# 转储表 user_raffle_order_001
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_raffle_order_001`;
+
+CREATE TABLE `user_raffle_order_001` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                         `order_time` datetime NOT NULL COMMENT '下单时间',
+                                         `order_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '订单状态；create-创建、used-已使用、cancel-已作废',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id_activity_id` (`user_id`,`activity_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户抽奖订单表';
+
+
+
+# 转储表 user_raffle_order_002
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_raffle_order_002`;
+
+CREATE TABLE `user_raffle_order_002` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                         `order_time` datetime NOT NULL COMMENT '下单时间',
+                                         `order_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '订单状态；create-创建、used-已使用、cancel-已作废',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id_activity_id` (`user_id`,`activity_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户抽奖订单表';
+
+
+
+# 转储表 user_raffle_order_003
+# ------------------------------------------------------------
+
+DROP TABLE IF EXISTS `user_raffle_order_003`;
+
+CREATE TABLE `user_raffle_order_003` (
+                                         `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+                                         `user_id` varchar(32) NOT NULL COMMENT '用户ID',
+                                         `activity_id` bigint(12) NOT NULL COMMENT '活动ID',
+                                         `activity_name` varchar(64) NOT NULL COMMENT '活动名称',
+                                         `strategy_id` bigint(8) NOT NULL COMMENT '抽奖策略ID',
+                                         `order_id` varchar(12) NOT NULL COMMENT '订单ID',
+                                         `order_time` datetime NOT NULL COMMENT '下单时间',
+                                         `order_state` varchar(16) NOT NULL DEFAULT 'create' COMMENT '订单状态；create-创建、used-已使用、cancel-已作废',
+                                         `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                                         `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                                         PRIMARY KEY (`id`),
+                                         UNIQUE KEY `uq_order_id` (`order_id`),
+                                         KEY `idx_user_id_activity_id` (`user_id`,`activity_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='用户抽奖订单表';
+
+
+
+
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
