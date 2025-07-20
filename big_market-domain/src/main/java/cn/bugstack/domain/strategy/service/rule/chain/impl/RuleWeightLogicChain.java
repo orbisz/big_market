@@ -20,14 +20,12 @@ import java.util.*;
 @Component("rule_weight")
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class RuleWeightLogicChain extends AbstractLogicChain {
+
     @Resource
     private IStrategyRepository repository;
 
     @Resource
     protected IStrategyDispatch strategyDispatch;
-
-    // 根据用户ID查询用户抽奖消耗的积分值，本章节我们先写死为固定的值。后续需要从数据库中查询。
-    public Long userScore = 0L;
 
     /**
      * 权重责任链过滤；
@@ -47,7 +45,6 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
             return next().logic(userId, strategyId);
         }
 
-
         // 2. 转换Keys值，并默认排序
         List<Long> analyticalSortedKeys = new ArrayList<>(analyticalValueGroup.keySet());
         Collections.sort(analyticalSortedKeys);
@@ -66,6 +63,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
          *      .max(Comparator.naturalOrder())
          *      .orElse(null);
          */
+        Integer userScore = repository.queryActivityAccountTotalUseCount(userId, strategyId);
         Long nextValue = analyticalSortedKeys.stream()
                 .sorted(Comparator.reverseOrder())
                 .filter(analyticalSortedKeyValue -> userScore >= analyticalSortedKeyValue)
@@ -82,7 +80,6 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
                     .build();
         }
 
-
         // 5. 过滤其他责任链
         log.info("抽奖责任链-权重放行 userId: {} strategyId: {} ruleModel: {}", userId, strategyId, ruleModel());
         return next().logic(userId, strategyId);
@@ -90,7 +87,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
 
     @Override
     protected String ruleModel() {
-        return "rule_weight";
+        return DefaultChainFactory.LogicModel.RULE_WEIGHT.getCode();
     }
 
     private Map<Long, String> getAnalyticalValue(String ruleValue) {
@@ -112,3 +109,4 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
     }
 
 }
+

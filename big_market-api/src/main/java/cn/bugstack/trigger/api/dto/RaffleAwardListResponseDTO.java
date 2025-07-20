@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @description 抽奖奖品列表，应答对象
- * @create 2024-02-14 09:43
  */
 @Data
 @Builder
