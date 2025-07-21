@@ -73,6 +73,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
         }
     }
 
+
     /**
      * 查询奖品列表
      * <a href="http://localhost:8091/api/v1/raffle/strategy/query_raffle_award_list">/api/v1/raffle/strategy/query_raffle_award_list</a>
@@ -145,7 +146,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
 
     @RequestMapping(value = "query_raffle_strategy_rule_weight", method = RequestMethod.POST)
     @Override
-    public Response<List<RaffleStrategyRuleWeightResponseDTO>> queryRaffleStrategyRuleWeight(RaffleStrategyRuleWeightRequestDTO request) {
+    public Response<List<RaffleStrategyRuleWeightResponseDTO>> queryRaffleStrategyRuleWeight(@RequestBody RaffleStrategyRuleWeightRequestDTO request) {
         try {
             log.info("查询抽奖策略权重规则配置开始 userId:{} activityId：{}", request.getUserId(), request.getActivityId());
             // 1. 参数校验
@@ -190,6 +191,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
                     .build();
         }
     }
+
 
     /**
      * 随机抽奖接口
