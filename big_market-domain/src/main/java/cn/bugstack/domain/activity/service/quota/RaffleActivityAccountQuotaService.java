@@ -58,21 +58,21 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     }
 
     @Override
-//    public ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException {
-//        return activityRepository.takeQueueValue();
-//    }
-    public ActivitySkuStockKeyVO takeQueueValue(Long sku) throws InterruptedException {
-        return activityRepository.takeQueueValue(sku);
+    public ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException {
+        return activityRepository.takeQueueValue();
     }
+//    public ActivitySkuStockKeyVO takeQueueValue(Long sku) throws InterruptedException {
+//        return activityRepository.takeQueueValue(sku);
+//    }
 
 
     @Override
-//    public void clearQueueValue() {
-//        activityRepository.clearQueueValue();
-//    }
-    public void clearQueueValue(Long sku) {
-        activityRepository.clearQueueValue(sku);
+    public void clearQueueValue() {
+       activityRepository.clearQueueValue();
     }
+    //public void clearQueueValue(Long sku) {
+    //    activityRepository.clearQueueValue(sku);
+    //}
 
 
     @Override
@@ -95,10 +95,10 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     }
 
 
-    @Override
-    public List<Long> querySkuList() {
-        return activityRepository.querySkuList();
-    }
+//    @Override
+//    public List<Long> querySkuList() {
+//        return activityRepository.querySkuList();
+//    }
 
     @Override
     public ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId) {
