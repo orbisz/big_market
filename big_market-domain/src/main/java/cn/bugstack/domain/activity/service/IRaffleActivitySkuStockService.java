@@ -15,14 +15,14 @@ public interface IRaffleActivitySkuStockService {
      * @return 奖品库存Key信息
      * @throws InterruptedException 异常
      */
-    //ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException;
-    ActivitySkuStockKeyVO takeQueueValue(Long sku) throws InterruptedException;
+    ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException;
+    //ActivitySkuStockKeyVO takeQueueValue(Long sku) throws InterruptedException;
 
     /**
      * 清空队列
      */
-    //void clearQueueValue();
-    void clearQueueValue(Long sku);
+    void clearQueueValue();
+    //void clearQueueValue(Long sku);
 
     /**
      * 延迟队列 + 任务趋势更新活动sku库存
@@ -42,7 +42,7 @@ public interface IRaffleActivitySkuStockService {
      * 查询所有的sku
      * @return sku编号列表
      */
-    List<Long> querySkuList();
+    //List<Long> querySkuList();
 
 
 }

@@ -27,11 +27,11 @@ public interface IActivityRepository {
 
     void activitySkuStockConsumeSendQueue(ActivitySkuStockKeyVO activitySkuStockKeyVO);
 
-    //ActivitySkuStockKeyVO takeQueueValue();
-    ActivitySkuStockKeyVO takeQueueValue(Long sku);
+    ActivitySkuStockKeyVO takeQueueValue();
+    //ActivitySkuStockKeyVO takeQueueValue(Long sku);
 
-    //void clearQueueValue();
-    void clearQueueValue(Long sku);
+    void clearQueueValue();
+    //void clearQueueValue(Long sku);
 
     void updateActivitySkuStock(Long sku);
 
@@ -56,7 +56,7 @@ public interface IActivityRepository {
      * 查询所有的sku
      * @return sku编号列表
      */
-    List<Long> querySkuList();
+    //List<Long> querySkuList();
 
     ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
 
