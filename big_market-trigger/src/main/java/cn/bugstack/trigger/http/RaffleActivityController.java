@@ -99,7 +99,6 @@ public class RaffleActivityController implements IRaffleActivityService {
         }
     }
 
-
     /**
      * 抽奖接口
      *
@@ -121,20 +120,23 @@ public class RaffleActivityController implements IRaffleActivityService {
     @Override
     public Response<ActivityDrawResponseDTO> draw(@RequestBody ActivityDrawRequestDTO request) {
         try {
-            log.info("活动抽奖 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
+            log.info("活动抽奖开始 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
             // 1. 参数校验
             if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
                 throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
             }
+
             // 2. 参与活动 - 创建参与记录订单
             UserRaffleOrderEntity orderEntity = raffleActivityPartakeService.createOrder(request.getUserId(), request.getActivityId());
             log.info("活动抽奖，创建订单 userId:{} activityId:{} orderId:{}", request.getUserId(), request.getActivityId(), orderEntity.getOrderId());
+
             // 3. 抽奖策略 - 执行抽奖
             RaffleAwardEntity raffleAwardEntity = raffleStrategy.performRaffle(RaffleFactorEntity.builder()
                     .userId(orderEntity.getUserId())
                     .strategyId(orderEntity.getStrategyId())
                     .endDateTime(orderEntity.getEndDateTime())
                     .build());
+
             // 4. 存放结果 - 写入中奖记录
             UserAwardRecordEntity userAwardRecord = UserAwardRecordEntity.builder()
                     .userId(orderEntity.getUserId())
@@ -147,7 +149,9 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .awardState(AwardStateVO.create)
                     .awardConfig(raffleAwardEntity.getAwardConfig())
                     .build();
+
             awardService.saveUserAwardRecord(userAwardRecord);
+
             // 5. 返回结果
             return Response.<ActivityDrawResponseDTO>builder()
                     .code(ResponseCode.SUCCESS.getCode())
@@ -172,8 +176,6 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .build();
         }
     }
-
-
 
     /**
      * 日历签到返利接口
@@ -218,7 +220,6 @@ public class RaffleActivityController implements IRaffleActivityService {
         }
     }
 
-
     /**
      * 判断是否签到接口
      * <p>
@@ -246,7 +247,6 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .build();
         }
     }
-
 
     /**
      * 查询账户额度

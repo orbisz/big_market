@@ -20,6 +20,7 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RBlockingQueue;
 import org.redisson.api.RDelayedQueue;
+import org.redisson.api.RLock;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
@@ -123,7 +124,9 @@ public class ActivityRepository implements IActivityRepository {
 
     @Override
     public void doSaveOrder(CreateQuotaOrderAggregate createOrderAggregate) {
+        RLock lock = redisService.getLock(Constants.RedisKey.ACTIVITY_ACCOUNT_LOCK + createOrderAggregate.getUserId() + Constants.UNDERLINE + createOrderAggregate.getActivityId());
         try {
+            lock.lock(3, TimeUnit.SECONDS);
             // 订单对象
             ActivityOrderEntity activityOrderEntity = createOrderAggregate.getActivityOrderEntity();
             RaffleActivityOrder raffleActivityOrder = new RaffleActivityOrder();
@@ -178,10 +181,11 @@ public class ActivityRepository implements IActivityRepository {
                     // 1. 写入订单
                     raffleActivityOrderDao.insert(raffleActivityOrder);
                     // 2. 更新账户 - 总
-                    int count = raffleActivityAccountDao.updateAccountQuota(raffleActivityAccount);
-                    // 3. 创建账户 - 更新为0，则账户不存在，创新新账户
-                    if (0 == count) {
+                    RaffleActivityAccount raffleActivityAccountRes = raffleActivityAccountDao.queryAccountByUserId(raffleActivityAccount);
+                    if (null == raffleActivityAccountRes) {
                         raffleActivityAccountDao.insert(raffleActivityAccount);
+                    } else {
+                        raffleActivityAccountDao.updateAccountQuota(raffleActivityAccount);
                     }
                     // 4. 更新账户 - 月
                     raffleActivityAccountMonthDao.addAccountQuota(raffleActivityAccountMonth);
@@ -196,9 +200,9 @@ public class ActivityRepository implements IActivityRepository {
             });
         } finally {
             dbRouter.clear();
+            lock.unlock();
         }
     }
-
 
     @Override
     public void cacheActivitySkuStockCount(String cacheKey, Integer stockCount) {
@@ -212,7 +216,6 @@ public class ActivityRepository implements IActivityRepository {
         if (surplus == 0) {
             // 库存消耗没了以后，发送MQ消息，更新数据库库存
             eventPublisher.publish(activitySkuStockZeroMessageEvent.topic(), activitySkuStockZeroMessageEvent.buildEventMessage(sku));
-            return false;
         } else if (surplus < 0) {
             // 库存小于0，恢复为0个
             redisService.setAtomicLong(cacheKey, 0);
@@ -234,7 +237,6 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public void activitySkuStockConsumeSendQueue(ActivitySkuStockKeyVO activitySkuStockKeyVO) {
         String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY;
-        //String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUEUE_KEY + activitySkuStockKeyVO.getSku();
         RBlockingQueue<ActivitySkuStockKeyVO> blockingQueue = redisService.getBlockingQueue(cacheKey);
         RDelayedQueue<ActivitySkuStockKeyVO> delayedQueue = redisService.getDelayedQueue(blockingQueue);
         delayedQueue.offer(activitySkuStockKeyVO, 3, TimeUnit.SECONDS);
@@ -243,17 +245,9 @@ public class ActivityRepository implements IActivityRepository {
     @Override
     public ActivitySkuStockKeyVO takeQueueValue() {
         String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY;
-        //String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUEUE_KEY + activitySkuStockKeyVO.getSku();
         RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
         return destinationQueue.poll();
     }
-//    public ActivitySkuStockKeyVO takeQueueValue(Long sku) {
-//        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUEUE_KEY + sku;
-//        RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
-//        return destinationQueue.poll();
-//    }
-
-
 
     @Override
     public void clearQueueValue() {
@@ -261,11 +255,6 @@ public class ActivityRepository implements IActivityRepository {
         RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
         destinationQueue.clear();
     }
-//    public void clearQueueValue(Long sku) {
-//        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUEUE_KEY + sku;
-//        RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
-//        destinationQueue.clear();
-//    }
 
     @Override
     public void updateActivitySkuStock(Long sku) {
@@ -480,7 +469,7 @@ public class ActivityRepository implements IActivityRepository {
     public List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId) {
         List<RaffleActivitySku> raffleActivitySkus = raffleActivitySkuDao.queryActivitySkuListByActivityId(activityId);
         List<ActivitySkuEntity> activitySkuEntities = new ArrayList<>(raffleActivitySkus.size());
-        for (RaffleActivitySku raffleActivitySku:raffleActivitySkus){
+        for (RaffleActivitySku raffleActivitySku : raffleActivitySkus) {
             ActivitySkuEntity activitySkuEntity = new ActivitySkuEntity();
             activitySkuEntity.setSku(raffleActivitySku.getSku());
             activitySkuEntity.setActivityCountId(raffleActivitySku.getActivityCountId());
@@ -496,25 +485,11 @@ public class ActivityRepository implements IActivityRepository {
         RaffleActivityAccountDay raffleActivityAccountDay = new RaffleActivityAccountDay();
         raffleActivityAccountDay.setActivityId(activityId);
         raffleActivityAccountDay.setUserId(userId);
-        raffleActivityAccountDay.setDay(RaffleActivityAccountDay.currentDay());
+        raffleActivityAccountDay.setDay(raffleActivityAccountDay.currentDay());
         Integer dayPartakeCount = raffleActivityAccountDayDao.queryRaffleActivityAccountDayPartakeCount(raffleActivityAccountDay);
         // 当日未参与抽奖则为0次
         return null == dayPartakeCount ? 0 : dayPartakeCount;
-
     }
-//    @Override
-//    public List<Long> querySkuList() {
-//        // 优先从缓存获取
-//        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_LIST_KEY;
-//        String jsonList = redisService.getValue(cacheKey);
-//        List<Long> resultList = JSON.parseArray(jsonList, Long.class);
-//        if (null != jsonList && null != resultList && !resultList.isEmpty()) return resultList;
-//        // 从库中获取数据
-//        List<RaffleActivitySku> raffleActivitySkus = raffleActivitySkuDao.querySkuList();
-//        resultList = raffleActivitySkus.stream().map(RaffleActivitySku::getSku).collect(Collectors.toList());
-//        redisService.setValue(cacheKey, JSON.toJSONString(resultList));
-//        return resultList;
-//    }
 
     @Override
     public ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId) {
@@ -541,12 +516,14 @@ public class ActivityRepository implements IActivityRepository {
         RaffleActivityAccountMonth raffleActivityAccountMonth = raffleActivityAccountMonthDao.queryActivityAccountMonthByUserId(RaffleActivityAccountMonth.builder()
                 .activityId(activityId)
                 .userId(userId)
+                .month(RaffleActivityAccountMonth.currentMonth())
                 .build());
 
         // 3. 查询日账户额度
         RaffleActivityAccountDay raffleActivityAccountDay = raffleActivityAccountDayDao.queryActivityAccountDayByUserId(RaffleActivityAccountDay.builder()
                 .activityId(activityId)
                 .userId(userId)
+                .day(RaffleActivityAccountDay.currentDay())
                 .build());
 
         // 组装对象
@@ -583,9 +560,8 @@ public class ActivityRepository implements IActivityRepository {
                 .activityId(activityId)
                 .userId(userId)
                 .build());
+        if (null == raffleActivityAccount) return 0;
         return raffleActivityAccount.getTotalCount() - raffleActivityAccount.getTotalCountSurplus();
     }
-
-
 
 }

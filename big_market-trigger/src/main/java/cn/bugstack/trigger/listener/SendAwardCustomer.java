@@ -23,9 +23,9 @@ public class SendAwardCustomer {
 
     @Value("${spring.rabbitmq.topic.send_award}")
     private String topic;
+
     @Resource
     private IAwardService awardService;
-
 
     @RabbitListener(queuesToDeclare = @Queue(value = "${spring.rabbitmq.topic.send_award}"))
     public void listener(String message) {
@@ -44,9 +44,8 @@ public class SendAwardCustomer {
             awardService.distributeAward(distributeAwardEntity);
         } catch (Exception e) {
             log.error("监听用户奖品发送消息，消费失败 topic: {} message: {}", topic, message);
-            throw e;
+//            throw e;
         }
     }
-
 
 }
