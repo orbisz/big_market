@@ -1,20 +1,15 @@
-package cn.bugstack.infrastructure.persistent.po;
+package cn.bugstack.trigger.api.dto;
 
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.util.Date;
 
 /**
- * @description 抽奖活动sku持久化对象
+ * @description sku商品对象
  */
 @Data
-public class RaffleActivitySku {
+public class SkuProductResponseDTO {
 
-    /**
-     * 自增ID
-     */
-    private Long id;
     /**
      * 商品sku
      */
@@ -39,14 +34,28 @@ public class RaffleActivitySku {
      * 商品金额【积分】
      */
     private BigDecimal productAmount;
-    /**
-     * 创建时间
-     */
-    private Date createTime;
 
     /**
-     * 更新时间
+     * 活动商品数量
      */
-    private Date updateTime;
+    private ActivityCount activityCount;
+
+    @Data
+    public static class ActivityCount {
+        /**
+         * 总次数
+         */
+        private Integer totalCount;
+
+        /**
+         * 日次数
+         */
+        private Integer dayCount;
+
+        /**
+         * 月次数
+         */
+        private Integer monthCount;
+    }
 
 }
