@@ -1,0 +1,194 @@
+25-07-26.09:32:33.139 [main            ] INFO  CreditAdjustServiceTest - Starting CreditAdjustServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 2404 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-26.09:32:33.141 [main            ] INFO  CreditAdjustServiceTest - The following 1 profile is active: "dev"
+25-07-26.09:32:35.097 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-26.09:32:35.104 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-26.09:32:35.233 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 0 Redis repository interfaces.
+25-07-26.09:32:37.643 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-26.09:32:38.478 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:32:38.513 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:32:43.452 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-26.09:32:43.610 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-26.09:32:43.669 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3cf70afa:0/SimpleConnection@2f7d8a7c [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55715]
+25-07-26.09:32:43.810 [main            ] INFO  CreditAdjustServiceTest - Started CreditAdjustServiceTest in 11.349 seconds (JVM running for 12.637)
+25-07-26.09:32:44.464 [main            ] INFO  CreditAdjustService    - 增加账户积分额度开始 userId:xiaofuge tradeName:REBATE amount:10.19
+25-07-26.09:32:44.513 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-26.09:32:44.860 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-26.09:32:44.946 [main            ] INFO  CreditAdjustService    - 增加账户积分额度完成 userId:xiaofuge orderId:439785488032
+25-07-26.09:32:44.963 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:32:44.966 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:32:44.968 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:32:45.779 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:32:45.794 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:32:45.810 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:32:45.812 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:32:45.813 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:32:45.813 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:33:42.262 [main            ] INFO  CreditAdjustServiceTest - Starting CreditAdjustServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 4268 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-26.09:33:42.265 [main            ] INFO  CreditAdjustServiceTest - The following 1 profile is active: "dev"
+25-07-26.09:33:43.759 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-26.09:33:43.764 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-26.09:33:43.844 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 0 Redis repository interfaces.
+25-07-26.09:33:45.276 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-26.09:33:45.961 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:33:45.990 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:33:50.661 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-26.09:33:50.849 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-26.09:33:50.950 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#66dd04e2:0/SimpleConnection@4be5b9b1 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 58434]
+25-07-26.09:33:51.106 [main            ] INFO  CreditAdjustServiceTest - Started CreditAdjustServiceTest in 9.507 seconds (JVM running for 10.686)
+25-07-26.09:33:51.688 [main            ] INFO  CreditAdjustService    - 增加账户积分额度开始 userId:xiaofuge tradeName:REBATE amount:-10.19
+25-07-26.09:33:51.739 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-26.09:33:52.075 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-26.09:33:52.157 [main            ] INFO  CreditAdjustService    - 增加账户积分额度完成 userId:xiaofuge orderId:523322908406
+25-07-26.09:33:52.175 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:33:52.177 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:33:52.179 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:33:53.067 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:33:53.081 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:33:53.096 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:33:53.098 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:33:53.099 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:33:53.099 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:40:31.369 [main            ] INFO  BehaviorRebateServiceTest - Starting BehaviorRebateServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 1640 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-26.09:40:31.371 [main            ] INFO  BehaviorRebateServiceTest - The following 1 profile is active: "dev"
+25-07-26.09:40:32.999 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-26.09:40:33.004 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-26.09:40:33.083 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 0 Redis repository interfaces.
+25-07-26.09:40:34.569 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-26.09:40:35.252 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:40:35.284 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:40:41.816 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-26.09:40:41.942 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-26.09:40:42.032 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5de335cf:0/SimpleConnection@2ad80cf6 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 59345]
+25-07-26.09:40:42.199 [main            ] INFO  BehaviorRebateServiceTest - Started BehaviorRebateServiceTest in 11.501 seconds (JVM running for 12.627)
+25-07-26.09:40:42.956 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-26.09:40:43.295 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-26.09:40:43.464 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-26.09:40:43.503 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-26.09:40:43.772 [main            ] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: xiaofuge
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_integral_20240601006' for key 'user_behavior_rebate_order_001.uq_biz_id'
+### The error may exist in file [D:\Java_project\big_market\big_market-app\target\classes\mybatis\mapper\user_behavior_rebate_order_mapper.xml]
+### The error may involve cn.bugstack.infrastructure.persistent.dao.IUserBehaviorRebateOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user_behavior_rebate_order_001(             user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, out_business_no, biz_id, create_time, update_time         ) values(                     ?, ?, ?, ?, ?, ?, ?, ?, now(), now()                 )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_integral_20240601006' for key 'user_behavior_rebate_order_001.uq_biz_id'
+; Duplicate entry 'xiaofuge_integral_20240601006' for key 'user_behavior_rebate_order_001.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_integral_20240601006' for key 'user_behavior_rebate_order_001.uq_biz_id'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy110.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy142.insert(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy143.insert(Unknown Source)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:82)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:68)
+	at cn.bugstack.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
+	at cn.bugstack.test.domain.rebate.BehaviorRebateServiceTest.test_createOrder(BehaviorRebateServiceTest.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_integral_20240601006' for key 'user_behavior_rebate_order_001.uq_biz_id'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy219.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 52 common frames omitted
+25-07-26.09:40:43.921 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:40:43.924 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:40:43.928 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:40:44.166 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:40:44.172 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:40:44.173 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:40:44.180 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:40:44.181 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:40:44.181 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:41:07.460 [main            ] INFO  BehaviorRebateServiceTest - Starting BehaviorRebateServiceTest using Java 18.0.2 on LAPTOP-JQ369557 with PID 27448 (started by zxy in D:\Java_project\big_market\big_market-app)
+25-07-26.09:41:07.462 [main            ] INFO  BehaviorRebateServiceTest - The following 1 profile is active: "dev"
+25-07-26.09:41:09.036 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-26.09:41:09.040 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-26.09:41:09.126 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 0 Redis repository interfaces.
+25-07-26.09:41:10.553 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-26.09:41:11.265 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:41:11.293 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-26.09:41:17.437 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-26.09:41:17.680 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-26.09:41:17.753 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#50e8ed74:0/SimpleConnection@3a89226e [delegate=amqp://admin@127.0.0.1:5672/, localPort= 59528]
+25-07-26.09:41:17.928 [main            ] INFO  BehaviorRebateServiceTest - Started BehaviorRebateServiceTest in 11.17 seconds (JVM running for 12.393)
+25-07-26.09:41:18.690 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-26.09:41:19.045 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-26.09:41:19.169 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-26.09:41:19.210 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-26.09:41:20.260 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_integral_20240601106","rebateConfig":"10","rebateType":"integral","userId":"xiaofuge"},"id":"57779838149","timestamp":1753494079161}
+25-07-26.09:41:20.275 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_integral_20240601106","rebateConfig":"10","rebateType":"integral","userId":"xiaofuge"},"id":"57779838149","timestamp":1753494079161}
+25-07-26.09:41:20.300 [main            ] INFO  BehaviorRebateServiceTest - 请求参数：{"behaviorTypeVO":"SIGN","outBusinessNo":"20240601106","userId":"xiaofuge"}
+25-07-26.09:41:20.307 [main            ] INFO  BehaviorRebateServiceTest - 测试结果：["269317426668"]
+25-07-26.09:41:20.323 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustService    - 增加账户积分额度开始 userId:xiaofuge tradeName:REBATE amount:10
+25-07-26.09:41:20.394 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustService    - 增加账户积分额度完成 userId:xiaofuge orderId:085292930567
+25-07-26.09:42:15.256 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:42:15.259 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:42:15.261 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-26.09:42:15.498 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:42:15.558 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:42:15.962 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-26.09:42:15.964 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:42:15.964 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-26.09:42:15.964 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped

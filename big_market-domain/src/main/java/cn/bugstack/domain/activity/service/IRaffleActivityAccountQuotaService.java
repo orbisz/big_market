@@ -1,6 +1,7 @@
 package cn.bugstack.domain.activity.service;
 
 import cn.bugstack.domain.activity.model.entity.ActivityAccountEntity;
+import cn.bugstack.domain.activity.model.entity.DeliveryOrderEntity;
 import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
 
 /**=
@@ -20,14 +21,20 @@ public interface IRaffleActivityAccountQuotaService {
     String createOrder(SkuRechargeEntity skuRechargeEntity);
 
     /**
+     * 订单出货 - 积分充值
+     * @param deliveryOrderEntity 出货单实体对象
+     */
+    void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
+
+    /**
      * 查询活动账户 - 总，参与次数
      *
      * @param activityId 活动ID
      * @param userId     用户ID
      * @return 参与次数
      */
-
     Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
+
     /**
      * 查询活动账户 - 日，参与次数
      *
@@ -45,6 +52,5 @@ public interface IRaffleActivityAccountQuotaService {
      * @return 账户实体
      */
     ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
-
 
 }
