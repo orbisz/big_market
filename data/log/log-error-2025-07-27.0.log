@@ -1,0 +1,88 @@
+25-07-27.20:22:20.066 [http-nio-8091-exec-11] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: Cannot invoke "String.split(String)" because "this.ruleValue" is null
+	at cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity.getRuleWeightValues(StrategyRuleEntity.java:41)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository.queryAwardRuleWeight(StrategyRepository.java:377)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$1981c8fe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$6667e11.queryAwardRuleWeight(<generated>)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeight(DefaultRaffleStrategy.java:95)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeightByActivityId(DefaultRaffleStrategy.java:101)
+	at cn.bugstack.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+25-07-27.20:24:12.264 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.20:24:12.264 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"306237164022","userId":"xiaofuge"},"id":"83333194911","timestamp":1753619052210}
+25-07-27.20:24:21.622 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.20:24:21.622 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"803840473068","userId":"xiaofuge"},"id":"59125507398","timestamp":1753619061591}
+25-07-27.20:36:48.646 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.20:36:48.647 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"694394312430","userId":"xiaofuge"},"id":"94248469902","timestamp":1753619808548}
+25-07-27.22:07:01.870 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:07:01.871 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"959536645594","userId":"xiaofuge"},"id":"21276269521","timestamp":1753625221814}
+25-07-27.22:08:13.192 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:08:13.192 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"662604325450","userId":"xiaofuge"},"id":"94038664245","timestamp":1753625293155}
+25-07-27.22:10:45.229 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:10:45.229 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"550381279735","userId":"xiaofuge"},"id":"91789576031","timestamp":1753625445195}
+25-07-27.22:11:15.527 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:11:15.527 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"736157815198","userId":"xiaofuge"},"id":"45830046101","timestamp":1753625475496}
+25-07-27.22:11:20.324 [http-nio-8091-exec-46] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-07-27.22:11:25.220 [http-nio-8091-exec-20] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-07-27.22:11:40.667 [http-nio-8091-exec-49] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-07-27.22:15:20.176 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:15:20.176 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"203284547062","userId":"xiaofuge"},"id":"06098929468","timestamp":1753625720143}

@@ -1,36 +1,44 @@
 package cn.bugstack.test;
 
-import cn.bugstack.infrastructure.persistent.redis.IRedisService;
+import cn.bugstack.trigger.api.dto.RaffleAwardListRequestDTO;
+import com.alibaba.fastjson2.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.redisson.api.RMap;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
-
+/**
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 功能测试
+ * @create 2023-12-23 11:39
+ */
 @Slf4j
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class ApiTest {
 
-    @Resource
-    private IRedisService redisService;
     @Test
     public void test() {
-        RMap<Object,Object> map = redisService.getMap("strategy_id_100001");
-        map.put(1,101);
-        map.put(2,101);
-        map.put(3,101);
-        map.put(4,101);
-        map.put(5,101);
-        map.put(6,101);
-        map.put(7,101);
-        map.put(8,101);
-        map.put(9,101);
-        map.put(10,101);
-        log.info("测试结果：{}",redisService.getFromMap("strategy_id_100001",1).toString());
+        RaffleAwardListRequestDTO requestDTO = new RaffleAwardListRequestDTO();
+        requestDTO.setUserId("xiaofuge");
+        requestDTO.setActivityId(100301L);
+        log.info(JSON.toJSONString(requestDTO));
     }
+
+
+    public static void main(String[] args) {
+        double convert = convert(0.0018);
+        System.out.println(convert);
+    }
+
+    private static double convert(double min){
+        double current = min;
+        double max = 1;
+        while (current % 1 != 0){
+            current = current * 10;
+            max = max * 10;
+        }
+        return max;
+    }
+
+
 
 }

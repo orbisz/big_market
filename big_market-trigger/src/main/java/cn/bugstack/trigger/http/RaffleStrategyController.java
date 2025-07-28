@@ -18,6 +18,7 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.*;
+import org.apache.dubbo.config.annotation.DubboService;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -25,12 +26,13 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @description 营销抽奖服
+ * @description 营销抽奖服务
  */
 @Slf4j
 @RestController()
 @CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/raffle/strategy/")
+@DubboService(version = "1.0")
 public class RaffleStrategyController implements IRaffleStrategyService {
 
     @Resource
@@ -72,7 +74,6 @@ public class RaffleStrategyController implements IRaffleStrategyService {
                     .build();
         }
     }
-
 
     /**
      * 查询奖品列表
@@ -134,7 +135,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
     }
 
     /**
-     * &#x67E5;&#x8BE2;&#x62BD;&#x5956;&#x7B56;&#x7565;&#x6743;&#x91CD;&#x89C4;&#x5219;&#x914D;&#x7F6E;
+     * 查询策略抽奖权重规则
      * curl --request POST \
      * --url http://localhost:8091/api/v1/raffle/strategy/query_raffle_strategy_rule_weight \
      * --header 'content-type: application/json' \
@@ -191,7 +192,6 @@ public class RaffleStrategyController implements IRaffleStrategyService {
                     .build();
         }
     }
-
 
     /**
      * 随机抽奖接口

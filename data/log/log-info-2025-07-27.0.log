@@ -1,0 +1,539 @@
+25-07-27.20:21:12.117 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on LAPTOP-JQ369557 with PID 33748 (D:\Java_project\big_market\big_market-app\target\classes started by zxy in D:\Java_project\big_market)
+25-07-27.20:21:12.121 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-27.20:21:13.511 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-27.20:21:13.513 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-27.20:21:13.583 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+25-07-27.20:21:14.807 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-07-27.20:21:14.819 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-07-27.20:21:14.819 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-27.20:21:14.819 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-27.20:21:14.993 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-27.20:21:14.993 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2789 ms
+25-07-27.20:21:15.467 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-27.20:21:16.238 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-27.20:21:16.267 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-27.20:21:18.173 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-27.20:21:18.279 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-07-27.20:21:18.297 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-07-27.20:21:18.299 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-27.20:21:18.368 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#bea283b:0/SimpleConnection@6e4bccc [delegate=amqp://admin@127.0.0.1:5672/, localPort= 49452]
+25-07-27.20:21:18.490 [main            ] INFO  Application            - Started Application in 7.087 seconds (JVM running for 8.197)
+25-07-27.20:21:19.101 [RMI TCP Connection(3)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-27.20:21:19.168 [RMI TCP Connection(5)-192.168.153.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-27.20:21:19.169 [RMI TCP Connection(5)-192.168.153.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-27.20:21:19.172 [RMI TCP Connection(5)-192.168.153.1] INFO  DispatcherServlet      - Completed initialization in 3 ms
+25-07-27.20:21:19.534 [RMI TCP Connection(3)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-27.20:21:19.563 [RMI TCP Connection(3)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-27.20:21:19.603 [RMI TCP Connection(3)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-27.20:22:19.869 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
+25-07-27.20:22:19.879 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:null
+25-07-27.20:22:19.880 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+25-07-27.20:22:19.923 [http-nio-8091-exec-4] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-27.20:22:19.923 [http-nio-8091-exec-9] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+25-07-27.20:22:19.923 [http-nio-8091-exec-8] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+25-07-27.20:22:19.923 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+25-07-27.20:22:19.971 [http-nio-8091-exec-4] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-27.20:22:19.972 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:null orders.size:0
+25-07-27.20:22:19.974 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:0
+25-07-27.20:22:20.004 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+25-07-27.20:22:20.066 [http-nio-8091-exec-11] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: Cannot invoke "String.split(String)" because "this.ruleValue" is null
+	at cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity.getRuleWeightValues(StrategyRuleEntity.java:41)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository.queryAwardRuleWeight(StrategyRepository.java:377)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$1981c8fe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$6667e11.queryAwardRuleWeight(<generated>)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeight(DefaultRaffleStrategy.java:95)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeightByActivityId(DefaultRaffleStrategy.java:101)
+	at cn.bugstack.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+25-07-27.20:22:20.328 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
+25-07-27.20:22:20.351 [http-nio-8091-exec-9] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+25-07-27.20:22:20.351 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+25-07-27.20:22:20.356 [http-nio-8091-exec-8] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+25-07-27.20:22:41.261 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:22:41.270 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:22:41.274 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:22:41.276 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+25-07-27.20:22:41.277 [http-nio-8091-exec-22] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.20:22:41.278 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.20:22:41.283 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:130.91
+25-07-27.20:22:41.289 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.20:22:41.364 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:0
+25-07-27.20:22:41.367 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1188,"dayCountSurplus":1188,"monthCount":1188,"monthCountSurplus":1188,"totalCount":1188,"totalCountSurplus":1161}
+25-07-27.20:22:41.374 [http-nio-8091-exec-22] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":false,"sort":5,"waitUnlockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":false,"sort":6,"waitUnlockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":false,"sort":7,"waitUnlockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.20:22:41.380 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":false,"sort":5,"waitUnlockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":false,"sort":6,"waitUnlockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":false,"sort":7,"waitUnlockCount":1},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.20:22:41.387 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+25-07-27.20:22:41.410 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":27},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":27},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":27}],"info":"调用成功"}
+25-07-27.20:22:58.367 [http-nio-8091-exec-32] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
+25-07-27.20:22:58.519 [http-nio-8091-exec-32] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
+25-07-27.20:23:00.672 [http-nio-8091-exec-33] INFO  RaffleActivityController - 日历签到返利开始 userId:xiaofuge
+25-07-27.20:23:00.747 [http-nio-8091-exec-33] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_sku_20250727","rebateConfig":"9014","rebateType":"sku","userId":"xiaofuge"},"id":"19017236202","timestamp":1753618980691}
+25-07-27.20:23:00.759 [http-nio-8091-exec-33] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_integral_20250727","rebateConfig":"10","rebateType":"integral","userId":"xiaofuge"},"id":"09224283419","timestamp":1753618980695}
+25-07-27.20:23:00.763 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250727","rebateConfig":"9014","rebateType":"sku","userId":"xiaofuge"},"id":"19017236202","timestamp":1753618980691}
+25-07-27.20:23:00.769 [http-nio-8091-exec-33] INFO  RaffleActivityController - 日历签到返利完成 userId:xiaofuge orderIds: ["330351802212","409270045521"]
+25-07-27.20:23:00.803 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9014 activityId:100301
+25-07-27.20:23:00.803 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9014 activityId:100301
+25-07-27.20:23:00.809 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9014 activityId:100301
+25-07-27.20:23:00.906 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_integral_20250727","rebateConfig":"10","rebateType":"integral","userId":"xiaofuge"},"id":"09224283419","timestamp":1753618980695}
+25-07-27.20:23:00.908 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:REBATE amount:10
+25-07-27.20:23:00.949 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":10,"orderId":"710701095962","outBusinessNo":"xiaofuge_integral_20250727","userId":"xiaofuge"},"id":"59601156622","timestamp":1753618980909}
+25-07-27.20:23:00.951 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":10,"orderId":"710701095962","outBusinessNo":"xiaofuge_integral_20250727","userId":"xiaofuge"},"id":"59601156622","timestamp":1753618980909}
+25-07-27.20:23:00.959 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:710701095962 topic: credit_adjust_success
+25-07-27.20:23:00.959 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:710701095962
+25-07-27.20:23:01.335 [http-nio-8091-exec-34] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:23:01.337 [http-nio-8091-exec-35] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:23:01.338 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:23:01.341 [http-nio-8091-exec-35] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:140.91
+25-07-27.20:23:01.342 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:23:01.349 [http-nio-8091-exec-34] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1189,"dayCountSurplus":1189,"monthCount":1189,"monthCountSurplus":1189,"totalCount":1189,"totalCountSurplus":1162}
+25-07-27.20:23:08.021 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:23:08.023 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:23:08.023 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:23:08.029 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:23:08.029 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:140.91
+25-07-27.20:23:08.033 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1189,"dayCountSurplus":1189,"monthCount":1189,"monthCountSurplus":1189,"totalCount":1189,"totalCountSurplus":1162}
+25-07-27.20:23:10.846 [http-nio-8091-exec-43] INFO  RaffleActivityController - 积分兑换商品开始 userId:xiaofuge sku:9013
+25-07-27.20:23:10.869 [http-nio-8091-exec-43] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9013 activityId:100301
+25-07-27.20:23:10.870 [http-nio-8091-exec-43] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9013 activityId:100301
+25-07-27.20:23:10.876 [http-nio-8091-exec-43] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9013 activityId:100301
+25-07-27.20:23:10.896 [http-nio-8091-exec-43] INFO  RaffleActivityController - 积分兑换商品，创建订单完成 userId:xiaofuge sku:9013 outBusinessNo:228296233672
+25-07-27.20:23:10.897 [http-nio-8091-exec-43] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:CONVERT_SKU amount:-20.00
+25-07-27.20:23:10.930 [http-nio-8091-exec-43] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":-20.00,"orderId":"466331658027","outBusinessNo":"228296233672","userId":"xiaofuge"},"id":"75106493305","timestamp":1753618990897}
+25-07-27.20:23:10.932 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":-20.00,"orderId":"466331658027","outBusinessNo":"228296233672","userId":"xiaofuge"},"id":"75106493305","timestamp":1753618990897}
+25-07-27.20:23:10.941 [http-nio-8091-exec-43] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:466331658027 topic: credit_adjust_success
+25-07-27.20:23:10.941 [http-nio-8091-exec-43] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:466331658027
+25-07-27.20:23:10.941 [http-nio-8091-exec-43] INFO  RaffleActivityController - 积分兑换商品，支付订单完成  userId:xiaofuge sku:9013 orderId:466331658027
+25-07-27.20:23:11.310 [http-nio-8091-exec-45] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:23:11.311 [http-nio-8091-exec-46] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:23:11.311 [http-nio-8091-exec-47] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:23:11.315 [http-nio-8091-exec-46] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:120.91
+25-07-27.20:23:11.315 [http-nio-8091-exec-48] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.20:23:11.319 [http-nio-8091-exec-47] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:23:11.322 [http-nio-8091-exec-45] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1194,"dayCountSurplus":1194,"monthCount":1194,"monthCountSurplus":1194,"totalCount":1194,"totalCountSurplus":1167}
+25-07-27.20:23:11.329 [http-nio-8091-exec-48] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":27},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":27},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":27}],"info":"调用成功"}
+25-07-27.20:23:16.218 [http-nio-8091-exec-2] INFO  RaffleActivityController - 积分兑换商品开始 userId:xiaofuge sku:9014
+25-07-27.20:23:16.240 [http-nio-8091-exec-2] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9014 activityId:100301
+25-07-27.20:23:16.240 [http-nio-8091-exec-2] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9014 activityId:100301
+25-07-27.20:23:16.254 [http-nio-8091-exec-2] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9014 activityId:100301
+25-07-27.20:23:16.273 [http-nio-8091-exec-2] INFO  RaffleActivityController - 积分兑换商品，创建订单完成 userId:xiaofuge sku:9014 outBusinessNo:241613725271
+25-07-27.20:23:16.273 [http-nio-8091-exec-2] INFO  CreditAdjustService    - 账户积分额度开始 userId:xiaofuge tradeName:CONVERT_SKU amount:-5.00
+25-07-27.20:23:16.306 [http-nio-8091-exec-2] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":-5.00,"orderId":"158817710894","outBusinessNo":"241613725271","userId":"xiaofuge"},"id":"41968999081","timestamp":1753618996273}
+25-07-27.20:23:16.308 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":-5.00,"orderId":"158817710894","outBusinessNo":"241613725271","userId":"xiaofuge"},"id":"41968999081","timestamp":1753618996273}
+25-07-27.20:23:16.315 [http-nio-8091-exec-2] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: xiaofuge orderId:158817710894 topic: credit_adjust_success
+25-07-27.20:23:16.316 [http-nio-8091-exec-2] INFO  CreditAdjustService    - 账户积分额度完成 userId:xiaofuge orderId:158817710894
+25-07-27.20:23:16.316 [http-nio-8091-exec-2] INFO  RaffleActivityController - 积分兑换商品，支付订单完成  userId:xiaofuge sku:9014 orderId:158817710894
+25-07-27.20:23:16.694 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:23:16.697 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:23:16.699 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:23:16.699 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.20:23:16.700 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.20:23:16.705 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1195,"monthCount":1195,"monthCountSurplus":1195,"totalCount":1195,"totalCountSurplus":1168}
+25-07-27.20:23:16.708 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:23:16.711 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":27},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":27},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":27}],"info":"调用成功"}
+25-07-27.20:24:12.080 [http-nio-8091-exec-12] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.20:24:12.081 [http-nio-8091-exec-12] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.20:24:12.162 [http-nio-8091-exec-12] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:306237164022
+25-07-27.20:24:12.162 [http-nio-8091-exec-12] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:306237164022
+25-07-27.20:24:12.164 [http-nio-8091-exec-12] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.20:24:12.170 [http-nio-8091-exec-12] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.20:24:12.171 [http-nio-8091-exec-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.20:24:12.176 [http-nio-8091-exec-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.20:24:12.176 [http-nio-8091-exec-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.20:24:12.197 [http-nio-8091-exec-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 103
+25-07-27.20:24:12.199 [http-nio-8091-exec-12] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 103 rule_weight
+25-07-27.20:24:12.248 [http-nio-8091-exec-12] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"306237164022","userId":"xiaofuge"},"id":"83333194911","timestamp":1753619052210}
+25-07-27.20:24:12.251 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"306237164022","userId":"xiaofuge"},"id":"83333194911","timestamp":1753619052210}
+25-07-27.20:24:12.260 [http-nio-8091-exec-12] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:306237164022 topic: send_award
+25-07-27.20:24:12.260 [http-nio-8091-exec-12] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:306237164022
+25-07-27.20:24:12.264 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.20:24:12.264 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"306237164022","userId":"xiaofuge"},"id":"83333194911","timestamp":1753619052210}
+25-07-27.20:24:12.839 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:24:12.841 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:24:12.847 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:24:12.848 [http-nio-8091-exec-17] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.20:24:12.849 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.20:24:12.854 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:24:12.857 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1194,"monthCount":1195,"monthCountSurplus":1194,"totalCount":1195,"totalCountSurplus":1167}
+25-07-27.20:24:12.865 [http-nio-8091-exec-17] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":28},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":28},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":28}],"info":"调用成功"}
+25-07-27.20:24:21.493 [http-nio-8091-exec-19] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.20:24:21.493 [http-nio-8091-exec-19] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.20:24:21.553 [http-nio-8091-exec-19] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:803840473068
+25-07-27.20:24:21.554 [http-nio-8091-exec-19] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:803840473068
+25-07-27.20:24:21.554 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.20:24:21.554 [http-nio-8091-exec-19] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.20:24:21.554 [http-nio-8091-exec-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.20:24:21.559 [http-nio-8091-exec-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.20:24:21.560 [http-nio-8091-exec-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.20:24:21.581 [http-nio-8091-exec-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 102
+25-07-27.20:24:21.581 [http-nio-8091-exec-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_weight
+25-07-27.20:24:21.616 [http-nio-8091-exec-19] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"803840473068","userId":"xiaofuge"},"id":"59125507398","timestamp":1753619061591}
+25-07-27.20:24:21.619 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"803840473068","userId":"xiaofuge"},"id":"59125507398","timestamp":1753619061591}
+25-07-27.20:24:21.622 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.20:24:21.622 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"803840473068","userId":"xiaofuge"},"id":"59125507398","timestamp":1753619061591}
+25-07-27.20:24:21.627 [http-nio-8091-exec-19] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:803840473068 topic: send_award
+25-07-27.20:24:21.627 [http-nio-8091-exec-19] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:803840473068
+25-07-27.20:24:21.645 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:24:21.648 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:24:21.651 [http-nio-8091-exec-21] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:24:21.652 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.20:24:21.652 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.20:24:21.659 [http-nio-8091-exec-21] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:24:21.661 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1193,"monthCount":1195,"monthCountSurplus":1193,"totalCount":1195,"totalCountSurplus":1166}
+25-07-27.20:24:21.668 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":29},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":29},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":29}],"info":"调用成功"}
+25-07-27.20:24:24.165 [http-nio-8091-exec-26] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.20:24:24.185 [http-nio-8091-exec-26] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":false,"sort":5,"waitUnlockCount":1},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.20:36:12.583 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.20:36:12.586 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.20:36:12.588 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.20:36:12.591 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.20:36:12.856 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.20:36:12.884 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.20:36:13.147 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.20:36:13.192 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.20:36:13.258 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-27.20:36:13.258 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-27.20:36:13.258 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-27.20:36:13.258 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-27.20:36:23.180 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on LAPTOP-JQ369557 with PID 17796 (D:\Java_project\big_market\big_market-app\target\classes started by zxy in D:\Java_project\big_market)
+25-07-27.20:36:23.182 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+25-07-27.20:36:24.516 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-07-27.20:36:24.519 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-07-27.20:36:24.587 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 50 ms. Found 0 Redis repository interfaces.
+25-07-27.20:36:25.614 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+25-07-27.20:36:25.627 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+25-07-27.20:36:25.627 [main            ] INFO  StandardService        - Starting service [Tomcat]
+25-07-27.20:36:25.627 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+25-07-27.20:36:25.787 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+25-07-27.20:36:25.788 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2537 ms
+25-07-27.20:36:26.199 [main            ] INFO  Version                - Redisson 3.23.4
+25-07-27.20:36:26.902 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-27.20:36:26.931 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-07-27.20:36:28.576 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-07-27.20:36:28.681 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+25-07-27.20:36:28.697 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+25-07-27.20:36:28.699 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-07-27.20:36:28.754 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1eb7ec59:0/SimpleConnection@1256925b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57235]
+25-07-27.20:36:28.871 [main            ] INFO  Application            - Started Application in 6.537 seconds (JVM running for 7.612)
+25-07-27.20:36:29.212 [RMI TCP Connection(4)-192.168.153.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+25-07-27.20:36:29.213 [RMI TCP Connection(4)-192.168.153.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+25-07-27.20:36:29.215 [RMI TCP Connection(4)-192.168.153.1] INFO  DispatcherServlet      - Completed initialization in 2 ms
+25-07-27.20:36:29.218 [RMI TCP Connection(5)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-27.20:36:29.548 [RMI TCP Connection(5)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-27.20:36:29.583 [RMI TCP Connection(5)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-27.20:36:29.628 [RMI TCP Connection(5)-192.168.153.1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-27.20:36:36.103 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+25-07-27.20:36:36.110 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:36:36.110 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:36:36.159 [http-nio-8091-exec-2] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-07-27.20:36:36.160 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.20:36:36.160 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:36:36.162 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.20:36:36.204 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.20:36:36.205 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:36:36.212 [http-nio-8091-exec-2] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-07-27.20:36:36.260 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.20:36:36.516 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1193,"monthCount":1195,"monthCountSurplus":1193,"totalCount":1195,"totalCountSurplus":1166}
+25-07-27.20:36:36.517 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":false,"sort":5,"waitUnlockCount":1},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.20:36:36.517 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":false,"sort":5,"waitUnlockCount":1},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.20:36:36.517 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+25-07-27.20:36:36.520 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":29},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":29},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":29}],"info":"调用成功"}
+25-07-27.20:36:39.071 [http-nio-8091-exec-8] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
+25-07-27.20:36:39.174 [http-nio-8091-exec-8] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
+25-07-27.20:36:43.737 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:36:43.738 [http-nio-8091-exec-11] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:36:43.738 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:36:43.744 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.20:36:43.745 [http-nio-8091-exec-11] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:36:43.751 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1193,"monthCount":1195,"monthCountSurplus":1193,"totalCount":1195,"totalCountSurplus":1166}
+25-07-27.20:36:48.392 [http-nio-8091-exec-22] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.20:36:48.394 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.20:36:48.490 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:694394312430
+25-07-27.20:36:48.490 [http-nio-8091-exec-22] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:694394312430
+25-07-27.20:36:48.491 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.20:36:48.500 [http-nio-8091-exec-22] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.20:36:48.500 [http-nio-8091-exec-22] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.20:36:48.513 [http-nio-8091-exec-22] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.20:36:48.513 [http-nio-8091-exec-22] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.20:36:48.538 [http-nio-8091-exec-22] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 102
+25-07-27.20:36:48.540 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_weight
+25-07-27.20:36:48.593 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"694394312430","userId":"xiaofuge"},"id":"94248469902","timestamp":1753619808548}
+25-07-27.20:36:48.609 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"694394312430","userId":"xiaofuge"},"id":"94248469902","timestamp":1753619808548}
+25-07-27.20:36:48.612 [http-nio-8091-exec-22] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:694394312430 topic: send_award
+25-07-27.20:36:48.612 [http-nio-8091-exec-22] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:694394312430
+25-07-27.20:36:48.642 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.20:36:48.643 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.20:36:48.644 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.20:36:48.646 [http-nio-8091-exec-16] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.20:36:48.646 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.20:36:48.647 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"694394312430","userId":"xiaofuge"},"id":"94248469902","timestamp":1753619808548}
+25-07-27.20:36:48.651 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.20:36:48.655 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.20:36:48.662 [http-nio-8091-exec-16] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":30},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":30},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":30}],"info":"调用成功"}
+25-07-27.20:36:48.667 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1192,"monthCount":1195,"monthCountSurplus":1192,"totalCount":1195,"totalCountSurplus":1165}
+25-07-27.20:36:51.160 [http-nio-8091-exec-17] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.20:36:51.181 [http-nio-8091-exec-17] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.21:53:36.727 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.21:53:36.730 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.21:53:36.735 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+25-07-27.21:53:36.738 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.21:53:36.741 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.21:53:36.742 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.21:53:36.744 [http-nio-8091-exec-47] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.21:53:36.744 [http-nio-8091-exec-32] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.21:53:36.747 [http-nio-8091-exec-34] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.21:53:36.764 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1192,"monthCount":1195,"monthCountSurplus":1192,"totalCount":1195,"totalCountSurplus":1165}
+25-07-27.21:53:36.765 [http-nio-8091-exec-27] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+25-07-27.21:53:36.766 [http-nio-8091-exec-34] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":30},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":30},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":30}],"info":"调用成功"}
+25-07-27.21:53:36.770 [http-nio-8091-exec-32] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.21:53:36.773 [http-nio-8091-exec-47] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.21:57:36.319 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.21:57:36.325 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.21:57:36.328 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.21:57:36.331 [http-nio-8091-exec-44] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+25-07-27.21:57:36.333 [http-nio-8091-exec-45] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.21:57:36.333 [http-nio-8091-exec-46] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.21:57:36.336 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.21:57:36.340 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1192,"monthCount":1195,"monthCountSurplus":1192,"totalCount":1195,"totalCountSurplus":1165}
+25-07-27.21:57:36.341 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.21:57:36.345 [http-nio-8091-exec-20] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.21:57:36.356 [http-nio-8091-exec-45] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.21:57:36.356 [http-nio-8091-exec-46] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.21:57:36.361 [http-nio-8091-exec-44] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+25-07-27.21:57:36.361 [http-nio-8091-exec-20] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":30},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":30},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":30}],"info":"调用成功"}
+25-07-27.22:07:01.701 [http-nio-8091-exec-1] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.22:07:01.701 [http-nio-8091-exec-1] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.22:07:01.784 [http-nio-8091-exec-1] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:959536645594
+25-07-27.22:07:01.784 [http-nio-8091-exec-1] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:959536645594
+25-07-27.22:07:01.784 [http-nio-8091-exec-1] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.22:07:01.784 [http-nio-8091-exec-1] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.22:07:01.784 [http-nio-8091-exec-1] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:07:01.792 [http-nio-8091-exec-1] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:07:01.792 [http-nio-8091-exec-1] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.22:07:01.812 [http-nio-8091-exec-1] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 103
+25-07-27.22:07:01.812 [http-nio-8091-exec-1] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 103 rule_weight
+25-07-27.22:07:01.850 [http-nio-8091-exec-1] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"959536645594","userId":"xiaofuge"},"id":"21276269521","timestamp":1753625221814}
+25-07-27.22:07:01.863 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"959536645594","userId":"xiaofuge"},"id":"21276269521","timestamp":1753625221814}
+25-07-27.22:07:01.865 [http-nio-8091-exec-1] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:959536645594 topic: send_award
+25-07-27.22:07:01.866 [http-nio-8091-exec-1] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:959536645594
+25-07-27.22:07:01.870 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:07:01.871 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"959536645594","userId":"xiaofuge"},"id":"21276269521","timestamp":1753625221814}
+25-07-27.22:07:01.882 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.22:07:01.885 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.22:07:01.888 [http-nio-8091-exec-8] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.22:07:01.889 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.22:07:01.893 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.22:07:01.898 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1191,"monthCount":1195,"monthCountSurplus":1191,"totalCount":1195,"totalCountSurplus":1164}
+25-07-27.22:07:01.899 [http-nio-8091-exec-8] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.22:07:01.906 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":31},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":31},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":31}],"info":"调用成功"}
+25-07-27.22:07:04.398 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:07:04.414 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:08:03.535 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.22:08:03.542 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.22:08:03.551 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.22:08:03.553 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.22:08:03.554 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+25-07-27.22:08:03.556 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1191,"monthCount":1195,"monthCountSurplus":1191,"totalCount":1195,"totalCountSurplus":1164}
+25-07-27.22:08:03.556 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:08:03.557 [http-nio-8091-exec-19] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:08:03.566 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.22:08:03.566 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.22:08:03.582 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":31},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":31},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":31}],"info":"调用成功"}
+25-07-27.22:08:03.586 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:08:03.587 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+25-07-27.22:08:03.592 [http-nio-8091-exec-19] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:08:13.044 [http-nio-8091-exec-21] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.22:08:13.044 [http-nio-8091-exec-21] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.22:08:13.130 [http-nio-8091-exec-21] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:662604325450
+25-07-27.22:08:13.130 [http-nio-8091-exec-21] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:662604325450
+25-07-27.22:08:13.130 [http-nio-8091-exec-21] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.22:08:13.130 [http-nio-8091-exec-21] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.22:08:13.130 [http-nio-8091-exec-21] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:08:13.134 [http-nio-8091-exec-21] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:08:13.135 [http-nio-8091-exec-21] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.22:08:13.153 [http-nio-8091-exec-21] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 103
+25-07-27.22:08:13.154 [http-nio-8091-exec-21] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 103 rule_weight
+25-07-27.22:08:13.184 [http-nio-8091-exec-21] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"662604325450","userId":"xiaofuge"},"id":"94038664245","timestamp":1753625293155}
+25-07-27.22:08:13.188 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"662604325450","userId":"xiaofuge"},"id":"94038664245","timestamp":1753625293155}
+25-07-27.22:08:13.192 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:08:13.192 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"662604325450","userId":"xiaofuge"},"id":"94038664245","timestamp":1753625293155}
+25-07-27.22:08:13.196 [http-nio-8091-exec-21] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:662604325450 topic: send_award
+25-07-27.22:08:13.196 [http-nio-8091-exec-21] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:662604325450
+25-07-27.22:08:13.211 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.22:08:13.211 [http-nio-8091-exec-23] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.22:08:13.212 [http-nio-8091-exec-39] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.22:08:13.214 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.22:08:13.218 [http-nio-8091-exec-23] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.22:08:13.221 [http-nio-8091-exec-39] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.22:08:13.226 [http-nio-8091-exec-7] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1190,"monthCount":1195,"monthCountSurplus":1190,"totalCount":1195,"totalCountSurplus":1163}
+25-07-27.22:08:13.227 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":32},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":32},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":32}],"info":"调用成功"}
+25-07-27.22:08:15.732 [http-nio-8091-exec-29] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:08:15.750 [http-nio-8091-exec-29] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:10:45.109 [http-nio-8091-exec-32] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.22:10:45.109 [http-nio-8091-exec-32] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.22:10:45.171 [http-nio-8091-exec-32] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:550381279735
+25-07-27.22:10:45.171 [http-nio-8091-exec-32] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:550381279735
+25-07-27.22:10:45.171 [http-nio-8091-exec-32] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.22:10:45.171 [http-nio-8091-exec-32] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.22:10:45.171 [http-nio-8091-exec-32] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:10:45.175 [http-nio-8091-exec-32] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:10:45.176 [http-nio-8091-exec-32] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.22:10:45.193 [http-nio-8091-exec-32] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 102
+25-07-27.22:10:45.193 [http-nio-8091-exec-32] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_weight
+25-07-27.22:10:45.222 [http-nio-8091-exec-32] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"550381279735","userId":"xiaofuge"},"id":"91789576031","timestamp":1753625445195}
+25-07-27.22:10:45.226 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"550381279735","userId":"xiaofuge"},"id":"91789576031","timestamp":1753625445195}
+25-07-27.22:10:45.229 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:10:45.229 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"550381279735","userId":"xiaofuge"},"id":"91789576031","timestamp":1753625445195}
+25-07-27.22:10:45.238 [http-nio-8091-exec-32] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:550381279735 topic: send_award
+25-07-27.22:10:45.238 [http-nio-8091-exec-32] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:550381279735
+25-07-27.22:10:45.254 [http-nio-8091-exec-47] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.22:10:45.257 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.22:10:45.262 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.22:10:45.262 [http-nio-8091-exec-37] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.22:10:45.264 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.22:10:45.268 [http-nio-8091-exec-47] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1189,"monthCount":1195,"monthCountSurplus":1189,"totalCount":1195,"totalCountSurplus":1162}
+25-07-27.22:10:45.269 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.22:10:45.275 [http-nio-8091-exec-37] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":33},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":33},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":33}],"info":"调用成功"}
+25-07-27.22:10:47.768 [http-nio-8091-exec-48] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:10:47.787 [http-nio-8091-exec-48] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:11:15.409 [http-nio-8091-exec-24] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.22:11:15.410 [http-nio-8091-exec-24] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.22:11:15.472 [http-nio-8091-exec-24] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:736157815198
+25-07-27.22:11:15.473 [http-nio-8091-exec-24] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:736157815198
+25-07-27.22:11:15.473 [http-nio-8091-exec-24] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.22:11:15.473 [http-nio-8091-exec-24] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.22:11:15.473 [http-nio-8091-exec-24] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:11:15.477 [http-nio-8091-exec-24] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:11:15.477 [http-nio-8091-exec-24] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.22:11:15.494 [http-nio-8091-exec-24] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 102
+25-07-27.22:11:15.494 [http-nio-8091-exec-24] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_weight
+25-07-27.22:11:15.522 [http-nio-8091-exec-24] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"736157815198","userId":"xiaofuge"},"id":"45830046101","timestamp":1753625475496}
+25-07-27.22:11:15.524 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"736157815198","userId":"xiaofuge"},"id":"45830046101","timestamp":1753625475496}
+25-07-27.22:11:15.527 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:11:15.527 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":102,"awardTitle":"OpenAI会员卡","orderId":"736157815198","userId":"xiaofuge"},"id":"45830046101","timestamp":1753625475496}
+25-07-27.22:11:15.533 [http-nio-8091-exec-24] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:736157815198 topic: send_award
+25-07-27.22:11:15.533 [http-nio-8091-exec-24] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:736157815198
+25-07-27.22:11:15.557 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.22:11:15.558 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.22:11:15.560 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.22:11:15.567 [http-nio-8091-exec-43] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.22:11:15.569 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.22:11:15.571 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.22:11:15.575 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1188,"monthCount":1195,"monthCountSurplus":1188,"totalCount":1195,"totalCountSurplus":1161}
+25-07-27.22:11:15.578 [http-nio-8091-exec-43] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":34},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":34},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":34}],"info":"调用成功"}
+25-07-27.22:11:18.080 [http-nio-8091-exec-45] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:11:18.101 [http-nio-8091-exec-45] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:11:20.324 [http-nio-8091-exec-46] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-07-27.22:11:25.220 [http-nio-8091-exec-20] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-07-27.22:11:40.667 [http-nio-8091-exec-49] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+25-07-27.22:15:12.580 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.22:15:12.582 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.22:15:12.584 [http-nio-8091-exec-8] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.22:15:12.587 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+25-07-27.22:15:12.590 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.22:15:12.593 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:15:12.593 [http-nio-8091-exec-8] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.22:15:12.593 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:15:12.600 [http-nio-8091-exec-1] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1188,"monthCount":1195,"monthCountSurplus":1188,"totalCount":1195,"totalCountSurplus":1161}
+25-07-27.22:15:12.601 [http-nio-8091-exec-25] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.22:15:12.611 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+25-07-27.22:15:12.611 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:15:12.616 [http-nio-8091-exec-25] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":34},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":34},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":34}],"info":"调用成功"}
+25-07-27.22:15:12.618 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:15:20.060 [http-nio-8091-exec-22] INFO  RaffleActivityController - 活动抽奖开始 userId:xiaofuge activityId:100301
+25-07-27.22:15:20.060 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:xiaofuge activityId:100301
+25-07-27.22:15:20.117 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:xiaofuge activityId:100301 orderId:203284547062
+25-07-27.22:15:20.118 [http-nio-8091-exec-22] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:203284547062
+25-07-27.22:15:20.118 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:xiaofuge strategyId:100006
+25-07-27.22:15:20.118 [http-nio-8091-exec-22] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:xiaofuge strategyId:100006
+25-07-27.22:15:20.118 [http-nio-8091-exec-22] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:15:20.123 [http-nio-8091-exec-22] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: xiaofuge strategyId: 100006 ruleModel: rule_blacklist
+25-07-27.22:15:20.123 [http-nio-8091-exec-22] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight
+25-07-27.22:15:20.140 [http-nio-8091-exec-22] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: xiaofuge strategyId: 100006 ruleModel: rule_weight awardId: 103
+25-07-27.22:15:20.141 [http-nio-8091-exec-22] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 103 rule_weight
+25-07-27.22:15:20.170 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"203284547062","userId":"xiaofuge"},"id":"06098929468","timestamp":1753625720143}
+25-07-27.22:15:20.174 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"203284547062","userId":"xiaofuge"},"id":"06098929468","timestamp":1753625720143}
+25-07-27.22:15:20.176 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+25-07-27.22:15:20.176 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":103,"awardTitle":"支付优惠券","orderId":"203284547062","userId":"xiaofuge"},"id":"06098929468","timestamp":1753625720143}
+25-07-27.22:15:20.183 [http-nio-8091-exec-22] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: xiaofuge orderId:203284547062 topic: send_award
+25-07-27.22:15:20.183 [http-nio-8091-exec-22] INFO  AwardService           - 中奖记录保存完成 userId:xiaofuge orderId:203284547062
+25-07-27.22:15:20.198 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-27.22:15:20.198 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户积分值开始 userId:xiaofuge
+25-07-27.22:15:20.200 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-27.22:15:20.201 [http-nio-8091-exec-13] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-27.22:15:20.205 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户积分值完成 userId:xiaofuge adjustAmount:115.91
+25-07-27.22:15:20.206 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:2
+25-07-27.22:15:20.211 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":1195,"dayCountSurplus":1187,"monthCount":1195,"monthCountSurplus":1187,"totalCount":1195,"totalCountSurplus":1160}
+25-07-27.22:15:20.211 [http-nio-8091-exec-13] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":35},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"}],"userActivityAccountTotalUseCount":35},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":35}],"info":"调用成功"}
+25-07-27.22:15:22.710 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+25-07-27.22:15:22.727 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"支付优惠券","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"小米台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+25-07-27.22:18:33.932 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.22:18:33.934 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.22:18:33.937 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.22:18:33.940 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-07-27.22:18:34.611 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.22:18:34.611 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.22:18:34.865 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.22:18:34.895 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-07-27.22:18:34.995 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-27.22:18:34.996 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-27.22:18:34.997 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-07-27.22:18:34.997 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
