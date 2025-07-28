@@ -24,9 +24,10 @@ import cn.bugstack.domain.strategy.service.IRaffleStrategy;
 import cn.bugstack.domain.strategy.service.armory.IStrategyArmory;
 import cn.bugstack.trigger.api.IRaffleActivityService;
 import cn.bugstack.trigger.api.dto.*;
+import cn.bugstack.types.annotations.DCCValue;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
-import cn.bugstack.types.model.Response;
+import cn.bugstack.trigger.api.response.Response;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -71,6 +72,10 @@ public class RaffleActivityController implements IRaffleActivityService {
     private IBehaviorRebateService behaviorRebateService;
     @Resource
     private ICreditAdjustService creditAdjustService;
+
+    // dcc 统一配置中心动态配置降级开关
+    @DCCValue("degradeSwitch:open")
+    private String degradeSwitch;
 
     /**
      * 活动装配 - 数据预热 | 把活动配置的对应的 sku 一起装配
@@ -118,19 +123,27 @@ public class RaffleActivityController implements IRaffleActivityService {
      * 接口：<a href="http://localhost:8091/api/v1/raffle/activity/draw">/api/v1/raffle/activity/draw</a>
      * 入参：{"activityId":100001,"userId":"xiaofuge"}
      * <p>
-     * curl --request POST \
-     * --url http://localhost:8091/api/v1/raffle/activity/draw \
-     * --header 'content-type: application/json' \
-     * --data '{
-     * "userId":"xiaofuge",
-     * "activityId": 100301
-     * }'
+     * Invoke-WebRequest -Uri "http://localhost:8091/api/v1/raffle/activity/draw" `
+     *   -Method Post `
+     *   -Headers @{"Content-Type" = "application/json"} `
+     *   -Body '{"userId":"xiaofuge", "activityId": 100301}'
+     *
+     *# 将响应内容按 UTF-8 编码解码
+     *$json = [System.Text.Encoding]::UTF8.GetString($response.RawContentStream.ToArray())
+     * # 输出解析后的结果
+     *$json
      */
     @RequestMapping(value = "draw", method = RequestMethod.POST)
     @Override
     public Response<ActivityDrawResponseDTO> draw(@RequestBody ActivityDrawRequestDTO request) {
         try {
             log.info("活动抽奖开始 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
+            if (!"open".equals(degradeSwitch)) {
+                return Response.<ActivityDrawResponseDTO>builder()
+                        .code(ResponseCode.DEGRADE_SWITCH.getCode())
+                        .info(ResponseCode.DEGRADE_SWITCH.getInfo())
+                        .build();
+            }
             // 1. 参数校验
             if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
                 throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
