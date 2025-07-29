@@ -77,7 +77,7 @@ public class RaffleActivityController implements IRaffleActivityService {
     private ICreditAdjustService creditAdjustService;
 
     // dcc 统一配置中心动态配置降级开关
-    @DCCValue("degradeSwitch:close")
+    //@DCCValue("degradeSwitch:close")
     private String degradeSwitch;
 
     /**
