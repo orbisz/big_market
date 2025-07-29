@@ -35,7 +35,7 @@ public class RaffleActivityControllerTest {
 
     @Test
     public void test_armory() {
-        Response<Boolean> response = raffleActivityService.armory(100301L);
+        Response<Boolean> response = raffleActivityService.armory(100401L);
         log.info("测试结果：{}", JSON.toJSONString(response));
     }
 

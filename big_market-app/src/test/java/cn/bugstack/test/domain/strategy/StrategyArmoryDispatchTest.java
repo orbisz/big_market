@@ -10,17 +10,20 @@ import org.junit.runner.RunWith;
 import org.redisson.api.RMap;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.util.ReflectionTestUtils;
 
 import javax.annotation.Resource;
 import java.util.*;
 
 /**
- * 对策略装配进行测试操作
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 策略领域测试
+ * @create 2023-12-23 11:33
  */
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class StrategyArmoryTest {
+public class StrategyArmoryDispatchTest {
 
     @Resource
     private IStrategyArmory strategyArmory;
@@ -33,7 +36,9 @@ public class StrategyArmoryTest {
      */
     @Before
     public void test_strategyArmory() {
-        boolean success = strategyArmory.assembleLotteryStrategy(100001L);
+        // 动态Mock值操作，可用于调整选择哪个算法
+        ReflectionTestUtils.setField(strategyArmory, "ALGORITHM_THRESHOLD_VALUE", 100);
+        boolean success = strategyArmory.assembleLotteryStrategy(100006L);
         log.info("测试结果：{}", success);
     }
 
@@ -42,7 +47,7 @@ public class StrategyArmoryTest {
      */
     @Test
     public void test_getRandomAwardId() {
-        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(100001L));
+        log.info("测试结果：{} - 奖品ID值", strategyDispatch.getRandomAwardId(100006L));
     }
 
     /**
@@ -76,7 +81,7 @@ public class StrategyArmoryTest {
     }
 
     @Test
-    public void test_shuffle(){
+    public void test_shuffle() {
         Map<Integer, Integer> strategyAwardSearchRateTable = new HashMap<>();
         // 添加内容到Map中
         strategyAwardSearchRateTable.put(1, 10);
@@ -102,8 +107,5 @@ public class StrategyArmoryTest {
             System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
         }
     }
-
-
-
 
 }

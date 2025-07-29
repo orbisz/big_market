@@ -5,7 +5,9 @@ import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import java.util.List;
 
 /**
+ * @author Fuzhengwei bugstack.cn @小傅哥
  * @description 抽奖活动SKU库存服务
+ * @create 2024-03-30 09:55
  */
 public interface IRaffleActivitySkuStockService {
 
@@ -16,13 +18,27 @@ public interface IRaffleActivitySkuStockService {
      * @throws InterruptedException 异常
      */
     ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException;
-    //ActivitySkuStockKeyVO takeQueueValue(Long sku) throws InterruptedException;
+
+    /**
+     * 获取活动sku库存消耗队列
+     *
+     * @param sku 指定sku
+     * @return 奖品库存Key信息
+     * @throws InterruptedException 异常
+     */
+    ActivitySkuStockKeyVO takeQueueValue(Long sku) throws InterruptedException;
 
     /**
      * 清空队列
      */
     void clearQueueValue();
-    //void clearQueueValue(Long sku);
+
+    /**
+     * 清空队列
+     *
+     * @param sku 指定sku
+     */
+    void clearQueueValue(Long sku);
 
     /**
      * 延迟队列 + 任务趋势更新活动sku库存
@@ -38,11 +54,6 @@ public interface IRaffleActivitySkuStockService {
      */
     void clearActivitySkuStock(Long sku);
 
-    /**
-     * 查询所有的sku
-     * @return sku编号列表
-     */
-    //List<Long> querySkuList();
-
+    List<Long> querySkuList();
 
 }

@@ -1,12 +1,12 @@
 package cn.bugstack.domain.award.service;
 
-import cn.bugstack.domain.award.event.SendAwardMessageEvent;
+import cn.bugstack.domain.award.adapter.event.SendAwardMessageEvent;
 import cn.bugstack.domain.award.model.aggregate.UserAwardRecordAggregate;
 import cn.bugstack.domain.award.model.entity.DistributeAwardEntity;
 import cn.bugstack.domain.award.model.entity.TaskEntity;
 import cn.bugstack.domain.award.model.entity.UserAwardRecordEntity;
 import cn.bugstack.domain.award.model.valobj.TaskStateVO;
-import cn.bugstack.domain.award.repository.IAwardRepository;
+import cn.bugstack.domain.award.adapter.repository.IAwardRepository;
 import cn.bugstack.domain.award.service.distribute.IDistributeAward;
 import cn.bugstack.types.event.BaseEvent;
 import lombok.extern.slf4j.Slf4j;
@@ -67,7 +67,7 @@ public class AwardService implements IAwardService {
     }
 
     @Override
-    public void distributeAward(DistributeAwardEntity distributeAwardEntity) {
+    public void distributeAward(DistributeAwardEntity distributeAwardEntity) throws Exception {
         // 奖品Key
         String awardKey = awardRepository.queryAwardKey(distributeAwardEntity.getAwardId());
         if (null == awardKey) {

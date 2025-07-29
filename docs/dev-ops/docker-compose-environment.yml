@@ -144,7 +144,7 @@ services:
     restart: always
     hostname: zoo1
     ports:
-      - 2181:2181
+      - "2181:2181"
     environment:
       ZOO_MY_ID: 1
       ZOO_SERVERS: server.1=zookeeper:2888:3888;2181
@@ -217,6 +217,54 @@ services:
       - my-network
     depends_on:
       - elasticsearch
+
+  # http://127.0.0.1:9090/xxl-job-admin admin/123456 - 安装后稍等会访问即可
+  # 官网镜像为 xuxueli/xxl-job-admin:2.4.1 但不支持ARM架构【需要自己打包】，所以找了一个 kuschzzp/xxl-job-aarch64:2.4.0 镜像支持 AMD/ARM
+  xxl-job-admin:
+    image: xuxueli/xxl-job-admin:2.4.1 #M1 Mac 更换镜像 kuschzzp/xxl-job-aarch64:2.4.0
+    container_name: xxl-job-admin
+    restart: always
+    depends_on:
+      - mysql
+    ports:
+      - "9090:9090"
+    links:
+      - mysql
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/xxl_job?serverTimezone=UTC&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Shanghai
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=123456
+      - SERVER_PORT=9090
+    networks:
+      - my-network
+
+  # 数据采集
+  prometheus:
+    image: bitnami/prometheus:2.47.2
+    container_name: prometheus
+    restart: always
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - my-network
+
+  # 监控界面
+  grafana:
+    image: grafana/grafana:10.2.0
+    container_name: grafana
+    restart: always
+    ports:
+      - "4000:4000"
+    depends_on:
+      - prometheus
+    volumes:
+      - ./grafana:/etc/grafana
+    networks:
+      - my-network
+
+
 
 networks:
   my-network:

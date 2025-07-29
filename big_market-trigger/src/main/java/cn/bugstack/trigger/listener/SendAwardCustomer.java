@@ -1,6 +1,6 @@
 package cn.bugstack.trigger.listener;
 
-import cn.bugstack.domain.award.event.SendAwardMessageEvent;
+import cn.bugstack.domain.award.adapter.event.SendAwardMessageEvent;
 import cn.bugstack.domain.award.model.entity.DistributeAwardEntity;
 import cn.bugstack.domain.award.service.IAwardService;
 import cn.bugstack.types.event.BaseEvent;
