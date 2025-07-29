@@ -281,13 +281,14 @@ public class ActivityRepository implements IActivityRepository {
 
     @Override
     public void activitySkuStockConsumeSendQueue(ActivitySkuStockKeyVO activitySkuStockKeyVO) {
-        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY;
+        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY + Constants.UNDERLINE + activitySkuStockKeyVO.getSku();
         RBlockingQueue<ActivitySkuStockKeyVO> blockingQueue = redisService.getBlockingQueue(cacheKey);
         RDelayedQueue<ActivitySkuStockKeyVO> delayedQueue = redisService.getDelayedQueue(blockingQueue);
         delayedQueue.offer(activitySkuStockKeyVO, 3, TimeUnit.SECONDS);
     }
 
     @Override
+    @Deprecated
     public ActivitySkuStockKeyVO takeQueueValue() {
         String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY;
         RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
@@ -295,11 +296,32 @@ public class ActivityRepository implements IActivityRepository {
     }
 
     @Override
+    public ActivitySkuStockKeyVO takeQueueValue(Long sku) {
+        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY + Constants.UNDERLINE + sku;
+        RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
+        return destinationQueue.poll();
+    }
+
+    @Override
+    @Deprecated
     public void clearQueueValue() {
         String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY;
         RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
         destinationQueue.clear();
     }
+
+    @Override
+    public void clearQueueValue(Long sku) {
+        String cacheKey = Constants.RedisKey.ACTIVITY_SKU_COUNT_QUERY_KEY + Constants.UNDERLINE + sku;
+        RBlockingQueue<ActivitySkuStockKeyVO> destinationQueue = redisService.getBlockingQueue(cacheKey);
+        destinationQueue.clear();
+    }
+
+    @Override
+    public List<Long> querySkuList() {
+        return raffleActivitySkuDao.querySkuList();
+    }
+
 
     @Override
     public void updateActivitySkuStock(Long sku) {
