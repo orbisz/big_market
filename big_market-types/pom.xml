@@ -30,7 +30,13 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-javanica</artifactId>
+        </dependency>
+
     </dependencies>
+
 
     <build>
         <finalName>big_market-types</finalName>
