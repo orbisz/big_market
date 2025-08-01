@@ -109,6 +109,7 @@ services:
       - ./rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins
 
 
+
 networks:
   my-network:
     driver: bridge
