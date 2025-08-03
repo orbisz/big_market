@@ -62,7 +62,7 @@ services:
         max-file: "3"
   big-market-front-app:
     container_name: big-market-front-app
-    image: orbiszx/big-market-front-app:3.1
+    image: orbiszx/big-market-front-app:3.2
     restart: always
     networks:
       - my-network
