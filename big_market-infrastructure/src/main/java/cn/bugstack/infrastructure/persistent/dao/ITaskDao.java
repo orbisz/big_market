@@ -20,6 +20,7 @@ public interface ITaskDao {
     @DBRouter
     void updateTaskSendMessageFail(Task task);
 
+    @DBRouter
     List<Task> queryNoSendMessageTaskList();
 
 }

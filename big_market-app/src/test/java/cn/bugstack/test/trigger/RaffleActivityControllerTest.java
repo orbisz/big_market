@@ -39,7 +39,7 @@ public class RaffleActivityControllerTest {
         for (int i = 0; i < 1; i++) {
             ActivityDrawRequestDTO request = new ActivityDrawRequestDTO();
             request.setActivityId(100301L);
-            request.setUserId("xiaofuge");
+            request.setUserId("zxy");
             Response<ActivityDrawResponseDTO> response = raffleActivityService.draw(request);
 
             log.info("请求参数：{}", JSON.toJSONString(request));
@@ -51,7 +51,7 @@ public class RaffleActivityControllerTest {
     public void test_blacklist_draw() throws InterruptedException {
         ActivityDrawRequestDTO request = new ActivityDrawRequestDTO();
         request.setActivityId(100301L);
-        request.setUserId("user001");
+        request.setUserId("zxy");
         Response<ActivityDrawResponseDTO> response = raffleActivityService.draw(request);
 
         log.info("请求参数：{}", JSON.toJSONString(request));

@@ -13,7 +13,7 @@
         <result column="update_time" property="updateTime"/>
     </resultMap>
 
-    <insert id="insert" parameterType="cn.bugstack.infrastructure.persistent.po.UserAwardRecord">
+    <insert id="insert" parameterType="cn.bugstack.infrastructure.persistent.po.Task">
         insert into task(
             user_id, topic, message_id, message, state, create_time, update_time
         ) values (
@@ -22,23 +22,25 @@
     </insert>
 
     <update id="updateTaskSendMessageCompleted"
-            parameterType="cn.bugstack.infrastructure.persistent.po.UserAwardRecord">
+            parameterType="cn.bugstack.infrastructure.persistent.po.Task">
         update task
         set state = 'completed', update_time = now()
         where user_id = #{userId} and message_id = #{messageId}
     </update>
 
-    <update id="updateTaskSendMessageFail" parameterType="cn.bugstack.infrastructure.persistent.po.UserAwardRecord">
+    <update id="updateTaskSendMessageFail" parameterType="cn.bugstack.infrastructure.persistent.po.Task">
         update task
         set state = 'fail', update_time = now()
         where user_id = #{userId} and message_id = #{messageId}
     </update>
 
     <select id="queryNoSendMessageTaskList" resultMap="dataMap">
+        <![CDATA[
         select user_id, topic, message_id, message
         from task
-        where state = 'fail' or (state = 'create' and now() - update_time > 6)
+        where state = 'fail' or (state = 'create' and update_time < DATE_SUB(NOW(), INTERVAL 6 MINUTE))
             limit 10
+        ]]>
     </select>
 
 </mapper>
