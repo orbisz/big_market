@@ -72,7 +72,7 @@ public class RaffleActivityControllerTest {
 
     @Test
     public void test_isCalendarSignRebate() {
-        Response<Boolean> response = raffleActivityService.isCalendarSignRebate("xiaofuge");
+        Response<Boolean> response = raffleActivityService.isCalendarSignRebate("zxy");
         log.info("测试结果：{}", JSON.toJSONString(response));
     }
 
