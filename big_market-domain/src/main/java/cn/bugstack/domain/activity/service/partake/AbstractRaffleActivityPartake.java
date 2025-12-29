@@ -1,6 +1,7 @@
 package cn.bugstack.domain.activity.service.partake;
 
 import cn.bugstack.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
+import cn.bugstack.domain.activity.model.aggregate.CreateTenPartakeOrderAggregate;
 import cn.bugstack.domain.activity.model.entity.ActivityEntity;
 import cn.bugstack.domain.activity.model.entity.PartakeRaffleActivityEntity;
 import cn.bugstack.domain.activity.model.entity.UserRaffleOrderEntity;
@@ -13,6 +14,7 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @description 抽奖活动参与抽奖类
@@ -78,6 +80,60 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
         // 7. 返回订单信息
         return userRaffleOrder;
     }
+
+    @Override
+    public CreateTenPartakeOrderAggregate createTenDrawOrder(String userId, Long activityId) {
+        // 0. 基础信息
+        Date currentDate = new Date();
+
+        log.info("创建十连抽订单开始 userId:{} activityId:{}", userId, activityId);
+        // 1. 活动查询
+        ActivityEntity activityEntity = activityRepository.queryRaffleActivityByActivityId(activityId);
+
+        // 校验；活动状态
+        if (!ActivityStateVO.open.equals(activityEntity.getState())) {
+            log.error("创建十连抽订单失败，活动状态未开启 activityId:{} state:{}", activityId, activityEntity.getState());
+            throw new AppException(ResponseCode.ACTIVITY_STATE_ERROR.getCode(), ResponseCode.ACTIVITY_STATE_ERROR.getInfo());
+        }
+        // 校验；活动日期「开始时间 <- 当前时间 -> 结束时间」
+        if (activityEntity.getBeginDateTime().after(currentDate) || activityEntity.getEndDateTime().before(currentDate)) {
+            throw new AppException(ResponseCode.ACTIVITY_DATE_ERROR.getCode(), ResponseCode.ACTIVITY_DATE_ERROR.getInfo());
+        }
+
+        // 2. 额度账户过滤&返回账户构建对象（十连抽需要确保至少有10次额度）
+        CreateTenPartakeOrderAggregate createTenPartakeOrderAggregate = this.doFilterAccountForTenDraw(userId, activityId, currentDate);
+
+        // 3. 构建10个订单
+        List<UserRaffleOrderEntity> userRaffleOrderEntities = this.buildTenUserRaffleOrders(userId, activityId, currentDate);
+
+        // 4. 填充抽奖单实体对象列表
+        createTenPartakeOrderAggregate.setUserRaffleOrderEntities(userRaffleOrderEntities);
+
+        // 5. 保存聚合对象
+        activityRepository.saveCreateTenPartakeOrderAggregate(createTenPartakeOrderAggregate);
+
+        log.info("创建十连抽订单完成 userId:{} activityId:{}", userId, activityId);
+        // 6. 返回聚合对象
+        return createTenPartakeOrderAggregate;
+    }
+
+    /**
+     * 十连抽额度账户过滤
+     * @param userId 用户ID
+     * @param activityId 活动ID
+     * @param currentDate 当前日期
+     * @return 十连抽聚合对象
+     */
+    protected abstract CreateTenPartakeOrderAggregate doFilterAccountForTenDraw(String userId, Long activityId, Date currentDate);
+
+    /**
+     * 构建10个抽奖订单
+     * @param userId 用户ID
+     * @param activityId 活动ID
+     * @param currentDate 当前日期
+     * @return 10个抽奖订单列表
+     */
+    protected abstract List<UserRaffleOrderEntity> buildTenUserRaffleOrders(String userId, Long activityId, Date currentDate);
 
     protected abstract CreatePartakeOrderAggregate doFilterAccount(String userId, Long activityId, Date currentDate);
 

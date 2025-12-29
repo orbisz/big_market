@@ -1,5 +1,6 @@
 package cn.bugstack.domain.activity.service;
 
+import cn.bugstack.domain.activity.model.aggregate.CreateTenPartakeOrderAggregate;
 import cn.bugstack.domain.activity.model.entity.PartakeRaffleActivityEntity;
 import cn.bugstack.domain.activity.model.entity.UserRaffleOrderEntity;
 
@@ -25,5 +26,13 @@ public interface IRaffleActivityPartakeService {
      */
     UserRaffleOrderEntity createOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity);
 
+    /**
+     * 创建十连抽订单；用户参与十连抽，扣减活动账户库存10次，产生10个抽奖单。
+     *
+     * @param userId     用户ID
+     * @param activityId 活动ID
+     * @return 十连抽订单聚合对象
+     */
+    CreateTenPartakeOrderAggregate createTenDrawOrder(String userId, Long activityId);
 
 }

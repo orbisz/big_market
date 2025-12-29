@@ -28,6 +28,8 @@ public class Constants {
         public static String ACTIVITY_ACCOUNT_LOCK = "activity_account_lock_";
         public static String ACTIVITY_ACCOUNT_UPDATE_LOCK = "activity_account_update_lock_";
         public static String USER_CREDIT_ACCOUNT_LOCK = "user_credit_account_lock_";
+        /** 十连抽 - 用户每日抽奖次数缓存key前缀 */
+        public static String RAFFLE_DAY_COUNT = "raffle:daily_count:";
 
 
     }

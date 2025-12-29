@@ -5,6 +5,7 @@ import cn.bugstack.domain.activity.model.valobj.OrderTradeTypeVO;
 import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
 import cn.bugstack.domain.activity.service.IRaffleActivityPartakeService;
 import cn.bugstack.domain.activity.service.IRaffleActivitySkuProductService;
+import cn.bugstack.domain.activity.model.aggregate.CreateTenPartakeOrderAggregate;
 import cn.bugstack.domain.activity.service.armory.IActivityArmory;
 import cn.bugstack.domain.award.model.entity.UserAwardRecordEntity;
 import cn.bugstack.domain.award.model.valobj.AwardStateVO;
@@ -39,6 +40,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 /**
  * @description 抽奖活动服务 注意；在不引用 application/case 层的时候，就需要让接口实现层来做领域的串联。一些较大规模的系统，需要加入 case 层。
@@ -69,6 +72,8 @@ public class RaffleActivityController implements IRaffleActivityService {
     private IBehaviorRebateService behaviorRebateService;
     @Resource
     private ICreditAdjustService creditAdjustService;
+    @Resource
+    private ThreadPoolExecutor threadPoolExecutor;
 
     /**
      * 活动装配 - 数据预热 | 把活动配置的对应的 sku 一起装配
@@ -408,6 +413,122 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .code(ResponseCode.UN_ERROR.getCode())
                     .info(ResponseCode.UN_ERROR.getInfo())
                     .data(false)
+                    .build();
+        }
+    }
+
+    /**
+     * 十连抽接口
+     *
+     * @param request 请求对象
+     * @return 十连抽结果
+     * <p>
+     * 接口：<a href="http://localhost:8091/api/v1/raffle/activity/ten_draw">/api/v1/raffle/activity/ten_draw</a>
+     * 入参：{"activityId":100301,"userId":"zxy"}
+     * <p>
+     * curl --request POST \
+     * --url http://localhost:8091/api/v1/raffle/activity/ten_draw \
+     * --header 'content-type: application/json' \
+     * --data '{
+     * "userId":"zxy",
+     * "activityId": 100301
+     * }'
+     */
+    @RequestMapping(value = "ten_draw", method = RequestMethod.POST)
+    @Override
+    public Response<ActivityTenDrawResponseDTO> tenDraw(@RequestBody ActivityTenDrawRequestDTO request) {
+        try {
+            log.info("十连抽开始 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
+
+            // 1. 参数校验
+            if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
+                throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
+            }
+
+            // 2. 参与活动 - 创建十连抽订单
+            CreateTenPartakeOrderAggregate tenPartakeOrderAggregate = raffleActivityPartakeService.createTenDrawOrder(request.getUserId(), request.getActivityId());
+            List<UserRaffleOrderEntity> orderEntities = tenPartakeOrderAggregate.getUserRaffleOrderEntities();
+            log.info("十连抽，创建订单完成 userId:{} activityId:{} orderCount:{}", request.getUserId(), request.getActivityId(), orderEntities.size());
+
+            // 3. 抽奖策略 - 并行执行十次单抽
+            List<Future<RaffleAwardEntity>> futures = new ArrayList<>(10);
+            for (UserRaffleOrderEntity orderEntity : orderEntities) {
+                Future<RaffleAwardEntity> future = threadPoolExecutor.submit(() -> {
+                    return raffleStrategy.performRaffle(RaffleFactorEntity.builder()
+                            .userId(orderEntity.getUserId())
+                            .strategyId(orderEntity.getStrategyId())
+                            .endDateTime(orderEntity.getEndDateTime())
+                            .build());
+                });
+                futures.add(future);
+            }
+
+            // 等待所有抽奖完成并收集结果
+            List<RaffleAwardEntity> raffleAwardEntities = new ArrayList<>(10);
+            for (int i = 0; i < futures.size(); i++) {
+                try {
+                    RaffleAwardEntity result = futures.get(i).get(5, TimeUnit.SECONDS);
+                    raffleAwardEntities.add(result);
+                } catch (Exception e) {
+                    log.error("十连抽，第{}次抽奖失败 userId:{} activityId:{}", i + 1, request.getUserId(), request.getActivityId(), e);
+                    // 抽奖失败时添加默认结果
+                    raffleAwardEntities.add(RaffleAwardEntity.builder()
+                            .awardId(0)
+                            .awardTitle("未中奖")
+                            .sort(0)
+                            .build());
+                }
+            }
+
+            // 4. 存放结果 - 批量写入中奖记录
+            List<UserAwardRecordEntity> userAwardRecordEntities = new ArrayList<>(10);
+            for (int i = 0; i < orderEntities.size(); i++) {
+                UserRaffleOrderEntity orderEntity = orderEntities.get(i);
+                RaffleAwardEntity raffleAwardEntity = raffleAwardEntities.get(i);
+
+                UserAwardRecordEntity userAwardRecord = UserAwardRecordEntity.builder()
+                        .userId(orderEntity.getUserId())
+                        .activityId(orderEntity.getActivityId())
+                        .strategyId(orderEntity.getStrategyId())
+                        .orderId(orderEntity.getOrderId())
+                        .awardId(raffleAwardEntity.getAwardId())
+                        .awardTitle(raffleAwardEntity.getAwardTitle())
+                        .awardTime(new Date())
+                        .awardState(AwardStateVO.create)
+                        .awardConfig(raffleAwardEntity.getAwardConfig())
+                        .build();
+                userAwardRecordEntities.add(userAwardRecord);
+            }
+            awardService.batchSaveUserAwardRecord(userAwardRecordEntities);
+
+            // 5. 返回结果
+            List<ActivityTenDrawResponseDTO.DrawResult> drawResults = raffleAwardEntities.stream()
+                    .map(raffleAward -> ActivityTenDrawResponseDTO.DrawResult.builder()
+                            .orderId(orderEntities.get(raffleAwardEntities.indexOf(raffleAward)).getOrderId())
+                            .awardId(raffleAward.getAwardId())
+                            .awardTitle(raffleAward.getAwardTitle())
+                            .awardIndex(raffleAward.getSort())
+                            .build())
+                    .collect(Collectors.toList());
+
+            return Response.<ActivityTenDrawResponseDTO>builder()
+                    .code(ResponseCode.SUCCESS.getCode())
+                    .info(ResponseCode.SUCCESS.getInfo())
+                    .data(ActivityTenDrawResponseDTO.builder()
+                            .drawResults(drawResults)
+                            .build())
+                    .build();
+        } catch (AppException e) {
+            log.error("十连抽失败 userId:{} activityId:{}", request.getUserId(), request.getActivityId(), e);
+            return Response.<ActivityTenDrawResponseDTO>builder()
+                    .code(e.getCode())
+                    .info(e.getInfo())
+                    .build();
+        } catch (Exception e) {
+            log.error("十连抽失败 userId:{} activityId:{}", request.getUserId(), request.getActivityId(), e);
+            return Response.<ActivityTenDrawResponseDTO>builder()
+                    .code(ResponseCode.UN_ERROR.getCode())
+                    .info(ResponseCode.UN_ERROR.getInfo())
                     .build();
         }
     }

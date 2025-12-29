@@ -3,6 +3,7 @@ package cn.bugstack.infrastructure.persistent.repository;
 import cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent;
 import cn.bugstack.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
 import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
+import cn.bugstack.domain.activity.model.aggregate.CreateTenPartakeOrderAggregate;
 import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import cn.bugstack.domain.activity.model.valobj.ActivityStateVO;
@@ -502,6 +503,144 @@ public class ActivityRepository implements IActivityRepository {
                 } catch (DuplicateKeyException e) {
                     status.setRollbackOnly();
                     log.error("写入创建参与活动记录，唯一索引冲突 userId: {} activityId: {}", userId, activityId, e);
+                    throw new AppException(ResponseCode.INDEX_DUP.getCode(), e);
+                }
+            });
+        } finally {
+            dbRouter.clear();
+        }
+    }
+
+    @Override
+    public void saveCreateTenPartakeOrderAggregate(CreateTenPartakeOrderAggregate createTenPartakeOrderAggregate) {
+        try {
+            String userId = createTenPartakeOrderAggregate.getUserId();
+            Long activityId = createTenPartakeOrderAggregate.getActivityId();
+            ActivityAccountEntity activityAccountEntity = createTenPartakeOrderAggregate.getActivityAccountEntity();
+            ActivityAccountMonthEntity activityAccountMonthEntity = createTenPartakeOrderAggregate.getActivityAccountMonthEntity();
+            ActivityAccountDayEntity activityAccountDayEntity = createTenPartakeOrderAggregate.getActivityAccountDayEntity();
+            List<UserRaffleOrderEntity> userRaffleOrderEntities = createTenPartakeOrderAggregate.getUserRaffleOrderEntities();
+
+            // 统一切换路由，以下事务内的所有操作，都走一个路由
+            dbRouter.doRouter(userId);
+            transactionTemplate.execute(status -> {
+                try {
+                    // 1. 更新总账户（扣减10次）
+                    int totalCount = raffleActivityAccountDao.updateActivityAccountSubtractionQuota(
+                            RaffleActivityAccount.builder()
+                                    .userId(userId)
+                                    .activityId(activityId)
+                                    .build());
+                    // 需要连续更新10次，每次扣减1次
+                    for (int i = 1; i < 10; i++) {
+                        int count = raffleActivityAccountDao.updateActivityAccountSubtractionQuota(
+                                RaffleActivityAccount.builder()
+                                        .userId(userId)
+                                        .activityId(activityId)
+                                        .build());
+                        if (1 != count) {
+                            status.setRollbackOnly();
+                            log.warn("写入十连抽参与活动记录，更新总账户额度不足，异常 userId: {} activityId: {}", userId, activityId);
+                            throw new AppException(ResponseCode.ACCOUNT_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_QUOTA_ERROR.getInfo());
+                        }
+                    }
+
+                    // 2. 创建或更新月账户（扣减10次）
+                    if (createTenPartakeOrderAggregate.isExistAccountMonth()) {
+                        for (int i = 0; i < 10; i++) {
+                            int updateMonthCount = raffleActivityAccountMonthDao.updateActivityAccountMonthSubtractionQuota(
+                                    RaffleActivityAccountMonth.builder()
+                                            .userId(userId)
+                                            .activityId(activityId)
+                                            .month(activityAccountMonthEntity.getMonth())
+                                            .build());
+                            if (1 != updateMonthCount) {
+                                status.setRollbackOnly();
+                                log.warn("写入十连抽参与活动记录，更新月账户额度不足，异常 userId: {} activityId: {} month: {}", userId, activityId, activityAccountMonthEntity.getMonth());
+                                throw new AppException(ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_MONTH_QUOTA_ERROR.getInfo());
+                            }
+                        }
+                        // 更新总账户中月镜像库存（扣减10次）
+                        for (int i = 0; i < 10; i++) {
+                            raffleActivityAccountDao.updateActivityAccountMonthSubtractionQuota(
+                                    RaffleActivityAccount.builder()
+                                            .userId(userId)
+                                            .activityId(activityId)
+                                            .build());
+                        }
+                    } else {
+                        raffleActivityAccountMonthDao.insertActivityAccountMonth(RaffleActivityAccountMonth.builder()
+                                .userId(activityAccountMonthEntity.getUserId())
+                                .activityId(activityAccountMonthEntity.getActivityId())
+                                .month(activityAccountMonthEntity.getMonth())
+                                .monthCount(activityAccountMonthEntity.getMonthCount())
+                                .monthCountSurplus(activityAccountMonthEntity.getMonthCountSurplus() - 10)
+                                .build());
+                        // 新创建月账户，则更新总账表中月镜像额度
+                        raffleActivityAccountDao.updateActivityAccountMonthSurplusImageQuota(RaffleActivityAccount.builder()
+                                .userId(userId)
+                                .activityId(activityId)
+                                .monthCountSurplus(activityAccountEntity.getMonthCountSurplus() - 10)
+                                .build());
+                    }
+
+                    // 3. 创建或更新日账户（扣减10次）
+                    if (createTenPartakeOrderAggregate.isExistAccountDay()) {
+                        for (int i = 0; i < 10; i++) {
+                            int updateDayCount = raffleActivityAccountDayDao.updateActivityAccountDaySubtractionQuota(RaffleActivityAccountDay.builder()
+                                    .userId(userId)
+                                    .activityId(activityId)
+                                    .day(activityAccountDayEntity.getDay())
+                                    .build());
+                            if (1 != updateDayCount) {
+                                status.setRollbackOnly();
+                                log.warn("写入十连抽参与活动记录，更新日账户额度不足，异常 userId: {} activityId: {} day: {}", userId, activityId, activityAccountDayEntity.getDay());
+                                throw new AppException(ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getCode(), ResponseCode.ACCOUNT_DAY_QUOTA_ERROR.getInfo());
+                            }
+                        }
+                        // 更新总账户中日镜像库存（扣减10次）
+                        for (int i = 0; i < 10; i++) {
+                            raffleActivityAccountDao.updateActivityAccountDaySubtractionQuota(
+                                    RaffleActivityAccount.builder()
+                                            .userId(userId)
+                                            .activityId(activityId)
+                                            .build());
+                        }
+                    } else {
+                        raffleActivityAccountDayDao.insertActivityAccountDay(RaffleActivityAccountDay.builder()
+                                .userId(activityAccountDayEntity.getUserId())
+                                .activityId(activityAccountDayEntity.getActivityId())
+                                .day(activityAccountDayEntity.getDay())
+                                .dayCount(activityAccountDayEntity.getDayCount())
+                                .dayCountSurplus(activityAccountDayEntity.getDayCountSurplus() - 10)
+                                .build());
+                        // 新创建日账户，则更新总账表中日镜像额度
+                        raffleActivityAccountDao.updateActivityAccountDaySurplusImageQuota(RaffleActivityAccount.builder()
+                                .userId(userId)
+                                .activityId(activityId)
+                                .dayCountSurplus(activityAccountEntity.getDayCountSurplus() - 10)
+                                .build());
+                    }
+
+                    // 4. 批量写入10条参与活动订单
+                    List<UserRaffleOrder> userRaffleOrders = new ArrayList<>(userRaffleOrderEntities.size());
+                    for (UserRaffleOrderEntity entity : userRaffleOrderEntities) {
+                        userRaffleOrders.add(UserRaffleOrder.builder()
+                                .userId(entity.getUserId())
+                                .activityId(entity.getActivityId())
+                                .activityName(entity.getActivityName())
+                                .strategyId(entity.getStrategyId())
+                                .orderId(entity.getOrderId())
+                                .orderTime(entity.getOrderTime())
+                                .orderState(entity.getOrderState().getCode())
+                                .build());
+                    }
+                    userRaffleOrderDao.batchInsert(userRaffleOrders);
+
+                    return 1;
+                } catch (DuplicateKeyException e) {
+                    status.setRollbackOnly();
+                    log.error("写入十连抽参与活动记录，唯一索引冲突 userId: {} activityId: {}", userId, activityId, e);
                     throw new AppException(ResponseCode.INDEX_DUP.getCode(), e);
                 }
             });
