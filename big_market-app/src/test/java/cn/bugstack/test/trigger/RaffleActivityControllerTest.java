@@ -117,4 +117,15 @@ public class RaffleActivityControllerTest {
         new CountDownLatch(1).await();
     }
 
+    @Test
+    public void test_tenDraw() {
+        ActivityTenDrawRequestDTO request = new ActivityTenDrawRequestDTO();
+        request.setUserId("zxy");
+        request.setActivityId(100301L);
+        Response<ActivityTenDrawResponseDTO> response = raffleActivityService.tenDraw(request);
+
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+    }
+
 }

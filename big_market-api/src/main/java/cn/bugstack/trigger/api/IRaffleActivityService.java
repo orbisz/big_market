@@ -76,4 +76,12 @@ public interface IRaffleActivityService {
      */
     Response<Boolean> creditPayExchangeSku(SkuProductShopCartRequestDTO request);
 
+    /**
+     * 十连抽接口
+     *
+     * @param request 请求对象
+     * @return 十连抽结果
+     */
+    Response<ActivityTenDrawResponseDTO> tenDraw(ActivityTenDrawRequestDTO request);
+
 }

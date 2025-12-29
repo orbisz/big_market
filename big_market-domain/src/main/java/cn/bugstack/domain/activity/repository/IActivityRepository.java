@@ -2,6 +2,7 @@ package cn.bugstack.domain.activity.repository;
 
 import cn.bugstack.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
 import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
+import cn.bugstack.domain.activity.model.aggregate.CreateTenPartakeOrderAggregate;
 import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
@@ -47,6 +48,12 @@ public interface IActivityRepository {
     ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
 
     void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
+
+    /**
+     * 批量保存十连抽聚合对象
+     * @param createTenPartakeOrderAggregate 十连抽聚合对象
+     */
+    void saveCreateTenPartakeOrderAggregate(CreateTenPartakeOrderAggregate createTenPartakeOrderAggregate);
 
     List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId);
 

@@ -13,6 +13,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -64,6 +66,46 @@ public class AwardService implements IAwardService {
         // 存储聚合对象 - 一个事务下，用户的中奖记录
         awardRepository.saveUserAwardRecord(userAwardRecordAggregate);
         log.info("中奖记录保存完成 userId:{} orderId:{}", userAwardRecordEntity.getUserId(), userAwardRecordEntity.getOrderId());
+    }
+
+    @Override
+    public void batchSaveUserAwardRecord(List<UserAwardRecordEntity> userAwardRecordEntities) {
+        if (userAwardRecordEntities == null || userAwardRecordEntities.isEmpty()) {
+            return;
+        }
+
+        List<UserAwardRecordAggregate> aggregates = new ArrayList<>(userAwardRecordEntities.size());
+        for (UserAwardRecordEntity entity : userAwardRecordEntities) {
+            // 构建消息对象
+            SendAwardMessageEvent.SendAwardMessage sendAwardMessage = new SendAwardMessageEvent.SendAwardMessage();
+            sendAwardMessage.setUserId(entity.getUserId());
+            sendAwardMessage.setOrderId(entity.getOrderId());
+            sendAwardMessage.setAwardId(entity.getAwardId());
+            sendAwardMessage.setAwardTitle(entity.getAwardTitle());
+            sendAwardMessage.setAwardConfig(entity.getAwardConfig());
+
+            BaseEvent.EventMessage<SendAwardMessageEvent.SendAwardMessage> sendAwardMessageEventMessage = sendAwardMessageEvent.buildEventMessage(sendAwardMessage);
+
+            // 构建任务对象
+            TaskEntity taskEntity = new TaskEntity();
+            taskEntity.setUserId(entity.getUserId());
+            taskEntity.setTopic(sendAwardMessageEvent.topic());
+            taskEntity.setMessageId(sendAwardMessageEventMessage.getId());
+            taskEntity.setMessage(sendAwardMessageEventMessage);
+            taskEntity.setState(TaskStateVO.create);
+
+            // 构建聚合对象
+            UserAwardRecordAggregate userAwardRecordAggregate = UserAwardRecordAggregate.builder()
+                    .taskEntity(taskEntity)
+                    .userAwardRecordEntity(entity)
+                    .build();
+
+            aggregates.add(userAwardRecordAggregate);
+        }
+
+        // 批量存储聚合对象
+        awardRepository.batchSaveUserAwardRecord(aggregates);
+        log.info("批量保存中奖记录完成 userId:{} count:{}", userAwardRecordEntities.get(0).getUserId(), userAwardRecordEntities.size());
     }
 
     @Override

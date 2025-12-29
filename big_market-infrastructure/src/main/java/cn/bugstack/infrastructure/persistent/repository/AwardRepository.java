@@ -28,6 +28,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -123,6 +125,91 @@ public class AwardRepository implements IAwardRepository {
             taskDao.updateTaskSendMessageFail(task);
         }
 
+    }
+
+    @Override
+    public void batchSaveUserAwardRecord(List<UserAwardRecordAggregate> userAwardRecordAggregates) {
+        if (userAwardRecordAggregates == null || userAwardRecordAggregates.isEmpty()) {
+            return;
+        }
+
+        String userId = userAwardRecordAggregates.get(0).getUserAwardRecordEntity().getUserId();
+
+        List<UserAwardRecord> userAwardRecords = new ArrayList<>(userAwardRecordAggregates.size());
+        List<Task> tasks = new ArrayList<>(userAwardRecordAggregates.size());
+        List<UserRaffleOrder> userRaffleOrders = new ArrayList<>(userAwardRecordAggregates.size());
+
+        for (UserAwardRecordAggregate aggregate : userAwardRecordAggregates) {
+            UserAwardRecordEntity userAwardRecordEntity = aggregate.getUserAwardRecordEntity();
+            TaskEntity taskEntity = aggregate.getTaskEntity();
+
+            UserAwardRecord userAwardRecord = new UserAwardRecord();
+            userAwardRecord.setUserId(userAwardRecordEntity.getUserId());
+            userAwardRecord.setActivityId(userAwardRecordEntity.getActivityId());
+            userAwardRecord.setStrategyId(userAwardRecordEntity.getStrategyId());
+            userAwardRecord.setOrderId(userAwardRecordEntity.getOrderId());
+            userAwardRecord.setAwardId(userAwardRecordEntity.getAwardId());
+            userAwardRecord.setAwardTitle(userAwardRecordEntity.getAwardTitle());
+            userAwardRecord.setAwardTime(userAwardRecordEntity.getAwardTime());
+            userAwardRecord.setAwardState(userAwardRecordEntity.getAwardState().getCode());
+            userAwardRecords.add(userAwardRecord);
+
+            Task task = new Task();
+            task.setUserId(taskEntity.getUserId());
+            task.setTopic(taskEntity.getTopic());
+            task.setMessageId(taskEntity.getMessageId());
+            task.setMessage(JSON.toJSONString(taskEntity.getMessage()));
+            task.setState(taskEntity.getState().getCode());
+            tasks.add(task);
+
+            UserRaffleOrder userRaffleOrderReq = new UserRaffleOrder();
+            userRaffleOrderReq.setUserId(userAwardRecordEntity.getUserId());
+            userRaffleOrderReq.setOrderId(userAwardRecordEntity.getOrderId());
+            userRaffleOrders.add(userRaffleOrderReq);
+        }
+
+        try {
+            dbRouter.doRouter(userId);
+            transactionTemplate.execute(status -> {
+                try {
+                    // 批量写入中奖记录
+                    userAwardRecordDao.batchInsert(userAwardRecords);
+                    // 批量写入任务
+                    for (Task task : tasks) {
+                        taskDao.insert(task);
+                    }
+                    // 批量更新抽奖单状态
+                    for (UserRaffleOrder userRaffleOrderReq : userRaffleOrders) {
+                        int count = userRaffleOrderDao.updateUserRaffleOrderStateUsed(userRaffleOrderReq);
+                        if (1 != count) {
+                            status.setRollbackOnly();
+                            log.error("批量写入中奖记录，用户抽奖单已使用过，不可重复抽奖 userId: {} orderId: {}", userId, userRaffleOrderReq.getOrderId());
+                            throw new AppException(ResponseCode.ACTIVITY_ORDER_ERROR.getCode(), ResponseCode.ACTIVITY_ORDER_ERROR.getInfo());
+                        }
+                    }
+                    return 1;
+                } catch (DuplicateKeyException e) {
+                    status.setRollbackOnly();
+                    log.error("批量写入中奖记录，唯一索引冲突 userId: {}", userId, e);
+                    throw new AppException(ResponseCode.INDEX_DUP.getCode(), e);
+                }
+            });
+        } finally {
+            dbRouter.clear();
+        }
+
+        // 批量发送消息【在事务外执行，如果失败还有任务补偿】
+        for (int i = 0; i < tasks.size(); i++) {
+            Task task = tasks.get(i);
+            try {
+                eventPublisher.publish(task.getTopic(), task.getMessage());
+                // 更新数据库记录，task 任务表
+                taskDao.updateTaskSendMessageCompleted(task);
+            } catch (Exception e) {
+                log.error("批量写入中奖记录，发送MQ消息失败 userId: {} topic: {}", userId, task.getTopic());
+                taskDao.updateTaskSendMessageFail(task);
+            }
+        }
     }
 
     @Override
