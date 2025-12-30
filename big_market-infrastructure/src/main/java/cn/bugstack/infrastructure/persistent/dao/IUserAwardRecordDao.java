@@ -23,5 +23,13 @@ public interface IUserAwardRecordDao {
     void batchInsert(@Param("recordList") List<UserAwardRecord> recordList);
 
     int updateAwardRecordCompletedState(UserAwardRecord userAwardRecordReq);
+
+    /**
+     * 查询用户最近N次中奖记录
+     * @param userId 用户ID
+     * @param limit 查询条数
+     * @return 中奖记录列表
+     */
+    List<UserAwardRecord> queryUserAwardRecordList(@Param("userId") String userId, @Param("limit") int limit);
 }
 

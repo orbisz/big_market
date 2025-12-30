@@ -39,4 +39,12 @@
         where user_id = #{userId} and order_id = #{orderId} and award_state = 'create'
     </update>
 
+    <select id="queryUserAwardRecordList" resultMap="dataMap">
+        select id, user_id, activity_id, strategy_id, order_id, award_id, award_title, award_time, award_state, create_time, update_time
+        from user_award_record
+        where user_id = #{userId}
+        order by award_time desc
+        limit #{limit}
+    </select>
+
 </mapper>

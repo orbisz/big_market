@@ -84,4 +84,12 @@ public interface IRaffleActivityService {
      */
     Response<ActivityTenDrawResponseDTO> tenDraw(ActivityTenDrawRequestDTO request);
 
+    /**
+     * 查询用户最近N次中奖记录
+     *
+     * @param request 请求对象「用户ID、查询条数」
+     * @return 中奖记录列表
+     */
+    Response<List<UserAwardRecordResponseDTO>> queryUserAwardRecordList(UserAwardRecordRequestDTO request);
+
 }

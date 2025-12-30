@@ -533,4 +533,67 @@ public class RaffleActivityController implements IRaffleActivityService {
         }
     }
 
+    /**
+     * 查询用户最近N次中奖记录
+     *
+     * @param request 请求对象
+     * @return 中奖记录列表
+     * <p>
+     * 接口：<a href="http://localhost:8091/api/v1/raffle/activity/query_user_award_record_list">/api/v1/raffle/activity/query_user_award_record_list</a>
+     * 入参：{"userId":"xiaofuge","limit":10}
+     * <p>
+     * curl --request POST \
+     * --url http://localhost:8091/api/v1/raffle/activity/query_user_award_record_list \
+     * --header 'content-type: application/json' \
+     * --data '{
+     * "userId":"xiaofuge",
+     * "limit": 10
+     * }'
+     */
+    @RequestMapping(value = "query_user_award_record_list", method = RequestMethod.POST)
+    @Override
+    public Response<List<UserAwardRecordResponseDTO>> queryUserAwardRecordList(@RequestBody UserAwardRecordRequestDTO request) {
+        try {
+            log.info("查询用户中奖记录开始 userId:{} limit:{}", request.getUserId(), request.getLimit());
+            // 1. 参数校验
+            if (StringUtils.isBlank(request.getUserId())) {
+                throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
+            }
+            // 2. 设置默认查询条数
+            int limit = request.getLimit() == null || request.getLimit() <= 0 ? 10 : request.getLimit();
+            // 3. 限制最大查询条数
+            if (limit > 100) {
+                limit = 100;
+            }
+            // 4. 查询中奖记录
+            List<UserAwardRecordEntity> userAwardRecordEntities = awardService.queryUserAwardRecordList(request.getUserId(), limit);
+            // 5. 转换DTO
+            List<UserAwardRecordResponseDTO> userAwardRecordResponseDTOS = new ArrayList<>(userAwardRecordEntities.size());
+            for (UserAwardRecordEntity entity : userAwardRecordEntities) {
+                userAwardRecordResponseDTOS.add(UserAwardRecordResponseDTO.builder()
+                        .userId(entity.getUserId())
+                        .activityId(entity.getActivityId())
+                        .strategyId(entity.getStrategyId())
+                        .orderId(entity.getOrderId())
+                        .awardId(entity.getAwardId())
+                        .awardTitle(entity.getAwardTitle())
+                        .awardTime(entity.getAwardTime())
+                        .awardState(entity.getAwardState().getCode())
+                        .build());
+            }
+            log.info("查询用户中奖记录完成 userId:{} count:{}", request.getUserId(), userAwardRecordResponseDTOS.size());
+            return Response.<List<UserAwardRecordResponseDTO>>builder()
+                    .code(ResponseCode.SUCCESS.getCode())
+                    .info(ResponseCode.SUCCESS.getInfo())
+                    .data(userAwardRecordResponseDTOS)
+                    .build();
+        } catch (Exception e) {
+            log.error("查询用户中奖记录失败 userId:{} limit:{}", request.getUserId(), request.getLimit(), e);
+            return Response.<List<UserAwardRecordResponseDTO>>builder()
+                    .code(ResponseCode.UN_ERROR.getCode())
+                    .info(ResponseCode.UN_ERROR.getInfo())
+                    .build();
+        }
+    }
+
 }

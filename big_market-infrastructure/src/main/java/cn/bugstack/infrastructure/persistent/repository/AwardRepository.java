@@ -6,6 +6,7 @@ import cn.bugstack.domain.award.model.entity.TaskEntity;
 import cn.bugstack.domain.award.model.entity.UserAwardRecordEntity;
 import cn.bugstack.domain.award.model.entity.UserCreditAwardEntity;
 import cn.bugstack.domain.award.model.valobj.AccountStatusVO;
+import cn.bugstack.domain.award.model.valobj.AwardStateVO;
 import cn.bugstack.domain.award.repository.IAwardRepository;
 import cn.bugstack.infrastructure.event.EventPublisher;
 import cn.bugstack.infrastructure.persistent.dao.*;
@@ -272,6 +273,42 @@ public class AwardRepository implements IAwardRepository {
     @Override
     public String queryAwardKey(Integer awardId) {
         return awardDao.queryAwardKeyByAwardId(awardId);
+    }
+
+    @Override
+    public List<UserAwardRecordEntity> queryUserAwardRecordList(String userId, int limit) {
+        try {
+            dbRouter.doRouter(userId);
+            List<UserAwardRecord> userAwardRecords = userAwardRecordDao.queryUserAwardRecordList(userId, limit);
+            List<UserAwardRecordEntity> userAwardRecordEntities = new ArrayList<>(userAwardRecords.size());
+            for (UserAwardRecord userAwardRecord : userAwardRecords) {
+                // 处理 awardState 为 null 的情况，设置默认值
+                String awardStateCode = userAwardRecord.getAwardState();
+                AwardStateVO awardStateVO = null;
+                if (awardStateCode != null) {
+                    awardStateVO = AwardStateVO.get(awardStateCode);
+                }
+                // 如果无法获取对应的状态，使用 create 作为默认值
+                if (awardStateVO == null) {
+                    awardStateVO = AwardStateVO.create;
+                }
+
+                UserAwardRecordEntity userAwardRecordEntity = UserAwardRecordEntity.builder()
+                        .userId(userAwardRecord.getUserId())
+                        .activityId(userAwardRecord.getActivityId())
+                        .strategyId(userAwardRecord.getStrategyId())
+                        .orderId(userAwardRecord.getOrderId())
+                        .awardId(userAwardRecord.getAwardId())
+                        .awardTitle(userAwardRecord.getAwardTitle())
+                        .awardTime(userAwardRecord.getAwardTime())
+                        .awardState(awardStateVO)
+                        .build();
+                userAwardRecordEntities.add(userAwardRecordEntity);
+            }
+            return userAwardRecordEntities;
+        } finally {
+            dbRouter.clear();
+        }
     }
 
 }

@@ -18,4 +18,18 @@ public enum AwardStateVO {
     private final String code;
     private final String desc;
 
+    /**
+     * 根据code获取枚举值
+     * @param code 状态码
+     * @return 枚举值，未找到返回 null
+     */
+    public static AwardStateVO get(String code) {
+        for (AwardStateVO stateVO : values()) {
+            if (stateVO.getCode().equals(code)) {
+                return stateVO;
+            }
+        }
+        return null;
+    }
+
 }

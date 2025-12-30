@@ -128,4 +128,26 @@ public class RaffleActivityControllerTest {
         log.info("测试结果：{}", JSON.toJSONString(response));
     }
 
+    @Test
+    public void test_queryUserAwardRecordList() {
+        UserAwardRecordRequestDTO request = new UserAwardRecordRequestDTO();
+        request.setUserId("zxy");
+        request.setLimit(10);
+        Response<List<UserAwardRecordResponseDTO>> response = raffleActivityService.queryUserAwardRecordList(request);
+
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+    }
+
+    @Test
+    public void test_queryUserAwardRecordList_defaultLimit() {
+        UserAwardRecordRequestDTO request = new UserAwardRecordRequestDTO();
+        request.setUserId("zxy");
+        // 不设置 limit，测试默认值
+        Response<List<UserAwardRecordResponseDTO>> response = raffleActivityService.queryUserAwardRecordList(request);
+
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+    }
+
 }

@@ -129,6 +129,9 @@ public class AwardService implements IAwardService {
         distributeAward.giveOutPrizes(distributeAwardEntity);
     }
 
-
+    @Override
+    public List<UserAwardRecordEntity> queryUserAwardRecordList(String userId, int limit) {
+        return awardRepository.queryUserAwardRecordList(userId, limit);
+    }
 
 }
