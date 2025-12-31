@@ -526,13 +526,13 @@ public class ActivityRepository implements IActivityRepository {
             transactionTemplate.execute(status -> {
                 try {
                     // 1. 更新总账户（扣减10次）
-                    int totalCount = raffleActivityAccountDao.updateActivityAccountSubtractionQuota(
-                            RaffleActivityAccount.builder()
-                                    .userId(userId)
-                                    .activityId(activityId)
-                                    .build());
+                    //int totalCount = raffleActivityAccountDao.updateActivityAccountSubtractionQuota(
+                    //        RaffleActivityAccount.builder()
+                    //                .userId(userId)
+                    //                .activityId(activityId)
+                    //                .build());
                     // 需要连续更新10次，每次扣减1次
-                    for (int i = 1; i < 10; i++) {
+                    for (int i = 0; i < 10; i++) {
                         int count = raffleActivityAccountDao.updateActivityAccountSubtractionQuota(
                                 RaffleActivityAccount.builder()
                                         .userId(userId)

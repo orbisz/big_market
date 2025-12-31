@@ -1,885 +1,135 @@
-25-12-30.10:08:33.117 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 4020 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.10:08:33.117 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.10:08:35.591 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.10:08:35.594 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.10:08:35.655 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 0 Redis repository interfaces.
-25-12-30.10:08:36.838 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.10:08:37.267 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:08:37.285 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:08:40.446 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.10:08:40.534 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.10:08:40.595 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#603c2dee:0/SimpleConnection@36dc6b9 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 56129]
-25-12-30.10:08:40.683 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 8.061 seconds (JVM running for 9.601)
-25-12-30.10:08:41.186 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
-25-12-30.10:08:41.220 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:08:41.501 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:08:41.666 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
-25-12-30.10:08:41.856 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"调用成功"}
-25-12-30.10:08:41.872 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:08:41.874 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:08:41.875 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:08:41.875 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:08:42.662 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:08:42.675 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:08:42.675 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:08:42.691 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:08:42.694 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:08:42.694 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:08:42.694 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:08:42.694 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:08:50.705 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 71672 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.10:08:50.707 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.10:08:51.647 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.10:08:51.649 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.10:08:51.708 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
-25-12-30.10:08:52.645 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.10:08:52.997 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:08:53.014 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:08:55.088 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.10:08:55.154 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.10:08:55.199 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4780341:0/SimpleConnection@12925d2 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 54595]
-25-12-30.10:08:55.268 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 4.966 seconds (JVM running for 5.696)
-25-12-30.10:08:55.609 [main            ] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
-25-12-30.10:08:55.616 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
-25-12-30.10:08:55.703 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:08:55.891 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:08:56.424 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
-25-12-30.10:08:56.424 [main            ] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
-25-12-30.10:08:56.426 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.426 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.427 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:08:56.449 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.449 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.449 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.449 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.449 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.449 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.449 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.449 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.450 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.450 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.450 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.450 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.452 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.452 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.452 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.452 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.452 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.452 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.452 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:08:56.452 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.456 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:08:56.480 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:08:56.487 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.488 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.490 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.490 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.493 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.493 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.495 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.495 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.496 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.496 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.498 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.498 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.500 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.500 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.501 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.502 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.503 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.503 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:08:56.503 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.503 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:08:56.541 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:08:56.541 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:08:56.541 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:08:56.540 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:08:56.541 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:08:56.541 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:08:56.541 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:08:56.541 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:08:56.541 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:08:56.541 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:08:56.542 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:08:56.542 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:08:56.543 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:08:57.533 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"283445564014","userId":"zxy"},"id":"40811082502","timestamp":1767060536550}
-25-12-30.10:08:57.542 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"283445564014","userId":"zxy"},"id":"40811082502","timestamp":1767060536550}
-25-12-30.10:08:57.568 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:08:57.568 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"283445564014","userId":"zxy"},"id":"40811082502","timestamp":1767060536550}
-25-12-30.10:08:58.182 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"202129087913","userId":"zxy"},"id":"40590843136","timestamp":1767060536552}
-25-12-30.10:08:58.185 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"202129087913","userId":"zxy"},"id":"40590843136","timestamp":1767060536552}
-25-12-30.10:08:58.188 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:08:58.188 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"202129087913","userId":"zxy"},"id":"40590843136","timestamp":1767060536552}
-25-12-30.10:08:58.788 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"109482047495","userId":"zxy"},"id":"42767516160","timestamp":1767060536552}
-25-12-30.10:08:58.790 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"109482047495","userId":"zxy"},"id":"42767516160","timestamp":1767060536552}
-25-12-30.10:08:58.793 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:08:58.793 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"109482047495","userId":"zxy"},"id":"42767516160","timestamp":1767060536552}
-25-12-30.10:08:59.308 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"327690774456","userId":"zxy"},"id":"32740359426","timestamp":1767060536553}
-25-12-30.10:08:59.309 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"327690774456","userId":"zxy"},"id":"32740359426","timestamp":1767060536553}
-25-12-30.10:08:59.313 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:08:59.313 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"327690774456","userId":"zxy"},"id":"32740359426","timestamp":1767060536553}
-25-12-30.10:08:59.809 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"631777991025","userId":"zxy"},"id":"96244247943","timestamp":1767060536553}
-25-12-30.10:08:59.811 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"631777991025","userId":"zxy"},"id":"96244247943","timestamp":1767060536553}
-25-12-30.10:08:59.812 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:08:59.812 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"631777991025","userId":"zxy"},"id":"96244247943","timestamp":1767060536553}
-25-12-30.10:09:00.067 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"740781565668","userId":"zxy"},"id":"32516781856","timestamp":1767060536553}
-25-12-30.10:09:00.192 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"740781565668","userId":"zxy"},"id":"32516781856","timestamp":1767060536553}
-25-12-30.10:09:00.194 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:09:00.194 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"740781565668","userId":"zxy"},"id":"32516781856","timestamp":1767060536553}
-25-12-30.10:09:00.474 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"982950239781","userId":"zxy"},"id":"40083092787","timestamp":1767060536553}
-25-12-30.10:09:00.606 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"982950239781","userId":"zxy"},"id":"40083092787","timestamp":1767060536553}
-25-12-30.10:09:00.609 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:09:00.609 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"982950239781","userId":"zxy"},"id":"40083092787","timestamp":1767060536553}
-25-12-30.10:09:00.884 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"847363789576","userId":"zxy"},"id":"36040697868","timestamp":1767060536553}
-25-12-30.10:09:01.184 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"847363789576","userId":"zxy"},"id":"36040697868","timestamp":1767060536553}
-25-12-30.10:09:01.187 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:09:01.187 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"847363789576","userId":"zxy"},"id":"36040697868","timestamp":1767060536553}
-25-12-30.10:09:01.513 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"674498075341","userId":"zxy"},"id":"45164694635","timestamp":1767060536553}
-25-12-30.10:09:01.640 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"674498075341","userId":"zxy"},"id":"45164694635","timestamp":1767060536553}
-25-12-30.10:09:01.642 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:09:01.642 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"674498075341","userId":"zxy"},"id":"45164694635","timestamp":1767060536553}
-25-12-30.10:09:01.917 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"041693528430","userId":"zxy"},"id":"07252080823","timestamp":1767060536553}
-25-12-30.10:09:02.025 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"041693528430","userId":"zxy"},"id":"07252080823","timestamp":1767060536553}
-25-12-30.10:09:02.028 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:09:02.028 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"041693528430","userId":"zxy"},"id":"07252080823","timestamp":1767060536553}
-25-12-30.10:09:02.467 [main            ] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
-25-12-30.10:09:02.471 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
-25-12-30.10:09:02.575 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"drawResults":[{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"283445564014"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"202129087913"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"202129087913"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"283445564014"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"283445564014"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"202129087913"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"202129087913"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"202129087913"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"283445564014"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"283445564014"}]},"info":"调用成功"}
-25-12-30.10:09:02.586 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:09:02.587 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:09:02.588 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:09:02.659 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:09:03.040 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:09:03.299 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:09:03.330 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:09:03.330 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:09:03.333 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:09:03.333 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:09:03.333 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:09:03.333 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:55:48.148 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 58252 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.10:55:48.149 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.10:55:50.574 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.10:55:50.578 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.10:55:50.671 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 0 Redis repository interfaces.
-25-12-30.10:55:51.951 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.10:55:52.384 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:55:52.400 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:55:54.932 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.10:55:54.994 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.10:55:55.061 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3856d0cb:0/SimpleConnection@7d44eab [delegate=amqp://admin@127.0.0.1:5672/, localPort= 61741]
-25-12-30.10:55:55.151 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 7.453 seconds (JVM running for 8.515)
-25-12-30.10:55:55.609 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
-25-12-30.10:55:55.642 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:55:55.915 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:55:56.112 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
-25-12-30.10:55:56.470 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"调用成功"}
-25-12-30.10:55:56.482 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:55:56.483 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:55:56.485 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:55:56.486 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:55:57.125 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:55:57.138 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:55:57.138 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:55:57.154 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:55:57.155 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:55:57.156 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:55:57.156 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:55:57.156 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:04.766 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 38288 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.10:56:04.768 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.10:56:05.640 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.10:56:05.643 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.10:56:05.698 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
-25-12-30.10:56:06.641 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.10:56:07.024 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:56:07.039 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:56:09.187 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.10:56:09.258 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.10:56:09.309 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5ae87de0:0/SimpleConnection@1fce6eb4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57000]
-25-12-30.10:56:09.387 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 5.015 seconds (JVM running for 5.705)
-25-12-30.10:56:09.735 [main            ] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
-25-12-30.10:56:09.744 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
-25-12-30.10:56:09.849 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:56:10.035 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:56:10.736 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
-25-12-30.10:56:10.736 [main            ] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
-25-12-30.10:56:10.738 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.738 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.739 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.10:56:10.756 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.756 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.756 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.756 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.757 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.757 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.757 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.757 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.758 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.758 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.758 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.758 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.759 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.759 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.759 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.759 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.760 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.760 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.760 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.10:56:10.760 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.760 [pool-3-thread-9 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:56:10.789 [pool-3-thread-9 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:56:10.793 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.793 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.794 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.795 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.797 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.797 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.798 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.798 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.799 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.803 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.805 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.805 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.807 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.807 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.809 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.809 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.810 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.810 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.812 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.10:56:10.812 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.10:56:10.847 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:56:10.849 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:56:10.847 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:56:10.847 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:56:10.847 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:56:10.849 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:56:10.849 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:56:10.849 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:56:10.847 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.10:56:10.849 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.10:56:10.849 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:56:10.849 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:56:10.849 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:56:10.850 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:56:10.849 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:56:10.849 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:56:10.849 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:56:10.849 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.10:56:10.850 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:56:10.850 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.10:56:11.774 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"046752814113","userId":"zxy"},"id":"71388183400","timestamp":1767063370858}
-25-12-30.10:56:11.902 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"046752814113","userId":"zxy"},"id":"71388183400","timestamp":1767063370858}
-25-12-30.10:56:12.108 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"210316655207","userId":"zxy"},"id":"16887133905","timestamp":1767063370861}
-25-12-30.10:56:12.204 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:12.204 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"046752814113","userId":"zxy"},"id":"71388183400","timestamp":1767063370858}
-25-12-30.10:56:12.235 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"210316655207","userId":"zxy"},"id":"16887133905","timestamp":1767063370861}
-25-12-30.10:56:12.238 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:12.238 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"210316655207","userId":"zxy"},"id":"16887133905","timestamp":1767063370861}
-25-12-30.10:56:12.491 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"240068778238","userId":"zxy"},"id":"11064528805","timestamp":1767063370861}
-25-12-30.10:56:12.624 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"240068778238","userId":"zxy"},"id":"11064528805","timestamp":1767063370861}
-25-12-30.10:56:12.626 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:12.626 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"240068778238","userId":"zxy"},"id":"11064528805","timestamp":1767063370861}
-25-12-30.10:56:12.910 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"601022854052","userId":"zxy"},"id":"39348379319","timestamp":1767063370861}
-25-12-30.10:56:13.020 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"601022854052","userId":"zxy"},"id":"39348379319","timestamp":1767063370861}
-25-12-30.10:56:13.023 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:13.023 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"601022854052","userId":"zxy"},"id":"39348379319","timestamp":1767063370861}
-25-12-30.10:56:13.310 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"198098902712","userId":"zxy"},"id":"60607440610","timestamp":1767063370861}
-25-12-30.10:56:13.452 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"198098902712","userId":"zxy"},"id":"60607440610","timestamp":1767063370861}
-25-12-30.10:56:13.455 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:13.455 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"198098902712","userId":"zxy"},"id":"60607440610","timestamp":1767063370861}
-25-12-30.10:56:13.685 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"416324131433","userId":"zxy"},"id":"63461244617","timestamp":1767063370861}
-25-12-30.10:56:13.813 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"416324131433","userId":"zxy"},"id":"63461244617","timestamp":1767063370861}
-25-12-30.10:56:13.815 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:13.815 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"416324131433","userId":"zxy"},"id":"63461244617","timestamp":1767063370861}
-25-12-30.10:56:14.061 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"576655934100","userId":"zxy"},"id":"95826646335","timestamp":1767063370861}
-25-12-30.10:56:14.205 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"576655934100","userId":"zxy"},"id":"95826646335","timestamp":1767063370861}
-25-12-30.10:56:14.207 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:14.207 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"576655934100","userId":"zxy"},"id":"95826646335","timestamp":1767063370861}
-25-12-30.10:56:14.452 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"071452473523","userId":"zxy"},"id":"76694091998","timestamp":1767063370861}
-25-12-30.10:56:14.578 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"071452473523","userId":"zxy"},"id":"76694091998","timestamp":1767063370861}
-25-12-30.10:56:14.582 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:14.582 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"071452473523","userId":"zxy"},"id":"76694091998","timestamp":1767063370861}
-25-12-30.10:56:14.916 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"355883597442","userId":"zxy"},"id":"15228567284","timestamp":1767063370861}
-25-12-30.10:56:14.917 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"355883597442","userId":"zxy"},"id":"15228567284","timestamp":1767063370861}
-25-12-30.10:56:14.919 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:14.919 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"355883597442","userId":"zxy"},"id":"15228567284","timestamp":1767063370861}
-25-12-30.10:56:15.298 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"749762172995","userId":"zxy"},"id":"45054769274","timestamp":1767063370862}
-25-12-30.10:56:15.301 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"749762172995","userId":"zxy"},"id":"45054769274","timestamp":1767063370862}
-25-12-30.10:56:15.303 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
-25-12-30.10:56:15.303 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR SendAwardCustomer      - 监听用户奖品发送消息，消费失败 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"749762172995","userId":"zxy"},"id":"45054769274","timestamp":1767063370862}
-25-12-30.10:56:15.531 [main            ] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
-25-12-30.10:56:15.536 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
-25-12-30.10:56:15.618 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"drawResults":[{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"046752814113"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"210316655207"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"210316655207"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"046752814113"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"210316655207"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"046752814113"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"210316655207"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"210316655207"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"046752814113"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"210316655207"}]},"info":"调用成功"}
-25-12-30.10:56:15.628 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:15.630 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:15.631 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:15.672 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:16.308 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:16.405 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:16.405 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:16.421 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:16.422 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:16.422 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:16.422 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:16.422 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:23.239 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 16516 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.10:56:23.239 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.10:56:24.137 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.10:56:24.140 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.10:56:24.190 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
-25-12-30.10:56:25.125 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.10:56:25.521 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:56:25.537 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:56:27.802 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.10:56:27.869 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.10:56:27.915 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3835d3fd:0/SimpleConnection@1fce6eb4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 65438]
-25-12-30.10:56:27.987 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 5.154 seconds (JVM running for 5.851)
-25-12-30.10:56:28.318 [main            ] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:10
-25-12-30.10:56:28.342 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:56:28.518 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:56:28.549 [main            ] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:10
-25-12-30.10:56:28.665 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"limit":10,"userId":"zxy"}
-25-12-30.10:56:28.675 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":[{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"240068778238","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"576655934100","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"416324131433","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"198098902712","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"210316655207","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"071452473523","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"749762172995","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"046752814113","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"355883597442","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"601022854052","strategyId":100006,"userId":"zxy"}],"info":"调用成功"}
-25-12-30.10:56:28.690 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:28.691 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:28.692 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:28.695 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:56:28.966 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:28.982 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:28.982 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:28.982 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:56:28.983 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:28.984 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:28.984 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:56:28.984 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:57:02.444 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 21776 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.10:57:02.444 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.10:57:03.347 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.10:57:03.350 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.10:57:03.402 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
-25-12-30.10:57:04.365 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.10:57:04.746 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:57:04.762 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.10:57:06.974 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.10:57:07.048 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.10:57:07.092 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3856d0cb:0/SimpleConnection@7d44eab [delegate=amqp://admin@127.0.0.1:5672/, localPort= 58356]
-25-12-30.10:57:07.167 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 5.127 seconds (JVM running for 5.803)
-25-12-30.10:57:07.516 [main            ] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:null
-25-12-30.10:57:07.536 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.10:57:07.726 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.10:57:07.757 [main            ] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:10
-25-12-30.10:57:07.865 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"userId":"zxy"}
-25-12-30.10:57:07.876 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":[{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"240068778238","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"576655934100","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"416324131433","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"198098902712","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"210316655207","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"071452473523","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767063371000,"awardTitle":"华为耳机","orderId":"749762172995","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"046752814113","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"355883597442","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767063371000,"awardTitle":"轻奢办公椅","orderId":"601022854052","strategyId":100006,"userId":"zxy"}],"info":"调用成功"}
-25-12-30.10:57:07.890 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:57:07.892 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:57:07.893 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:57:07.894 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.10:57:08.146 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:57:08.160 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:57:08.160 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:57:08.161 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.10:57:08.162 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:57:08.162 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:57:08.162 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.10:57:08.162 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:05.906 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 35024 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.11:20:05.908 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.11:20:07.145 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.11:20:07.148 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.11:20:07.230 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 0 Redis repository interfaces.
-25-12-30.11:20:08.386 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.11:20:08.798 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.11:20:08.815 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.11:20:11.397 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.11:20:11.460 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.11:20:11.525 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#335972a5:0/SimpleConnection@45b2d17b [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57959]
-25-12-30.11:20:11.601 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 6.093 seconds (JVM running for 7.622)
-25-12-30.11:20:12.033 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
-25-12-30.11:20:12.063 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.11:20:12.345 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.11:20:12.523 [main            ] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
-25-12-30.11:20:12.832 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"调用成功"}
-25-12-30.11:20:12.858 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:12.859 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:12.860 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:12.861 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:13.596 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:13.596 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:13.608 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:13.608 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:13.610 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:13.610 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:13.610 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:13.610 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:21.235 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 71404 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.11:20:21.237 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.11:20:22.166 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.11:20:22.170 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.11:20:22.225 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
-25-12-30.11:20:23.140 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.11:20:23.498 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.11:20:23.514 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.11:20:25.697 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.11:20:25.759 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.11:20:25.816 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5f82209e:0/SimpleConnection@3891b430 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 49611]
-25-12-30.11:20:25.889 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 5.064 seconds (JVM running for 5.908)
-25-12-30.11:20:26.253 [main            ] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
-25-12-30.11:20:26.261 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
-25-12-30.11:20:26.369 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.11:20:26.554 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.11:20:27.171 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
-25-12-30.11:20:27.171 [main            ] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
-25-12-30.11:20:27.173 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.173 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.11:20:27.195 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.195 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.195 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.195 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.195 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.195 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.195 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.195 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.195 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.195 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.195 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.195 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.196 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.196 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.196 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.196 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.197 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.197 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.197 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.11:20:27.197 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.199 [pool-3-thread-10] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.11:20:27.221 [pool-3-thread-10] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.11:20:27.224 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.225 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.226 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.226 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.227 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.228 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.229 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.229 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.230 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.230 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.231 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.231 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.233 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.233 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.235 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.235 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.236 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.236 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.237 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.11:20:27.237 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.11:20:27.270 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.11:20:27.270 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.11:20:27.270 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.11:20:27.270 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.11:20:27.270 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.11:20:27.270 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.11:20:27.270 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.11:20:27.270 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.11:20:27.270 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.11:20:27.273 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.11:20:27.273 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.11:20:27.273 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.11:20:28.482 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"996499889739","userId":"zxy"},"id":"72672512409","timestamp":1767064827279}
-25-12-30.11:20:28.490 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"996499889739","userId":"zxy"},"id":"72672512409","timestamp":1767064827279}
-25-12-30.11:20:28.992 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"993073347266","userId":"zxy"},"id":"01610598692","timestamp":1767064827282}
-25-12-30.11:20:29.130 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:996499889739 model:dall-e-3
-25-12-30.11:20:29.133 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"993073347266","userId":"zxy"},"id":"01610598692","timestamp":1767064827282}
-25-12-30.11:20:29.492 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"501093301091","userId":"zxy"},"id":"88438109849","timestamp":1767064827282}
-25-12-30.11:20:29.646 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:993073347266 model:dall-e-2
-25-12-30.11:20:29.648 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"501093301091","userId":"zxy"},"id":"88438109849","timestamp":1767064827282}
-25-12-30.11:20:30.084 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"866223019647","userId":"zxy"},"id":"91213425993","timestamp":1767064827282}
-25-12-30.11:20:30.144 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:501093301091 model:dall-e-2
-25-12-30.11:20:30.145 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"866223019647","userId":"zxy"},"id":"91213425993","timestamp":1767064827282}
-25-12-30.11:20:30.596 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"932791485434","userId":"zxy"},"id":"80462307849","timestamp":1767064827282}
-25-12-30.11:20:30.646 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:866223019647 model:dall-e-2
-25-12-30.11:20:30.648 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"932791485434","userId":"zxy"},"id":"80462307849","timestamp":1767064827282}
-25-12-30.11:20:31.126 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"419634476846","userId":"zxy"},"id":"18248985636","timestamp":1767064827282}
-25-12-30.11:20:31.178 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:932791485434 model:dall-e-3
-25-12-30.11:20:31.179 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"419634476846","userId":"zxy"},"id":"18248985636","timestamp":1767064827282}
-25-12-30.11:20:31.421 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"498548399166","userId":"zxy"},"id":"55896202249","timestamp":1767064827282}
-25-12-30.11:20:31.673 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:419634476846 model:dall-e-2
-25-12-30.11:20:31.675 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"498548399166","userId":"zxy"},"id":"55896202249","timestamp":1767064827282}
-25-12-30.11:20:31.904 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"064676902000","userId":"zxy"},"id":"97945983725","timestamp":1767064827282}
-25-12-30.11:20:32.165 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:498548399166 model:dall-e-2
-25-12-30.11:20:32.167 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"064676902000","userId":"zxy"},"id":"97945983725","timestamp":1767064827282}
-25-12-30.11:20:32.372 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"283235690831","userId":"zxy"},"id":"80183260082","timestamp":1767064827282}
-25-12-30.11:20:32.612 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:064676902000 model:dall-e-3
-25-12-30.11:20:32.614 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"283235690831","userId":"zxy"},"id":"80183260082","timestamp":1767064827282}
-25-12-30.11:20:32.743 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"821410046605","userId":"zxy"},"id":"35497098453","timestamp":1767064827282}
-25-12-30.11:20:33.170 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:283235690831 model:dall-e-3
-25-12-30.11:20:33.172 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"821410046605","userId":"zxy"},"id":"35497098453","timestamp":1767064827282}
-25-12-30.11:20:33.216 [main            ] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
-25-12-30.11:20:33.220 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
-25-12-30.11:20:33.286 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"drawResults":[{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"996499889739"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"993073347266"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"993073347266"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"993073347266"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"996499889739"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"993073347266"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"993073347266"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"996499889739"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"996499889739"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"993073347266"}]},"info":"调用成功"}
-25-12-30.11:20:33.297 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:33.298 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:33.299 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:33.300 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.11:20:33.557 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:821410046605 model:dall-e-2
-25-12-30.11:20:33.560 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:33.922 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:33.936 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:33.937 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.11:20:33.938 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:33.938 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:33.938 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.11:20:33.938 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:38:20.784 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 68984 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.15:38:20.785 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.15:38:23.322 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.15:38:23.326 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.15:38:23.433 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 0 Redis repository interfaces.
-25-12-30.15:38:24.971 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.15:38:25.636 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.15:38:25.658 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.15:38:29.064 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.15:38:29.152 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.15:38:29.229 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1ab268bd:0/SimpleConnection@ecfff32 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 49872]
-25-12-30.15:38:29.337 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 9.123 seconds (JVM running for 13.783)
-25-12-30.15:38:29.908 [main            ] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:null
-25-12-30.15:38:29.947 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.15:38:30.285 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.15:38:30.346 [main            ] ERROR RaffleActivityController - 查询用户中奖记录失败 userId:zxy limit:null
-java.lang.NullPointerException: Cannot invoke "cn.bugstack.domain.award.model.valobj.AwardStateVO.getCode()" because the return value of "cn.bugstack.domain.award.model.entity.UserAwardRecordEntity.getAwardState()" is null
-	at cn.bugstack.trigger.http.RaffleActivityController.queryUserAwardRecordList(RaffleActivityController.java:581)
-	at cn.bugstack.test.trigger.RaffleActivityControllerTest.test_queryUserAwardRecordList_defaultLimit(RaffleActivityControllerTest.java:147)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-25-12-30.15:38:30.597 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"userId":"zxy"}
-25-12-30.15:38:30.600 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0001","info":"调用失败"}
-25-12-30.15:38:30.628 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:38:30.629 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:38:30.631 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:38:30.633 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:38:31.315 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:38:31.327 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:38:31.328 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:38:31.343 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:38:31.345 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:38:31.346 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:38:31.346 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:38:31.346 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:39:33.192 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 2176 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.15:39:33.194 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.15:39:34.361 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.15:39:34.364 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.15:39:34.445 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 0 Redis repository interfaces.
-25-12-30.15:39:35.638 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.15:39:36.112 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.15:39:36.133 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.15:39:38.831 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.15:39:38.907 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.15:39:38.962 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4efed0e0:0/SimpleConnection@3891b430 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 50434]
-25-12-30.15:39:39.051 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 6.34 seconds (JVM running for 7.21)
-25-12-30.15:39:39.494 [main            ] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:10
-25-12-30.15:39:39.520 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.15:39:39.759 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.15:39:39.796 [main            ] ERROR RaffleActivityController - 查询用户中奖记录失败 userId:zxy limit:10
-java.lang.NullPointerException: Cannot invoke "cn.bugstack.domain.award.model.valobj.AwardStateVO.getCode()" because the return value of "cn.bugstack.domain.award.model.entity.UserAwardRecordEntity.getAwardState()" is null
-	at cn.bugstack.trigger.http.RaffleActivityController.queryUserAwardRecordList(RaffleActivityController.java:581)
-	at cn.bugstack.test.trigger.RaffleActivityControllerTest.test_queryUserAwardRecordList(RaffleActivityControllerTest.java:136)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
-	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
-	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
-	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
-	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
-	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
-	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
-	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
-	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-25-12-30.15:39:39.955 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"limit":10,"userId":"zxy"}
-25-12-30.15:39:39.959 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0001","info":"调用失败"}
-25-12-30.15:39:39.973 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:39:39.976 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:39:39.977 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:39:39.978 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.15:39:40.026 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:39:40.039 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:39:40.039 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:39:40.040 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.15:39:40.042 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:39:40.042 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:39:40.042 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.15:39:40.043 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:29.092 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 61124 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.16:00:29.094 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.16:00:30.273 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.16:00:30.277 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.16:00:30.359 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 0 Redis repository interfaces.
-25-12-30.16:00:31.709 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.16:00:32.198 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.16:00:32.218 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.16:00:35.093 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.16:00:35.179 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.16:00:35.246 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2759749:0/SimpleConnection@769f6023 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 50823]
-25-12-30.16:00:35.349 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 6.777 seconds (JVM running for 7.891)
-25-12-30.16:00:35.828 [main            ] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:null
-25-12-30.16:00:35.851 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.16:00:36.127 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.16:00:36.174 [main            ] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:10
-25-12-30.16:00:36.347 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"userId":"zxy"}
-25-12-30.16:00:36.374 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":[{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"930099374082","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"234072875454","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"036010900671","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"573795231447","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"222423322850","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"655765506101","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"275860393522","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"135995486691","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"020637766903","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"138352826207","strategyId":100006,"userId":"zxy"}],"info":"调用成功"}
-25-12-30.16:00:36.392 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:36.393 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:36.395 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:36.396 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:37.333 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:37.346 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:37.346 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:37.362 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:37.364 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:37.364 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:37.364 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:37.364 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:50.422 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 26152 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.16:00:50.424 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.16:00:51.581 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.16:00:51.585 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.16:00:51.665 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 0 Redis repository interfaces.
-25-12-30.16:00:52.864 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.16:00:53.380 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.16:00:53.399 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.16:00:56.221 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.16:00:56.299 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.16:00:56.358 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1f85904a:0/SimpleConnection@3891b430 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 50061]
-25-12-30.16:00:56.456 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 6.53 seconds (JVM running for 7.413)
-25-12-30.16:00:56.877 [main            ] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:null
-25-12-30.16:00:56.903 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.16:00:57.134 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.16:00:57.167 [main            ] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:10
-25-12-30.16:00:57.312 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"userId":"zxy"}
-25-12-30.16:00:57.327 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":[{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"930099374082","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"234072875454","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"036010900671","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"573795231447","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"222423322850","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"655765506101","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"275860393522","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"135995486691","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":107,"awardState":"create","awardTime":1767080200000,"awardTitle":"华为耳机","orderId":"020637766903","strategyId":100006,"userId":"zxy"},{"activityId":100301,"awardId":106,"awardState":"create","awardTime":1767080200000,"awardTitle":"轻奢办公椅","orderId":"138352826207","strategyId":100006,"userId":"zxy"}],"info":"调用成功"}
-25-12-30.16:00:57.351 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:57.361 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:57.363 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:57.365 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:00:57.436 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:57.437 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:57.448 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:57.449 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:00:57.451 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:57.451 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:57.451 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:00:57.452 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:01:11.914 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 53544 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
-25-12-30.16:01:11.917 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
-25-12-30.16:01:13.070 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-30.16:01:13.076 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-30.16:01:13.165 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 0 Redis repository interfaces.
-25-12-30.16:01:14.359 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-30.16:01:14.848 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.16:01:14.867 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-30.16:01:17.678 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-30.16:01:17.758 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-30.16:01:17.817 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5f82209e:0/SimpleConnection@3891b430 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 57120]
-25-12-30.16:01:17.929 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 6.502 seconds (JVM running for 7.385)
-25-12-30.16:01:18.386 [main            ] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
-25-12-30.16:01:18.394 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
-25-12-30.16:01:18.545 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.16:01:18.782 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.16:01:19.422 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
-25-12-30.16:01:19.422 [main            ] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
-25-12-30.16:01:19.424 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.424 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.424 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.424 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.424 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.424 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.424 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.424 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.425 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.425 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-30.16:01:19.447 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.447 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.447 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.447 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.447 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.447 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.447 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.447 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.448 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.448 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.448 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.448 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.448 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.448 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.449 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.449 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.450 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.450 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-30.16:01:19.450 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.450 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.450 [pool-3-thread-8 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-30.16:01:19.480 [pool-3-thread-8 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-30.16:01:19.485 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.485 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.487 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.487 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.489 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.489 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.491 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.491 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.493 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.493 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.494 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.494 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.496 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.496 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.498 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.498 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.499 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.499 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.503 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-30.16:01:19.503 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-30.16:01:19.623 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.16:01:19.623 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.16:01:19.623 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.16:01:19.623 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.16:01:19.623 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.16:01:19.623 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.16:01:19.623 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.16:01:19.623 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.16:01:19.623 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-30.16:01:19.623 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-30.16:01:19.625 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.16:01:19.625 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.16:01:19.625 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.16:01:19.625 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.16:01:19.626 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.16:01:19.626 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.16:01:19.626 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.16:01:19.626 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.16:01:19.626 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-30.16:01:19.626 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-30.16:01:20.519 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"758624210306","userId":"zxy"},"id":"83422893961","timestamp":1767081679634}
-25-12-30.16:01:20.901 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"487699917714","userId":"zxy"},"id":"75137307901","timestamp":1767081679637}
-25-12-30.16:01:20.910 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"487699917714","userId":"zxy"},"id":"75137307901","timestamp":1767081679637}
-25-12-30.16:01:21.546 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"199336526853","userId":"zxy"},"id":"62278713448","timestamp":1767081679637}
-25-12-30.16:01:21.680 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:487699917714 model:dall-e-2
-25-12-30.16:01:22.016 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"083226084921","userId":"zxy"},"id":"58093050418","timestamp":1767081679637}
-25-12-30.16:01:22.193 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"083226084921","userId":"zxy"},"id":"58093050418","timestamp":1767081679637}
-25-12-30.16:01:22.668 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"307379864663","userId":"zxy"},"id":"40805613186","timestamp":1767081679637}
-25-12-30.16:01:22.722 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:083226084921 model:dall-e-2
-25-12-30.16:01:23.155 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"910877426496","userId":"zxy"},"id":"55864526928","timestamp":1767081679637}
-25-12-30.16:01:23.157 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"910877426496","userId":"zxy"},"id":"55864526928","timestamp":1767081679637}
-25-12-30.16:01:23.669 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"067670448885","userId":"zxy"},"id":"59618281765","timestamp":1767081679637}
-25-12-30.16:01:23.721 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:910877426496 model:dall-e-2
-25-12-30.16:01:24.230 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"493573362172","userId":"zxy"},"id":"45252546907","timestamp":1767081679637}
-25-12-30.16:01:24.232 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"493573362172","userId":"zxy"},"id":"45252546907","timestamp":1767081679637}
-25-12-30.16:01:24.751 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"512727728343","userId":"zxy"},"id":"51811971305","timestamp":1767081679637}
-25-12-30.16:01:24.804 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:493573362172 model:dall-e-3
-25-12-30.16:01:25.256 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"874187626542","userId":"zxy"},"id":"11416676687","timestamp":1767081679637}
-25-12-30.16:01:25.258 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"874187626542","userId":"zxy"},"id":"11416676687","timestamp":1767081679637}
-25-12-30.16:01:25.799 [main            ] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
-25-12-30.16:01:25.803 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
-25-12-30.16:01:25.810 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"drawResults":[{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"758624210306"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"758624210306"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"758624210306"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"758624210306"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"307379864663"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"758624210306"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"307379864663"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"307379864663"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"307379864663"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"307379864663"}]},"info":"调用成功"}
-25-12-30.16:01:25.824 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:01:25.825 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:01:25.827 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:01:25.943 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-30.16:01:25.950 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:01:25.950 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:01:25.980 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:01:26.035 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:874187626542 model:dall-e-3
-25-12-30.16:01:26.037 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-30.16:01:26.039 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:01:26.039 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:01:26.039 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-30.16:01:26.039 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-12-31.15:53:56.346 [main            ] INFO  RaffleActivityControllerTest - Starting RaffleActivityControllerTest using Java 18.0.2 on DESKTOP-0RF5ELK with PID 46536 (started by zhangxiuyu in F:\Java_project\big-market\big_market\big_market-app)
+25-12-31.15:53:56.347 [main            ] INFO  RaffleActivityControllerTest - The following 1 profile is active: "dev"
+25-12-31.15:53:59.855 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-12-31.15:53:59.859 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-12-31.15:53:59.951 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 0 Redis repository interfaces.
+25-12-31.15:54:01.268 [main            ] INFO  Version                - Redisson 3.23.4
+25-12-31.15:54:01.745 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-31.15:54:01.767 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+25-12-31.15:54:04.747 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-12-31.15:54:04.834 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-12-31.15:54:04.940 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2125535d:0/SimpleConnection@3891b430 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 52859]
+25-12-31.15:54:05.052 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 9.18 seconds (JVM running for 10.545)
+25-12-31.15:54:05.508 [main            ] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
+25-12-31.15:54:05.521 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
+25-12-31.15:54:05.657 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-12-31.15:54:05.951 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-12-31.15:54:07.405 [main            ] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
+25-12-31.15:54:07.405 [main            ] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
+25-12-31.15:54:07.407 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.407 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+25-12-31.15:54:07.428 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.428 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.428 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.428 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.428 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.428 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.429 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.430 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.430 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.430 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.431 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.431 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.431 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.431 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.432 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.432 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.432 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.432 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.432 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+25-12-31.15:54:07.432 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.433 [pool-3-thread-5 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-12-31.15:54:07.461 [pool-3-thread-5 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-12-31.15:54:07.469 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.469 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.471 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.471 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.472 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.473 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.474 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.474 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.476 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.476 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.477 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.477 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.479 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.479 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.481 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.481 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.482 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.482 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.484 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+25-12-31.15:54:07.484 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+25-12-31.15:54:07.710 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+25-12-31.15:54:07.710 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+25-12-31.15:54:07.710 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+25-12-31.15:54:07.710 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+25-12-31.15:54:07.710 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+25-12-31.15:54:07.711 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+25-12-31.15:54:07.710 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+25-12-31.15:54:07.712 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+25-12-31.15:54:07.712 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+25-12-31.15:54:07.712 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+25-12-31.15:54:07.712 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+25-12-31.15:54:07.713 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+25-12-31.15:54:07.713 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+25-12-31.15:54:07.713 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+25-12-31.15:54:07.713 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+25-12-31.15:54:07.713 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+25-12-31.15:54:07.713 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+25-12-31.15:54:07.713 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+25-12-31.15:54:07.714 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+25-12-31.15:54:07.714 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+25-12-31.15:54:08.963 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"674363586299","userId":"zxy"},"id":"34092580984","timestamp":1767167647721}
+25-12-31.15:54:08.978 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"674363586299","userId":"zxy"},"id":"34092580984","timestamp":1767167647721}
+25-12-31.15:54:09.654 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"831709643364","userId":"zxy"},"id":"20904045926","timestamp":1767167647723}
+25-12-31.15:54:09.712 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:674363586299 model:dall-e-2
+25-12-31.15:54:09.716 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"831709643364","userId":"zxy"},"id":"20904045926","timestamp":1767167647723}
+25-12-31.15:54:09.949 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"756115045317","userId":"zxy"},"id":"54297512197","timestamp":1767167647723}
+25-12-31.15:54:10.211 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:831709643364 model:dall-e-2
+25-12-31.15:54:10.212 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"756115045317","userId":"zxy"},"id":"54297512197","timestamp":1767167647723}
+25-12-31.15:54:10.490 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"295202956929","userId":"zxy"},"id":"42024459181","timestamp":1767167647723}
+25-12-31.15:54:10.759 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:756115045317 model:dall-e-3
+25-12-31.15:54:10.762 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"295202956929","userId":"zxy"},"id":"42024459181","timestamp":1767167647723}
+25-12-31.15:54:10.889 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"621993520567","userId":"zxy"},"id":"24360759059","timestamp":1767167647723}
+25-12-31.15:54:11.347 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:295202956929 model:dall-e-2
+25-12-31.15:54:11.350 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"621993520567","userId":"zxy"},"id":"24360759059","timestamp":1767167647723}
+25-12-31.15:54:11.399 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"241240066128","userId":"zxy"},"id":"51628625948","timestamp":1767167647723}
+25-12-31.15:54:11.937 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"877444794477","userId":"zxy"},"id":"09263393145","timestamp":1767167647723}
+25-12-31.15:54:11.940 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:621993520567 model:dall-e-2
+25-12-31.15:54:11.946 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"241240066128","userId":"zxy"},"id":"51628625948","timestamp":1767167647723}
+25-12-31.15:54:12.429 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"557675834548","userId":"zxy"},"id":"75063766241","timestamp":1767167647723}
+25-12-31.15:54:12.486 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:241240066128 model:dall-e-2
+25-12-31.15:54:12.487 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"877444794477","userId":"zxy"},"id":"09263393145","timestamp":1767167647723}
+25-12-31.15:54:12.975 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"046171339370","userId":"zxy"},"id":"38001770463","timestamp":1767167647723}
+25-12-31.15:54:13.027 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:877444794477 model:dall-e-3
+25-12-31.15:54:13.030 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"557675834548","userId":"zxy"},"id":"75063766241","timestamp":1767167647723}
+25-12-31.15:54:13.512 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"887696412681","userId":"zxy"},"id":"99358001265","timestamp":1767167647723}
+25-12-31.15:54:13.515 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:557675834548 model:dall-e-3
+25-12-31.15:54:13.518 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"046171339370","userId":"zxy"},"id":"38001770463","timestamp":1767167647723}
+25-12-31.15:54:14.005 [main            ] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
+25-12-31.15:54:14.009 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
+25-12-31.15:54:14.060 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:046171339370 model:dall-e-2
+25-12-31.15:54:14.060 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"drawResults":[{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"674363586299"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"674363586299"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"756115045317"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"674363586299"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"674363586299"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"674363586299"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"756115045317"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"756115045317"},{"awardId":106,"awardIndex":6,"awardTitle":"轻奢办公椅","orderId":"674363586299"},{"awardId":107,"awardIndex":7,"awardTitle":"华为耳机","orderId":"756115045317"}]},"info":"调用成功"}
+25-12-31.15:54:14.063 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"887696412681","userId":"zxy"},"id":"99358001265","timestamp":1767167647723}
+25-12-31.15:54:14.135 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-12-31.15:54:14.136 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-12-31.15:54:14.137 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-12-31.15:54:14.139 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-12-31.15:54:14.468 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:887696412681 model:dall-e-3
+25-12-31.15:54:14.472 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-12-31.15:54:15.083 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-12-31.15:54:15.083 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-12-31.15:54:15.113 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-12-31.15:54:15.114 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-12-31.15:54:15.115 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-12-31.15:54:15.115 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-12-31.15:54:15.115 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
