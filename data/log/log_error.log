@@ -1,4 +1,4 @@
-25-12-31.20:56:16.681 [http-nio-8091-exec-5] ERROR RaffleActivityController - 查询用户中奖记录失败 userId:null limit:20
+26-01-06.15:52:11.578 [http-nio-8091-exec-12] ERROR RaffleActivityController - 查询用户中奖记录失败 userId:null limit:20
 cn.bugstack.types.exception.AppException: null
 	at cn.bugstack.trigger.http.RaffleActivityController.queryUserAwardRecordList(RaffleActivityController.java:560)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -56,7 +56,7 @@ cn.bugstack.types.exception.AppException: null
 Caused by: java.lang.Throwable: 非法参数
 	at cn.bugstack.types.exception.AppException.<init>(AppException.java:30)
 	... 53 common frames omitted
-25-12-31.20:56:16.735 [http-nio-8091-exec-9] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+26-01-06.15:52:11.813 [http-nio-8091-exec-10] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: Cannot invoke "String.split(String)" because "this.ruleValue" is null
 	at cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity.getRuleWeightValues(StrategyRuleEntity.java:41)
 	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository.queryAwardRuleWeight(StrategyRepository.java:377)
@@ -69,7 +69,7 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$4d340658.queryAwardRuleWeight(<generated>)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$ab90161d.queryAwardRuleWeight(<generated>)
 	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeight(DefaultRaffleStrategy.java:95)
 	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeightByActivityId(DefaultRaffleStrategy.java:101)
 	at cn.bugstack.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:160)

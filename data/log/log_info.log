@@ -1,42 +1,42 @@
-25-12-31.20:49:34.269 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on DESKTOP-0RF5ELK with PID 42860 (F:\Java_project\big-market\big_market\big_market-app\target\classes started by zhangxiuyu in F:\Java_project\big-market\big_market)
-25-12-31.20:49:34.272 [main            ] INFO  Application            - The following 1 profile is active: "dev"
-25-12-31.20:50:03.725 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-12-31.20:50:03.728 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-12-31.20:50:04.292 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 196 ms. Found 0 Redis repository interfaces.
-25-12-31.20:50:08.903 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
-25-12-31.20:50:08.979 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
-25-12-31.20:50:08.979 [main            ] INFO  StandardService        - Starting service [Tomcat]
-25-12-31.20:50:08.979 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
-25-12-31.20:50:09.464 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
-25-12-31.20:50:09.464 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 34055 ms
-25-12-31.20:50:10.416 [main            ] INFO  Version                - Redisson 3.23.4
-25-12-31.20:50:15.072 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-31.20:50:15.089 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
-25-12-31.20:50:22.054 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-12-31.20:50:22.125 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
-25-12-31.20:50:22.222 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
-25-12-31.20:50:22.224 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
-25-12-31.20:50:22.445 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#18209303:0/SimpleConnection@7674f9d4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 61540]
-25-12-31.20:50:22.555 [main            ] INFO  Application            - Started Application in 60.202 seconds (JVM running for 76.595)
-25-12-31.20:56:15.235 [http-nio-8091-exec-4] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
-25-12-31.20:56:15.237 [http-nio-8091-exec-4] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
-25-12-31.20:56:15.268 [http-nio-8091-exec-4] INFO  DispatcherServlet      - Completed initialization in 30 ms
-25-12-31.20:56:15.574 [http-nio-8091-exec-6] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
-25-12-31.20:56:15.616 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
-25-12-31.20:56:15.616 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
-25-12-31.20:56:15.617 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:null
-25-12-31.20:56:15.779 [http-nio-8091-exec-5] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-31.20:56:15.779 [http-nio-8091-exec-6] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-31.20:56:15.829 [http-nio-8091-exec-10] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
-25-12-31.20:56:15.829 [http-nio-8091-exec-9] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
-25-12-31.20:56:16.199 [http-nio-8091-exec-5] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-31.20:56:16.201 [http-nio-8091-exec-6] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-31.20:56:16.397 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:null orders.size:0
-25-12-31.20:56:16.477 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:10.00
-25-12-31.20:56:16.477 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:10.00
-25-12-31.20:56:16.653 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
-25-12-31.20:56:16.654 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:null limit:20
-25-12-31.20:56:16.681 [http-nio-8091-exec-5] ERROR RaffleActivityController - 查询用户中奖记录失败 userId:null limit:20
+26-01-06.15:50:54.290 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on DESKTOP-0RF5ELK with PID 21056 (F:\Java_project\big-market\big_market\big_market-app\target\classes started by zhangxiuyu in F:\Java_project\big-market\big_market)
+26-01-06.15:50:54.293 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-01-06.15:51:02.235 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-01-06.15:51:02.244 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-01-06.15:51:02.888 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 151 ms. Found 0 Redis repository interfaces.
+26-01-06.15:51:11.259 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-01-06.15:51:11.306 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-01-06.15:51:11.306 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-01-06.15:51:11.306 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-01-06.15:51:11.707 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-01-06.15:51:11.707 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 17244 ms
+26-01-06.15:51:12.511 [main            ] INFO  Version                - Redisson 3.23.4
+26-01-06.15:51:17.175 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-01-06.15:51:17.191 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-01-06.15:51:21.423 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-01-06.15:51:21.502 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-01-06.15:51:21.519 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-01-06.15:51:21.521 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+26-01-06.15:51:21.604 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5b895e76:0/SimpleConnection@4a0ee0ba [delegate=amqp://admin@127.0.0.1:5672/, localPort= 53516]
+26-01-06.15:51:21.689 [main            ] INFO  Application            - Started Application in 29.395 seconds (JVM running for 36.788)
+26-01-06.15:52:09.736 [http-nio-8091-exec-1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-01-06.15:52:09.736 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-01-06.15:52:09.737 [http-nio-8091-exec-1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-01-06.15:52:09.784 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
+26-01-06.15:52:09.844 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-01-06.15:52:09.844 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:null
+26-01-06.15:52:09.844 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-01-06.15:52:09.862 [http-nio-8091-exec-5] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-06.15:52:09.862 [http-nio-8091-exec-3] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-06.15:52:10.216 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-01-06.15:52:10.216 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-01-06.15:52:10.625 [http-nio-8091-exec-5] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-06.15:52:10.626 [http-nio-8091-exec-3] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-06.15:52:10.866 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:null orders.size:0
+26-01-06.15:52:10.866 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:10.00
+26-01-06.15:52:10.866 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:10.00
+26-01-06.15:52:11.450 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-01-06.15:52:11.491 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:null limit:20
+26-01-06.15:52:11.578 [http-nio-8091-exec-12] ERROR RaffleActivityController - 查询用户中奖记录失败 userId:null limit:20
 cn.bugstack.types.exception.AppException: null
 	at cn.bugstack.trigger.http.RaffleActivityController.queryUserAwardRecordList(RaffleActivityController.java:560)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -94,7 +94,7 @@ cn.bugstack.types.exception.AppException: null
 Caused by: java.lang.Throwable: 非法参数
 	at cn.bugstack.types.exception.AppException.<init>(AppException.java:30)
 	... 53 common frames omitted
-25-12-31.20:56:16.735 [http-nio-8091-exec-9] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+26-01-06.15:52:11.813 [http-nio-8091-exec-10] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
 java.lang.NullPointerException: Cannot invoke "String.split(String)" because "this.ruleValue" is null
 	at cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity.getRuleWeightValues(StrategyRuleEntity.java:41)
 	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository.queryAwardRuleWeight(StrategyRepository.java:377)
@@ -107,7 +107,7 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
 	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
-	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$4d340658.queryAwardRuleWeight(<generated>)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$ab90161d.queryAwardRuleWeight(<generated>)
 	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeight(DefaultRaffleStrategy.java:95)
 	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeightByActivityId(DefaultRaffleStrategy.java:101)
 	at cn.bugstack.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:160)
@@ -163,266 +163,429 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-25-12-31.20:56:17.096 [http-nio-8091-exec-6] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
-25-12-31.20:56:17.107 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
-25-12-31.20:56:17.109 [http-nio-8091-exec-10] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
-25-12-31.20:56:29.505 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
-25-12-31.20:56:29.505 [http-nio-8091-exec-13] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-12-31.20:56:29.511 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
-25-12-31.20:56:29.512 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
-25-12-31.20:56:29.512 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
-25-12-31.20:56:29.512 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
-25-12-31.20:56:29.512 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
-25-12-31.20:56:29.534 [http-nio-8091-exec-13] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-12-31.20:56:29.546 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:491.91
-25-12-31.20:56:29.548 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:491.91
-25-12-31.20:56:29.551 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:20
-25-12-31.20:56:29.551 [http-nio-8091-exec-19] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
-25-12-31.20:56:29.555 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
-25-12-31.20:56:29.565 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1345,"monthCount":1355,"monthCountSurplus":957,"totalCount":1355,"totalCountSurplus":930}
-25-12-31.20:56:29.584 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
-25-12-31.20:56:29.621 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":425},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":425},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":425}],"info":"调用成功"}
-25-12-31.20:56:29.631 [http-nio-8091-exec-19] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
-25-12-31.20:56:29.648 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:20
-25-12-31.20:56:32.106 [http-nio-8091-exec-22] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
-25-12-31.20:56:32.106 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
-25-12-31.20:56:32.596 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
-25-12-31.20:56:32.597 [http-nio-8091-exec-22] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
-25-12-31.20:56:32.618 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.618 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:32.626 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.626 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.626 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.626 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.626 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.626 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.626 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.626 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.626 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.626 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.633 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.633 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.633 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.633 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.634 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.634 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.635 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.635 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.635 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.635 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.635 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.635 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.635 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.635 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.636 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.636 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.636 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.636 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.637 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:32.637 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.638 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.638 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.642 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.642 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.642 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.642 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.642 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.642 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.643 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:32.643 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:32.826 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:32.826 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:32.828 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:32.828 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:32.828 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:32.828 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:32.828 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:32.828 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:32.828 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:32.828 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:32.884 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:32.885 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:32.884 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:32.885 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:32.884 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:32.884 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:32.884 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:32.884 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:32.884 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:32.884 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:33.877 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"585711110379","userId":"zxy"},"id":"22454928074","timestamp":1767185792953}
-25-12-31.20:56:34.471 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"177633244945","userId":"zxy"},"id":"28826568561","timestamp":1767185792984}
-25-12-31.20:56:34.512 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"585711110379","userId":"zxy"},"id":"22454928074","timestamp":1767185792953}
-25-12-31.20:56:35.411 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"177570010426","userId":"zxy"},"id":"51058479382","timestamp":1767185792984}
-25-12-31.20:56:36.647 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:585711110379 model:dall-e-3
-25-12-31.20:56:36.652 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"177633244945","userId":"zxy"},"id":"28826568561","timestamp":1767185792984}
-25-12-31.20:56:36.952 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"732449318129","userId":"zxy"},"id":"99587786122","timestamp":1767185792984}
-25-12-31.20:56:37.355 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:177633244945 model:dall-e-3
-25-12-31.20:56:37.560 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"682318463868","userId":"zxy"},"id":"66313324665","timestamp":1767185792984}
-25-12-31.20:56:37.560 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"177570010426","userId":"zxy"},"id":"51058479382","timestamp":1767185792984}
-25-12-31.20:56:38.023 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"211712096710","userId":"zxy"},"id":"64043716311","timestamp":1767185792984}
-25-12-31.20:56:38.159 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:177570010426 model:dall-e-3
-25-12-31.20:56:38.162 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"732449318129","userId":"zxy"},"id":"99587786122","timestamp":1767185792984}
-25-12-31.20:56:38.431 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"403811929541","userId":"zxy"},"id":"05169946124","timestamp":1767185792984}
-25-12-31.20:56:38.676 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:732449318129 model:dall-e-3
-25-12-31.20:56:38.678 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"682318463868","userId":"zxy"},"id":"66313324665","timestamp":1767185792984}
-25-12-31.20:56:38.861 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"310413130430","userId":"zxy"},"id":"02407023391","timestamp":1767185792984}
-25-12-31.20:56:39.096 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:682318463868 model:dall-e-2
-25-12-31.20:56:39.244 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"211712096710","userId":"zxy"},"id":"64043716311","timestamp":1767185792984}
-25-12-31.20:56:39.346 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"639106674036","userId":"zxy"},"id":"61457201290","timestamp":1767185792984}
-25-12-31.20:56:39.737 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:211712096710 model:dall-e-3
-25-12-31.20:56:39.740 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"403811929541","userId":"zxy"},"id":"05169946124","timestamp":1767185792984}
-25-12-31.20:56:39.877 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"048401980385","userId":"zxy"},"id":"79444832307","timestamp":1767185792984}
-25-12-31.20:56:40.321 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:403811929541 model:dall-e-2
-25-12-31.20:56:40.324 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"310413130430","userId":"zxy"},"id":"02407023391","timestamp":1767185792984}
-25-12-31.20:56:40.369 [http-nio-8091-exec-22] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
-25-12-31.20:56:40.810 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:310413130430 model:dall-e-2
-25-12-31.20:56:40.812 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"639106674036","userId":"zxy"},"id":"61457201290","timestamp":1767185792984}
-25-12-31.20:56:42.054 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:639106674036 model:dall-e-2
-25-12-31.20:56:42.056 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"048401980385","userId":"zxy"},"id":"79444832307","timestamp":1767185792984}
-25-12-31.20:56:42.571 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:048401980385 model:dall-e-2
-25-12-31.20:56:44.564 [http-nio-8091-exec-29] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
-25-12-31.20:56:44.576 [http-nio-8091-exec-29] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
-25-12-31.20:56:46.102 [http-nio-8091-exec-30] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
-25-12-31.20:56:46.102 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
-25-12-31.20:56:46.104 [http-nio-8091-exec-32] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
-25-12-31.20:56:46.104 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
-25-12-31.20:56:46.106 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:501.91
-25-12-31.20:56:46.108 [http-nio-8091-exec-32] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
-25-12-31.20:56:46.109 [http-nio-8091-exec-30] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1335,"monthCount":1355,"monthCountSurplus":947,"totalCount":1355,"totalCountSurplus":920}
-25-12-31.20:56:46.112 [http-nio-8091-exec-33] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":435},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":435},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":435}],"info":"调用成功"}
-25-12-31.20:56:51.436 [http-nio-8091-exec-34] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
-25-12-31.20:56:51.436 [http-nio-8091-exec-34] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
-25-12-31.20:56:52.068 [http-nio-8091-exec-34] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
-25-12-31.20:56:52.068 [http-nio-8091-exec-34] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
-25-12-31.20:56:52.069 [pool-3-thread-11] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.069 [pool-3-thread-12] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.069 [pool-3-thread-12] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.069 [pool-3-thread-11] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.069 [pool-3-thread-13] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.069 [pool-3-thread-11] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.069 [pool-3-thread-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.069 [pool-3-thread-13] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.069 [pool-3-thread-13] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.069 [pool-3-thread-14] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.070 [pool-3-thread-14] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.070 [pool-3-thread-15] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.070 [pool-3-thread-14] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.070 [pool-3-thread-15] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.070 [pool-3-thread-15] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.071 [pool-3-thread-17] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-16] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-17] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-18] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-16] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-17] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.071 [pool-3-thread-16] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.071 [pool-3-thread-18] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-18] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.071 [pool-3-thread-19] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-19] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.071 [pool-3-thread-20] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-20] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
-25-12-31.20:56:52.071 [pool-3-thread-20] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.075 [pool-3-thread-14] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.075 [pool-3-thread-11] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.075 [pool-3-thread-14] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.075 [pool-3-thread-11] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.075 [pool-3-thread-13] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.075 [pool-3-thread-13] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.075 [pool-3-thread-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.075 [pool-3-thread-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.075 [pool-3-thread-16] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.075 [pool-3-thread-16] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.075 [pool-3-thread-20] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.076 [pool-3-thread-20] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.076 [pool-3-thread-15] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.076 [pool-3-thread-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.076 [pool-3-thread-15] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.076 [pool-3-thread-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.076 [pool-3-thread-17] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.076 [pool-3-thread-17] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.079 [pool-3-thread-18] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
-25-12-31.20:56:52.079 [pool-3-thread-18] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
-25-12-31.20:56:52.088 [pool-3-thread-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:52.088 [pool-3-thread-12] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:52.089 [pool-3-thread-16] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:52.089 [pool-3-thread-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:52.089 [pool-3-thread-13] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:52.089 [pool-3-thread-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:52.089 [pool-3-thread-13] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:52.089 [pool-3-thread-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:52.090 [pool-3-thread-14] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:52.090 [pool-3-thread-14] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:52.090 [pool-3-thread-18] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:52.090 [pool-3-thread-18] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:52.090 [pool-3-thread-17] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:52.090 [pool-3-thread-17] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:52.090 [pool-3-thread-11] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
-25-12-31.20:56:52.091 [pool-3-thread-11] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
-25-12-31.20:56:52.092 [pool-3-thread-20] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:52.092 [pool-3-thread-20] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:52.092 [pool-3-thread-15] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
-25-12-31.20:56:52.092 [pool-3-thread-15] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
-25-12-31.20:56:52.686 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"755192617818","userId":"zxy"},"id":"40903707678","timestamp":1767185812094}
-25-12-31.20:56:52.688 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"755192617818","userId":"zxy"},"id":"40903707678","timestamp":1767185812094}
-25-12-31.20:56:53.768 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"224576271796","userId":"zxy"},"id":"61854033307","timestamp":1767185812094}
-25-12-31.20:56:53.963 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:755192617818 model:dall-e-2
-25-12-31.20:56:53.965 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"224576271796","userId":"zxy"},"id":"61854033307","timestamp":1767185812094}
-25-12-31.20:56:54.502 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"731954366428","userId":"zxy"},"id":"42391035658","timestamp":1767185812094}
-25-12-31.20:56:54.615 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:224576271796 model:dall-e-2
-25-12-31.20:56:54.617 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"731954366428","userId":"zxy"},"id":"42391035658","timestamp":1767185812094}
-25-12-31.20:56:55.296 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"465652426426","userId":"zxy"},"id":"51385265677","timestamp":1767185812094}
-25-12-31.20:56:55.537 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:731954366428 model:dall-e-3
-25-12-31.20:56:55.697 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"465652426426","userId":"zxy"},"id":"51385265677","timestamp":1767185812094}
-25-12-31.20:56:56.293 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"929187267398","userId":"zxy"},"id":"31097946790","timestamp":1767185812094}
-25-12-31.20:56:56.342 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:465652426426 model:dall-e-2
-25-12-31.20:56:56.345 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"929187267398","userId":"zxy"},"id":"31097946790","timestamp":1767185812094}
-25-12-31.20:56:56.788 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"701871937496","userId":"zxy"},"id":"50585074956","timestamp":1767185812094}
-25-12-31.20:56:56.916 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:929187267398 model:dall-e-3
-25-12-31.20:56:56.917 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"701871937496","userId":"zxy"},"id":"50585074956","timestamp":1767185812094}
-25-12-31.20:56:57.231 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"601898965849","userId":"zxy"},"id":"27210853005","timestamp":1767185812094}
-25-12-31.20:56:57.420 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:701871937496 model:dall-e-3
-25-12-31.20:56:57.664 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"601898965849","userId":"zxy"},"id":"27210853005","timestamp":1767185812094}
-25-12-31.20:56:58.022 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"142852332298","userId":"zxy"},"id":"21540363332","timestamp":1767185812094}
-25-12-31.20:56:58.241 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:601898965849 model:dall-e-2
-25-12-31.20:56:58.244 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"142852332298","userId":"zxy"},"id":"21540363332","timestamp":1767185812094}
-25-12-31.20:56:58.410 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"373252164275","userId":"zxy"},"id":"23182157802","timestamp":1767185812094}
-25-12-31.20:56:58.553 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:142852332298 model:dall-e-3
-25-12-31.20:56:58.555 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"373252164275","userId":"zxy"},"id":"23182157802","timestamp":1767185812094}
-25-12-31.20:56:58.993 [http-nio-8091-exec-34] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"548661152306","userId":"zxy"},"id":"57497615119","timestamp":1767185812094}
-25-12-31.20:56:59.042 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:373252164275 model:dall-e-3
-25-12-31.20:56:59.044 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"548661152306","userId":"zxy"},"id":"57497615119","timestamp":1767185812094}
-25-12-31.20:56:59.281 [http-nio-8091-exec-34] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
-25-12-31.20:56:59.516 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:548661152306 model:dall-e-3
-25-12-31.20:57:03.299 [http-nio-8091-exec-38] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
-25-12-31.20:57:03.310 [http-nio-8091-exec-38] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
-25-12-31.20:57:04.912 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
-25-12-31.20:57:04.914 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
-25-12-31.20:57:04.914 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
-25-12-31.20:57:04.914 [http-nio-8091-exec-43] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
-25-12-31.20:57:04.918 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:511.91
-25-12-31.20:57:04.919 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
-25-12-31.20:57:04.921 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1325,"monthCount":1355,"monthCountSurplus":937,"totalCount":1355,"totalCountSurplus":910}
-25-12-31.20:57:04.923 [http-nio-8091-exec-43] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":445},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":445},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":445}],"info":"调用成功"}
-25-12-31.20:58:24.973 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-31.20:58:24.985 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-31.20:58:24.988 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-31.20:58:24.989 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
-25-12-31.20:58:25.164 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-31.20:58:25.799 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-31.20:58:25.814 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-31.20:58:25.829 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
-25-12-31.20:58:25.887 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-31.20:58:25.887 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-31.20:58:25.887 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
-25-12-31.20:58:25.887 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-06.15:52:12.828 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
+26-01-06.15:52:12.837 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-01-06.15:52:12.839 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-01-06.15:52:21.476 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-06.15:52:21.476 [http-nio-8091-exec-13] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-06.15:52:21.494 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.15:52:21.494 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.15:52:21.494 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-06.15:52:21.495 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-06.15:52:21.495 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-01-06.15:52:21.511 [http-nio-8091-exec-13] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-06.15:52:21.530 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+26-01-06.15:52:21.535 [http-nio-8091-exec-19] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.15:52:21.541 [http-nio-8091-exec-14] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:775.91
+26-01-06.15:52:21.541 [http-nio-8091-exec-15] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
+26-01-06.15:52:21.545 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:20
+26-01-06.15:52:21.546 [http-nio-8091-exec-17] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:775.91
+26-01-06.15:52:21.562 [http-nio-8091-exec-18] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":709},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":709},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":709}],"info":"调用成功"}
+26-01-06.15:52:21.563 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1355,"monthCount":1355,"monthCountSurplus":1355,"totalCount":1355,"totalCountSurplus":646}
+26-01-06.15:52:21.600 [http-nio-8091-exec-19] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":false,"sort":5,"waitUnlockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":false,"sort":6,"waitUnlockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":false,"sort":7,"waitUnlockCount":1},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.15:52:21.602 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:20
+26-01-06.15:52:22.982 [http-nio-8091-exec-22] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
+26-01-06.15:52:22.982 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
+26-01-06.15:52:23.646 [http-nio-8091-exec-22] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
+26-01-06.15:52:23.646 [http-nio-8091-exec-22] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
+26-01-06.15:52:23.648 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.648 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.15:52:23.653 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.653 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.653 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.653 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.653 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.653 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.653 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.654 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.654 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.654 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.658 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.658 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.658 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.658 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.659 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.659 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.659 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.659 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.660 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.15:52:23.660 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.771 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.771 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.771 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.771 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.771 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.771 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.771 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.771 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.771 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.771 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.804 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.804 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.804 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.804 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.804 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.804 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.804 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.15:52:23.804 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.804 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.804 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.15:52:23.845 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.15:52:23.845 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.15:52:23.845 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.15:52:23.845 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.15:52:23.846 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.15:52:23.846 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.15:52:23.846 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.15:52:23.846 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.15:52:23.846 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.15:52:23.846 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.15:52:23.846 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.15:52:23.846 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.15:52:23.846 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.15:52:23.846 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.15:52:23.847 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.15:52:23.847 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.15:52:23.847 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.15:52:23.847 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.15:52:23.847 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.15:52:23.847 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.15:52:24.235 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"255382989822","userId":"zxy"},"id":"19824713696","timestamp":1767685943850}
+26-01-06.15:52:24.243 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"255382989822","userId":"zxy"},"id":"19824713696","timestamp":1767685943850}
+26-01-06.15:52:25.243 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"317719711686","userId":"zxy"},"id":"63532847736","timestamp":1767685943852}
+26-01-06.15:52:25.389 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:255382989822 model:dall-e-2
+26-01-06.15:52:25.393 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"317719711686","userId":"zxy"},"id":"63532847736","timestamp":1767685943852}
+26-01-06.15:52:25.842 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"152456330604","userId":"zxy"},"id":"33109782012","timestamp":1767685943852}
+26-01-06.15:52:26.532 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"218256276282","userId":"zxy"},"id":"26399561887","timestamp":1767685943852}
+26-01-06.15:52:26.812 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:317719711686 model:dall-e-2
+26-01-06.15:52:27.048 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"152456330604","userId":"zxy"},"id":"33109782012","timestamp":1767685943852}
+26-01-06.15:52:27.584 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"046376545167","userId":"zxy"},"id":"70545782383","timestamp":1767685943852}
+26-01-06.15:52:27.720 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:152456330604 model:dall-e-3
+26-01-06.15:52:27.722 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"218256276282","userId":"zxy"},"id":"26399561887","timestamp":1767685943852}
+26-01-06.15:52:27.934 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"398960199463","userId":"zxy"},"id":"18302577809","timestamp":1767685943852}
+26-01-06.15:52:28.170 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:218256276282 model:dall-e-2
+26-01-06.15:52:28.171 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"046376545167","userId":"zxy"},"id":"70545782383","timestamp":1767685943852}
+26-01-06.15:52:28.330 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"642477353399","userId":"zxy"},"id":"82299087540","timestamp":1767685943852}
+26-01-06.15:52:28.550 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:046376545167 model:dall-e-3
+26-01-06.15:52:28.710 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"398960199463","userId":"zxy"},"id":"18302577809","timestamp":1767685943852}
+26-01-06.15:52:28.806 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"156402024844","userId":"zxy"},"id":"08076646790","timestamp":1767685943852}
+26-01-06.15:52:29.168 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:398960199463 model:dall-e-3
+26-01-06.15:52:29.169 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"642477353399","userId":"zxy"},"id":"82299087540","timestamp":1767685943852}
+26-01-06.15:52:29.290 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"009392627970","userId":"zxy"},"id":"16697227880","timestamp":1767685943852}
+26-01-06.15:52:29.501 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:642477353399 model:dall-e-3
+26-01-06.15:52:29.632 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"156402024844","userId":"zxy"},"id":"08076646790","timestamp":1767685943852}
+26-01-06.15:52:29.753 [http-nio-8091-exec-22] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"774626678296","userId":"zxy"},"id":"44371208983","timestamp":1767685943852}
+26-01-06.15:52:29.982 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:156402024844 model:dall-e-3
+26-01-06.15:52:30.149 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"009392627970","userId":"zxy"},"id":"16697227880","timestamp":1767685943852}
+26-01-06.15:52:30.238 [http-nio-8091-exec-22] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
+26-01-06.15:52:30.582 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:009392627970 model:dall-e-2
+26-01-06.15:52:30.584 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"774626678296","userId":"zxy"},"id":"44371208983","timestamp":1767685943852}
+26-01-06.15:52:31.041 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:774626678296 model:dall-e-2
+26-01-06.15:52:32.753 [http-nio-8091-exec-23] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.15:52:32.763 [http-nio-8091-exec-23] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.15:52:35.517 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.15:52:35.517 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-06.15:52:35.517 [http-nio-8091-exec-24] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-06.15:52:35.517 [http-nio-8091-exec-27] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-06.15:52:35.521 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
+26-01-06.15:52:35.521 [http-nio-8091-exec-25] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:785.91
+26-01-06.15:52:35.525 [http-nio-8091-exec-24] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1345,"monthCount":1355,"monthCountSurplus":1345,"totalCount":1355,"totalCountSurplus":636}
+26-01-06.15:52:35.526 [http-nio-8091-exec-27] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":719},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":719},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":719}],"info":"调用成功"}
+26-01-06.15:52:38.040 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.15:52:38.050 [http-nio-8091-exec-28] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.15:59:10.855 [http-nio-8091-exec-35] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-06.15:59:10.855 [http-nio-8091-exec-36] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.15:59:10.863 [http-nio-8091-exec-35] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":719},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":719},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":719}],"info":"调用成功"}
+26-01-06.15:59:10.866 [http-nio-8091-exec-36] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.16:01:46.004 [http-nio-8091-exec-39] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-06.16:01:46.010 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-01-06.16:01:46.010 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.16:01:46.010 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-06.16:01:46.010 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.16:01:46.010 [http-nio-8091-exec-44] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-06.16:01:46.015 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:785.91
+26-01-06.16:01:46.016 [http-nio-8091-exec-40] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:785.91
+26-01-06.16:01:46.018 [http-nio-8091-exec-39] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1345,"monthCount":1355,"monthCountSurplus":1345,"totalCount":1355,"totalCountSurplus":636}
+26-01-06.16:01:46.018 [http-nio-8091-exec-41] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
+26-01-06.16:01:46.020 [http-nio-8091-exec-45] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.16:01:46.020 [http-nio-8091-exec-46] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:20
+26-01-06.16:01:46.025 [http-nio-8091-exec-44] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":719},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":719},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":719}],"info":"调用成功"}
+26-01-06.16:01:46.027 [http-nio-8091-exec-42] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+26-01-06.16:01:46.029 [http-nio-8091-exec-46] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:20
+26-01-06.16:01:46.040 [http-nio-8091-exec-45] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.16:01:47.304 [http-nio-8091-exec-47] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
+26-01-06.16:01:47.304 [http-nio-8091-exec-47] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
+26-01-06.16:01:47.954 [http-nio-8091-exec-47] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
+26-01-06.16:01:47.954 [http-nio-8091-exec-47] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
+26-01-06.16:01:47.954 [pool-3-thread-11] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.954 [pool-3-thread-12] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.954 [pool-3-thread-11] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.954 [pool-3-thread-12] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.954 [pool-3-thread-13] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.954 [pool-3-thread-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.954 [pool-3-thread-11] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.954 [pool-3-thread-13] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.954 [pool-3-thread-13] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.955 [pool-3-thread-14] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-14] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-14] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.955 [pool-3-thread-15] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-16] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-15] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-16] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-15] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.955 [pool-3-thread-16] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.955 [pool-3-thread-18] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-18] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-18] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.955 [pool-3-thread-17] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-17] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.955 [pool-3-thread-17] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.956 [pool-3-thread-20] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.956 [pool-3-thread-20] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.956 [pool-3-thread-20] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.956 [pool-3-thread-19] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:01:47.956 [pool-3-thread-19] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:01:47.956 [pool-3-thread-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.960 [pool-3-thread-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.960 [pool-3-thread-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.960 [pool-3-thread-13] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.960 [pool-3-thread-13] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.960 [pool-3-thread-11] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.960 [pool-3-thread-11] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.960 [pool-3-thread-18] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.960 [pool-3-thread-18] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.961 [pool-3-thread-14] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.961 [pool-3-thread-14] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.962 [pool-3-thread-20] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.962 [pool-3-thread-15] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.962 [pool-3-thread-20] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.962 [pool-3-thread-15] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.962 [pool-3-thread-17] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.962 [pool-3-thread-16] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.962 [pool-3-thread-17] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.962 [pool-3-thread-16] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.963 [pool-3-thread-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:01:47.964 [pool-3-thread-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:01:47.972 [pool-3-thread-18] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:01:47.972 [pool-3-thread-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:01:47.972 [pool-3-thread-12] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:01:47.972 [pool-3-thread-18] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:01:47.973 [pool-3-thread-11] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:01:47.973 [pool-3-thread-11] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:01:47.973 [pool-3-thread-14] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:01:47.973 [pool-3-thread-14] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:01:47.973 [pool-3-thread-13] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:01:47.973 [pool-3-thread-13] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:01:47.981 [pool-3-thread-15] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:01:47.981 [pool-3-thread-17] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:01:47.981 [pool-3-thread-17] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:01:47.981 [pool-3-thread-15] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:01:47.982 [pool-3-thread-20] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:01:47.982 [pool-3-thread-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:01:47.982 [pool-3-thread-16] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:01:47.982 [pool-3-thread-20] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:01:47.982 [pool-3-thread-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:01:47.982 [pool-3-thread-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:01:49.413 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"393335199591","userId":"zxy"},"id":"11711765850","timestamp":1767686507983}
+26-01-06.16:01:49.416 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"393335199591","userId":"zxy"},"id":"11711765850","timestamp":1767686507983}
+26-01-06.16:01:49.638 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"916307449930","userId":"zxy"},"id":"15652786211","timestamp":1767686507983}
+26-01-06.16:01:49.794 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:393335199591 model:dall-e-3
+26-01-06.16:01:49.796 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"916307449930","userId":"zxy"},"id":"15652786211","timestamp":1767686507983}
+26-01-06.16:01:50.013 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"092770736299","userId":"zxy"},"id":"04832816290","timestamp":1767686507983}
+26-01-06.16:01:50.232 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:916307449930 model:dall-e-3
+26-01-06.16:01:50.234 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"092770736299","userId":"zxy"},"id":"04832816290","timestamp":1767686507983}
+26-01-06.16:01:50.543 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"446003981524","userId":"zxy"},"id":"89482355504","timestamp":1767686507983}
+26-01-06.16:01:50.679 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:092770736299 model:dall-e-2
+26-01-06.16:01:50.683 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"446003981524","userId":"zxy"},"id":"89482355504","timestamp":1767686507983}
+26-01-06.16:01:50.898 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"138948123678","userId":"zxy"},"id":"80064650166","timestamp":1767686507983}
+26-01-06.16:01:51.154 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:446003981524 model:dall-e-3
+26-01-06.16:01:51.156 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"138948123678","userId":"zxy"},"id":"80064650166","timestamp":1767686507983}
+26-01-06.16:01:51.323 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"487584152782","userId":"zxy"},"id":"62663014131","timestamp":1767686507983}
+26-01-06.16:01:51.641 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:138948123678 model:dall-e-3
+26-01-06.16:01:51.643 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"487584152782","userId":"zxy"},"id":"62663014131","timestamp":1767686507983}
+26-01-06.16:01:51.770 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"327388591988","userId":"zxy"},"id":"53251870706","timestamp":1767686507983}
+26-01-06.16:01:52.083 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:487584152782 model:dall-e-3
+26-01-06.16:01:52.085 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"327388591988","userId":"zxy"},"id":"53251870706","timestamp":1767686507983}
+26-01-06.16:01:52.126 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"699638475262","userId":"zxy"},"id":"85033465333","timestamp":1767686507983}
+26-01-06.16:01:52.600 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:327388591988 model:dall-e-3
+26-01-06.16:01:52.602 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"699638475262","userId":"zxy"},"id":"85033465333","timestamp":1767686507983}
+26-01-06.16:01:52.637 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"652065733273","userId":"zxy"},"id":"32482586712","timestamp":1767686507983}
+26-01-06.16:01:52.873 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:699638475262 model:dall-e-2
+26-01-06.16:01:53.000 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"652065733273","userId":"zxy"},"id":"32482586712","timestamp":1767686507983}
+26-01-06.16:01:53.087 [http-nio-8091-exec-47] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"485632483007","userId":"zxy"},"id":"39726804550","timestamp":1767686507983}
+26-01-06.16:01:53.315 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:652065733273 model:dall-e-2
+26-01-06.16:01:53.432 [http-nio-8091-exec-47] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
+26-01-06.16:01:53.433 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"485632483007","userId":"zxy"},"id":"39726804550","timestamp":1767686507983}
+26-01-06.16:01:53.449 [http-nio-8091-exec-49] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.16:01:53.449 [http-nio-8091-exec-50] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-06.16:01:53.449 [http-nio-8091-exec-48] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-06.16:01:53.449 [http-nio-8091-exec-1] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-06.16:01:53.450 [http-nio-8091-exec-50] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
+26-01-06.16:01:53.454 [http-nio-8091-exec-48] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1335,"monthCount":1355,"monthCountSurplus":1335,"totalCount":1355,"totalCountSurplus":626}
+26-01-06.16:01:53.455 [http-nio-8091-exec-1] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":729},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":729},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":729}],"info":"调用成功"}
+26-01-06.16:01:53.455 [http-nio-8091-exec-49] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:794.91
+26-01-06.16:01:53.765 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:485632483007 model:dall-e-2
+26-01-06.16:01:55.978 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.16:01:55.988 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.16:03:18.117 [http-nio-8091-exec-3] INFO  RaffleActivityController - 活动抽奖开始 userId:zxy activityId:100301
+26-01-06.16:03:18.140 [http-nio-8091-exec-3] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:zxy activityId:100301
+26-01-06.16:03:18.510 [http-nio-8091-exec-3] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:zxy activityId:100301 orderId:918406678663
+26-01-06.16:03:18.510 [http-nio-8091-exec-3] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:zxy activityId:100301 orderId:918406678663
+26-01-06.16:03:18.510 [http-nio-8091-exec-3] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:18.510 [http-nio-8091-exec-3] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:18.510 [http-nio-8091-exec-3] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:18.513 [http-nio-8091-exec-3] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:18.513 [http-nio-8091-exec-3] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:18.521 [http-nio-8091-exec-3] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:03:18.521 [http-nio-8091-exec-3] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:03:18.865 [http-nio-8091-exec-3] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"918406678663","userId":"zxy"},"id":"35160147176","timestamp":1767686598522}
+26-01-06.16:03:18.866 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"918406678663","userId":"zxy"},"id":"35160147176","timestamp":1767686598522}
+26-01-06.16:03:19.213 [http-nio-8091-exec-3] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: zxy orderId:918406678663 topic: send_award
+26-01-06.16:03:19.213 [http-nio-8091-exec-3] INFO  AwardService           - 中奖记录保存完成 userId:zxy orderId:918406678663
+26-01-06.16:03:19.393 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:918406678663 model:dall-e-3
+26-01-06.16:03:19.404 [http-nio-8091-exec-11] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-06.16:03:19.404 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.16:03:19.404 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-06.16:03:19.404 [http-nio-8091-exec-15] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-06.16:03:19.406 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:796.91
+26-01-06.16:03:19.408 [http-nio-8091-exec-16] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
+26-01-06.16:03:19.410 [http-nio-8091-exec-11] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1334,"monthCount":1355,"monthCountSurplus":1334,"totalCount":1355,"totalCountSurplus":625}
+26-01-06.16:03:19.412 [http-nio-8091-exec-15] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":730},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":730},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":730}],"info":"调用成功"}
+26-01-06.16:03:21.931 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.16:03:21.940 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.16:03:24.175 [http-nio-8091-exec-17] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
+26-01-06.16:03:24.175 [http-nio-8091-exec-17] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
+26-01-06.16:03:25.672 [http-nio-8091-exec-17] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
+26-01-06.16:03:25.672 [http-nio-8091-exec-17] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
+26-01-06.16:03:25.672 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.672 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.672 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.672 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.672 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.674 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.672 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.674 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.674 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-06.16:03:25.674 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.674 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.674 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.678 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-06.16:03:25.678 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-06.16:03:25.689 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:03:25.689 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:03:25.689 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:03:25.689 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:03:25.689 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:03:25.689 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:03:25.689 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:03:25.689 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:03:25.689 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:03:25.690 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:03:25.693 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:03:25.693 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:03:25.693 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:03:25.693 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:03:25.693 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:03:25.693 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:03:25.693 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-06.16:03:25.693 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-06.16:03:25.693 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-06.16:03:25.693 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-06.16:03:26.585 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"965931979009","userId":"zxy"},"id":"23656065147","timestamp":1767686605694}
+26-01-06.16:03:26.586 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"965931979009","userId":"zxy"},"id":"23656065147","timestamp":1767686605694}
+26-01-06.16:03:26.809 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"016974276960","userId":"zxy"},"id":"42446522248","timestamp":1767686605694}
+26-01-06.16:03:27.044 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:965931979009 model:dall-e-3
+26-01-06.16:03:27.046 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"016974276960","userId":"zxy"},"id":"42446522248","timestamp":1767686605694}
+26-01-06.16:03:27.213 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"918749958561","userId":"zxy"},"id":"67513357353","timestamp":1767686605694}
+26-01-06.16:03:27.428 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:016974276960 model:dall-e-2
+26-01-06.16:03:27.580 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"403120132978","userId":"zxy"},"id":"16914804188","timestamp":1767686605694}
+26-01-06.16:03:27.580 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"918749958561","userId":"zxy"},"id":"67513357353","timestamp":1767686605694}
+26-01-06.16:03:27.915 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"907841102356","userId":"zxy"},"id":"03470779356","timestamp":1767686605694}
+26-01-06.16:03:28.038 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:918749958561 model:dall-e-3
+26-01-06.16:03:28.040 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"403120132978","userId":"zxy"},"id":"16914804188","timestamp":1767686605694}
+26-01-06.16:03:28.366 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"660543388543","userId":"zxy"},"id":"20833760547","timestamp":1767686605694}
+26-01-06.16:03:28.483 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:403120132978 model:dall-e-3
+26-01-06.16:03:28.484 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"907841102356","userId":"zxy"},"id":"03470779356","timestamp":1767686605694}
+26-01-06.16:03:28.839 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"157576472089","userId":"zxy"},"id":"04868834475","timestamp":1767686605694}
+26-01-06.16:03:28.967 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:907841102356 model:dall-e-2
+26-01-06.16:03:28.968 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"660543388543","userId":"zxy"},"id":"20833760547","timestamp":1767686605694}
+26-01-06.16:03:29.228 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"614627269597","userId":"zxy"},"id":"38275302740","timestamp":1767686605694}
+26-01-06.16:03:29.447 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:660543388543 model:dall-e-2
+26-01-06.16:03:29.448 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"157576472089","userId":"zxy"},"id":"04868834475","timestamp":1767686605694}
+26-01-06.16:03:29.606 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"801766284351","userId":"zxy"},"id":"18635887317","timestamp":1767686605694}
+26-01-06.16:03:29.824 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:157576472089 model:dall-e-3
+26-01-06.16:03:29.948 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"614627269597","userId":"zxy"},"id":"38275302740","timestamp":1767686605694}
+26-01-06.16:03:30.055 [http-nio-8091-exec-17] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"588554132207","userId":"zxy"},"id":"68604800145","timestamp":1767686605694}
+26-01-06.16:03:30.363 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:614627269597 model:dall-e-2
+26-01-06.16:03:30.481 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"801766284351","userId":"zxy"},"id":"18635887317","timestamp":1767686605694}
+26-01-06.16:03:30.572 [http-nio-8091-exec-17] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
+26-01-06.16:03:30.586 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-06.16:03:30.586 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-06.16:03:30.586 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-06.16:03:30.586 [http-nio-8091-exec-20] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-06.16:03:30.589 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
+26-01-06.16:03:30.589 [http-nio-8091-exec-18] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:804.91
+26-01-06.16:03:30.592 [http-nio-8091-exec-13] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1324,"monthCount":1355,"monthCountSurplus":1324,"totalCount":1355,"totalCountSurplus":615}
+26-01-06.16:03:30.593 [http-nio-8091-exec-20] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":740},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":740},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":740}],"info":"调用成功"}
+26-01-06.16:03:30.920 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:801766284351 model:dall-e-3
+26-01-06.16:03:30.921 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"588554132207","userId":"zxy"},"id":"68604800145","timestamp":1767686605694}
+26-01-06.16:03:31.158 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:588554132207 model:dall-e-2
+26-01-06.16:03:33.124 [http-nio-8091-exec-21] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-06.16:03:33.133 [http-nio-8091-exec-21] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-06.16:04:45.025 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-06.16:04:45.027 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-06.16:04:45.028 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-06.16:04:45.029 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-06.16:04:45.318 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-06.16:04:45.330 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-06.16:04:45.406 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-06.16:04:45.797 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-06.16:04:45.854 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-06.16:04:45.854 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-06.16:04:45.854 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-06.16:04:45.854 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
