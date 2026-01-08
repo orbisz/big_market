@@ -349,21 +349,21 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 25-07-20.00:03:16.163 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
 25-07-20.00:03:16.236 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#33fec21:0/SimpleConnection@1892865f [delegate=amqp://admin@127.0.0.1:5672/, localPort= 52210]
 25-07-20.00:03:16.346 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 11.423 seconds (JVM running for 13.147)
-25-07-20.00:03:16.926 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:xiaofuge activityId:100301
+25-07-20.00:03:16.926 [main            ] INFO  RaffleActivityController - 活动抽奖 userId:zxy activityId:100301
 25-07-20.00:03:17.060 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.00:03:17.455 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.00:03:17.638 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:xiaofuge activityId:100301 orderId:814536678323
-25-07-20.00:03:17.698 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: rule_default awardId: 102
-25-07-20.00:03:17.701 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 102 rule_default
+25-07-20.00:03:17.638 [main            ] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:zxy activityId:100301 orderId:814536678323
+25-07-20.00:03:17.698 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: zxy strategyId: 100006 ruleModel: rule_default awardId: 102
+25-07-20.00:03:17.701 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 102 rule_default
 25-07-20.00:03:17.702 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.00:03:17.788 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.00:03:17.849 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:xiaofuge strategyId:100006 awardId:102
-25-07-20.00:03:17.868 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:xiaofuge strategyId:100006 awardId:102
+25-07-20.00:03:17.849 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId:zxy strategyId:100006 awardId:102
+25-07-20.00:03:17.868 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-成功 userId:zxy strategyId:100006 awardId:102
 25-07-20.00:03:18.000 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树-兜底奖励】treeId:tree_luck_award node:rule_stock code:0001
-25-07-20.00:03:18.003 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 102 null
-25-07-20.00:03:18.816 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":102,"awardTitle":"7等奖","userId":"xiaofuge"},"id":"43047052914","timestamp":1752940998031}
-25-07-20.00:03:18.831 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":102,"awardTitle":"7等奖","userId":"xiaofuge"},"id":"43047052914","timestamp":1752940998031}
-25-07-20.00:03:18.843 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"xiaofuge"}
+25-07-20.00:03:18.003 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 zxy 100006 102 null
+25-07-20.00:03:18.816 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":102,"awardTitle":"7等奖","userId":"zxy"},"id":"43047052914","timestamp":1752940998031}
+25-07-20.00:03:18.831 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":102,"awardTitle":"7等奖","userId":"zxy"},"id":"43047052914","timestamp":1752940998031}
+25-07-20.00:03:18.843 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
 25-07-20.00:03:18.851 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"awardId":102,"awardIndex":2,"awardTitle":"7等奖"},"info":"调用成功"}
 25-07-20.00:03:18.875 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.00:03:18.877 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
@@ -387,9 +387,9 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 25-07-20.15:18:06.921 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
 25-07-20.15:18:06.976 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.15:18:07.013 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.15:18:07.814 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_sku_20240429","rebateConfig":"9011","rebateType":"sign","userId":"xiaofuge"},"id":"62272065302","timestamp":1752995886969}
-25-07-20.15:18:07.844 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_integral_20240429","rebateConfig":"10","rebateType":"sign","userId":"xiaofuge"},"id":"73299710008","timestamp":1752995886973}
-25-07-20.15:18:07.862 [main            ] INFO  BehaviorRebateServiceTest - 请求参数：{"behaviorTypeVO":"SIGN","outBusinessNo":"20240429","userId":"xiaofuge"}
+25-07-20.15:18:07.814 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_sku_20240429","rebateConfig":"9011","rebateType":"sign","userId":"zxy"},"id":"62272065302","timestamp":1752995886969}
+25-07-20.15:18:07.844 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_integral_20240429","rebateConfig":"10","rebateType":"sign","userId":"zxy"},"id":"73299710008","timestamp":1752995886973}
+25-07-20.15:18:07.862 [main            ] INFO  BehaviorRebateServiceTest - 请求参数：{"behaviorTypeVO":"SIGN","outBusinessNo":"20240429","userId":"zxy"}
 25-07-20.15:18:07.867 [main            ] INFO  BehaviorRebateServiceTest - 测试结果：["106328576464","920972567054"]
 25-07-20.15:18:07.888 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.15:18:07.890 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
@@ -413,15 +413,15 @@ Caused by: java.net.ConnectException: Connection refused: no further information
 25-07-20.15:20:50.593 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
 25-07-20.15:20:50.644 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.15:20:50.697 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.15:20:50.873 [main            ] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: xiaofuge
+25-07-20.15:20:50.873 [main            ] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: zxy
 org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
 ### The error may exist in file [D:\Java_project\big_market\big_market-app\target\classes\mybatis\mapper\user_behavior_rebate_order_mapper.xml]
 ### The error may involve cn.bugstack.infrastructure.persistent.dao.IUserBehaviorRebateOrderDao.insert-Inline
 ### The error occurred while setting parameters
 ### SQL: insert into user_behavior_rebate_order_001(             user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, biz_id, create_time, update_time         ) values(                     ?, ?, ?, ?, ?, ?, ?, now(), now()                 )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
-; Duplicate entry 'xiaofuge_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
+; Duplicate entry 'zxy_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
 	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
 	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
 	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
@@ -468,7 +468,7 @@ org.springframework.dao.DuplicateKeyException:
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'xiaofuge_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20240429' for key 'user_behavior_rebate_order_001.uq_biz_id'
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
@@ -513,9 +513,9 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'x
 25-07-20.15:21:26.744 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
 25-07-20.15:21:26.790 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.15:21:26.838 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.15:21:27.811 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_sku_20240501","rebateConfig":"9011","rebateType":"sign","userId":"xiaofuge"},"id":"07096041176","timestamp":1752996086783}
-25-07-20.15:21:27.839 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_integral_20240501","rebateConfig":"10","rebateType":"sign","userId":"xiaofuge"},"id":"53694531734","timestamp":1752996086788}
-25-07-20.15:21:27.858 [main            ] INFO  BehaviorRebateServiceTest - 请求参数：{"behaviorTypeVO":"SIGN","outBusinessNo":"20240501","userId":"xiaofuge"}
+25-07-20.15:21:27.811 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_sku_20240501","rebateConfig":"9011","rebateType":"sign","userId":"zxy"},"id":"07096041176","timestamp":1752996086783}
+25-07-20.15:21:27.839 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_integral_20240501","rebateConfig":"10","rebateType":"sign","userId":"zxy"},"id":"53694531734","timestamp":1752996086788}
+25-07-20.15:21:27.858 [main            ] INFO  BehaviorRebateServiceTest - 请求参数：{"behaviorTypeVO":"SIGN","outBusinessNo":"20240501","userId":"zxy"}
 25-07-20.15:21:27.863 [main            ] INFO  BehaviorRebateServiceTest - 测试结果：["270501039020","081035058334"]
 25-07-20.15:21:27.885 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.15:21:27.888 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
@@ -535,15 +535,15 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'x
 25-07-20.16:38:00.938 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
 25-07-20.16:38:01.023 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1d654b5f:0/SimpleConnection@5519ef7d [delegate=amqp://admin@127.0.0.1:5672/, localPort= 58594]
 25-07-20.16:38:01.169 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 10.274 seconds (JVM running for 11.874)
-25-07-20.16:38:01.797 [main            ] INFO  RaffleActivityController - 日历签到返利开始 userId:xiaofuge
+25-07-20.16:38:01.797 [main            ] INFO  RaffleActivityController - 日历签到返利开始 userId:zxy
 25-07-20.16:38:01.814 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.16:38:02.163 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
 25-07-20.16:38:02.214 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.16:38:02.252 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.16:38:03.053 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
-25-07-20.16:38:03.073 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
-25-07-20.16:38:03.091 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"xiaofuge_integral_20250720","rebateConfig":"10","rebateType":"integral","userId":"xiaofuge"},"id":"46238317508","timestamp":1753000682212}
-25-07-20.16:38:03.117 [main            ] INFO  RaffleActivityController - 日历签到返利完成 userId:xiaofuge orderIds: ["282294072847","266813881950"]
+25-07-20.16:38:03.053 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.16:38:03.073 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.16:38:03.091 [main            ] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_integral_20250720","rebateConfig":"10","rebateType":"integral","userId":"zxy"},"id":"46238317508","timestamp":1753000682212}
+25-07-20.16:38:03.117 [main            ] INFO  RaffleActivityController - 日历签到返利完成 userId:zxy orderIds: ["282294072847","266813881950"]
 25-07-20.16:38:03.126 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":true,"info":"调用成功"}
 25-07-20.16:38:03.182 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.16:38:03.185 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
@@ -593,14 +593,14 @@ Caused by: cn.bugstack.types.exception.AppException: null
 25-07-20.23:56:32.269 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
 25-07-20.23:56:32.468 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
 25-07-20.23:56:32.623 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#6807989e:0/SimpleConnection@4dd425dc [delegate=amqp://admin@127.0.0.1:5672/, localPort= 64327]
-25-07-20.23:56:32.793 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:56:32.793 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:56:32.824 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 12.061 seconds (JVM running for 13.781)
 25-07-20.23:56:33.249 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-25-07-20.23:56:33.728 [main            ] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:xiaofuge
+25-07-20.23:56:33.728 [main            ] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
 25-07-20.23:56:33.753 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.23:56:33.840 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
 25-07-20.23:56:33.843 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.23:56:33.927 [main            ] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:xiaofuge orders.size:0
+25-07-20.23:56:33.927 [main            ] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
 25-07-20.23:56:33.996 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":false,"info":"调用成功"}
 25-07-20.23:56:34.087 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.23:56:34.090 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
@@ -650,15 +650,15 @@ Caused by: cn.bugstack.types.exception.AppException: null
 25-07-20.23:57:52.661 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
 25-07-20.23:57:52.906 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
 25-07-20.23:57:52.984 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#499c4d61:0/SimpleConnection@551725e4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 64612]
-25-07-20.23:57:53.125 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:57:53.125 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:57:53.138 [main            ] INFO  RaffleActivityControllerTest - Started RaffleActivityControllerTest in 12.415 seconds (JVM running for 13.839)
 25-07-20.23:57:53.705 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.23:57:54.230 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.23:57:54.292 [main            ] INFO  RaffleActivityController - 查询用户活动账户开始 userId:xiaofuge activityId:100301
+25-07-20.23:57:54.292 [main            ] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
 25-07-20.23:57:54.312 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.23:57:54.362 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.23:57:54.512 [main            ] INFO  RaffleActivityController - 查询用户活动账户完成 userId:xiaofuge activityId:100301 dto:{"dayCount":90,"dayCountSurplus":90,"monthCount":90,"monthCountSurplus":90,"totalCount":8890,"totalCountSurplus":28}
-25-07-20.23:57:54.528 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"xiaofuge"}
+25-07-20.23:57:54.512 [main            ] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":90,"dayCountSurplus":90,"monthCount":90,"monthCountSurplus":90,"totalCount":8890,"totalCountSurplus":28}
+25-07-20.23:57:54.528 [main            ] INFO  RaffleActivityControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
 25-07-20.23:57:54.538 [main            ] INFO  RaffleActivityControllerTest - 测试结果：{"code":"0000","data":{"dayCount":90,"dayCountSurplus":90,"monthCount":90,"monthCountSurplus":90,"totalCount":8890,"totalCountSurplus":28},"info":"调用成功"}
 25-07-20.23:57:54.633 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.23:57:54.637 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
@@ -708,11 +708,11 @@ Caused by: cn.bugstack.types.exception.AppException: null
 25-07-20.23:59:41.070 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
 25-07-20.23:59:41.277 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
 25-07-20.23:59:41.331 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#499c4d61:0/SimpleConnection@551725e4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 64824]
-25-07-20.23:59:41.461 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:41.461 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:41.500 [main            ] INFO  RaffleStrategyControllerTest - Started RaffleStrategyControllerTest in 11.646 seconds (JVM running for 13.203)
 25-07-20.23:59:42.054 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.23:59:42.642 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-25-07-20.23:59:42.712 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:xiaofuge activityId：100301
+25-07-20.23:59:42.712 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
 25-07-20.23:59:42.740 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
 25-07-20.23:59:42.789 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
 25-07-20.23:59:43.165 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
@@ -743,7 +743,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.231 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.231 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.247 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.250 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -772,7 +772,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.254 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.254 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.269 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.271 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -801,7 +801,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.275 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.275 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.290 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.291 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -830,7 +830,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.296 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.296 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.323 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.326 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -859,7 +859,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.330 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.330 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.345 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.348 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -888,7 +888,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.351 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.351 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.365 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.367 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -917,7 +917,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.372 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.372 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.388 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.391 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -946,7 +946,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.395 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.395 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.408 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.412 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -975,7 +975,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.415 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.415 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.431 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.433 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -1004,7 +1004,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.438 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.438 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.453 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.455 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -1033,8 +1033,8 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.459 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
-25-07-20.23:59:43.471 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":4000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":60,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":5000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":6000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"},{"awardId":108,"awardTitle":"暴走玩偶"}],"userActivityAccountTotalUseCount":8862}],"info":"调用成功"}
+25-07-20.23:59:43.459 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.471 [main            ] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":4000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":60,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":5000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":6000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"},{"awardId":108,"awardTitle":"暴走玩偶"}],"userActivityAccountTotalUseCount":8862}],"info":"调用成功"}
 25-07-20.23:59:43.472 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.475 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -1063,8 +1063,8 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.478 [main            ] INFO  RaffleStrategyControllerTest - 请求参数：{"activityId":100301,"userId":"xiaofuge"}
-25-07-20.23:59:43.479 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.478 [main            ] INFO  RaffleStrategyControllerTest - 请求参数：{"activityId":100301,"userId":"zxy"}
+25-07-20.23:59:43.479 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.480 [main            ] INFO  RaffleStrategyControllerTest - 测试结果：{"code":"0000","data":[{"ruleWeightCount":4000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":60,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":5000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"}],"userActivityAccountTotalUseCount":8862},{"ruleWeightCount":6000,"strategyAwards":[{"awardId":102,"awardTitle":"OpenAI会员卡"},{"awardId":103,"awardTitle":"支付优惠券"},{"awardId":104,"awardTitle":"小米台灯"},{"awardId":105,"awardTitle":"小米su7周体验"},{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"小霸王游戏机"},{"awardId":108,"awardTitle":"暴走玩偶"}],"userActivityAccountTotalUseCount":8862}],"info":"调用成功"}
 25-07-20.23:59:43.492 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.494 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
@@ -1094,7 +1094,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.497 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.497 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.509 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.510 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -1123,7 +1123,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.514 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.514 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.525 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.527 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -1152,7 +1152,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.530 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.530 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.542 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
 25-07-20.23:59:43.544 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
@@ -1181,7 +1181,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-20.23:59:43.547 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"xiaofuge_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"xiaofuge"},"id":"48764961568","timestamp":1753000682209}
+25-07-20.23:59:43.547 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20250720","rebateConfig":"9011","rebateType":"sku","userId":"zxy"},"id":"48764961568","timestamp":1753000682209}
 25-07-20.23:59:43.547 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.23:59:43.550 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
 25-07-20.23:59:43.553 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.

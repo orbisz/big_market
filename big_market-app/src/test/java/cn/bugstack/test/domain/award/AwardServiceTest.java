@@ -35,7 +35,7 @@ public class AwardServiceTest {
     public void test_saveUserAwardRecord() throws InterruptedException {
         for (int i = 0; i < 100; i++) {
             UserAwardRecordEntity userAwardRecordEntity = new UserAwardRecordEntity();
-            userAwardRecordEntity.setUserId("xiaofuge");
+            userAwardRecordEntity.setUserId("zxy");
             userAwardRecordEntity.setActivityId(100301L);
             userAwardRecordEntity.setStrategyId(100006L);
             userAwardRecordEntity.setOrderId(RandomStringUtils.randomNumeric(12));
@@ -53,7 +53,7 @@ public class AwardServiceTest {
     @Test
     public void test_distributeAward() throws InterruptedException {
         DistributeAwardEntity distributeAwardEntity = new DistributeAwardEntity();
-        distributeAwardEntity.setUserId("xiaofuge");
+        distributeAwardEntity.setUserId("zxy");
         distributeAwardEntity.setOrderId("690124733440");
         distributeAwardEntity.setAwardId(101);
         distributeAwardEntity.setAwardConfig("0.01,1"); // 0.01,1 黑名单指定积分值

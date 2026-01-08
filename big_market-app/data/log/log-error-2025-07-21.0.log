@@ -1,4 +1,4 @@
-25-07-21.00:14:02.126 [main            ] ERROR RaffleActivityController - 日历签到返利失败 userId:xiaofuge
+25-07-21.00:14:02.126 [main            ] ERROR RaffleActivityController - 日历签到返利失败 userId:zxy
 25-07-21.00:14:02.247 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:272)
@@ -1619,7 +1619,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-21.00:31:25.457 [main            ] ERROR RaffleActivityController - 日历签到返利失败 userId:xiaofuge
+25-07-21.00:31:25.457 [main            ] ERROR RaffleActivityController - 日历签到返利失败 userId:zxy
 25-07-21.00:31:25.482 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:272)
@@ -1890,7 +1890,7 @@ Caused by: cn.bugstack.types.exception.AppException: null
 	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:77)
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:263)
 	... 13 common frames omitted
-25-07-21.00:51:17.414 [main            ] ERROR RaffleActivityController - 日历签到返利失败 userId:xiaofuge
+25-07-21.00:51:17.414 [main            ] ERROR RaffleActivityController - 日历签到返利失败 userId:zxy
 25-07-21.00:51:17.625 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  ConditionalRejectingErrorHandler - Execution of Rabbit message listener failed.
 org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener method 'public void cn.bugstack.trigger.listener.RebateMessageCustomer.listener(java.lang.String)' threw exception
 	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:272)

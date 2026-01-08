@@ -38,7 +38,7 @@ public class RaffleStrategyControllerTest {
     @Test
     public void test_queryRaffleStrategyRuleWeight() {
         RaffleStrategyRuleWeightRequestDTO request = new RaffleStrategyRuleWeightRequestDTO();
-        request.setUserId("xiaofuge");
+        request.setUserId("zxy");
         request.setActivityId(100301L);
 
         Response<List<RaffleStrategyRuleWeightResponseDTO>> response = raffleStrategyService.queryRaffleStrategyRuleWeight(request);

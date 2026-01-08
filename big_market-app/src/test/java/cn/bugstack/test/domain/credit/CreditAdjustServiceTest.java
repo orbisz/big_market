@@ -30,7 +30,7 @@ public class CreditAdjustServiceTest {
     @Test
     public void test_createOrder_forward() {
         TradeEntity tradeEntity = new TradeEntity();
-        tradeEntity.setUserId("xiaofuge");
+        tradeEntity.setUserId("zxy");
         tradeEntity.setTradeName(TradeNameVO.REBATE);
         tradeEntity.setTradeType(TradeTypeVO.FORWARD);
         tradeEntity.setAmount(new BigDecimal("10.19"));
@@ -41,7 +41,7 @@ public class CreditAdjustServiceTest {
     @Test
     public void test_createOrder_reverse() {
         TradeEntity tradeEntity = new TradeEntity();
-        tradeEntity.setUserId("xiaofuge");
+        tradeEntity.setUserId("zxy");
         tradeEntity.setTradeName(TradeNameVO.REBATE);
         tradeEntity.setTradeType(TradeTypeVO.REVERSE);
         tradeEntity.setAmount(new BigDecimal("-10.19"));
@@ -52,7 +52,7 @@ public class CreditAdjustServiceTest {
     @Test
     public void test_createOrder_pay() throws InterruptedException {
         TradeEntity tradeEntity = new TradeEntity();
-        tradeEntity.setUserId("xiaofuge");
+        tradeEntity.setUserId("zxy");
         tradeEntity.setTradeName(TradeNameVO.CONVERT_SKU);
         tradeEntity.setTradeType(TradeTypeVO.REVERSE);
         tradeEntity.setAmount(new BigDecimal("-1.68"));
