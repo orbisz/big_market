@@ -311,3 +311,1049 @@ java.lang.NullPointerException: Cannot invoke "String.split(String)" because "th
 26-01-08.16:25:35.821 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
 26-01-08.16:25:35.821 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
 26-01-08.16:25:35.821 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.16:44:45.217 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on DESKTOP-0RF5ELK with PID 19496 (F:\Java_project\big-market\big_market\big_market-app\target\classes started by zhangxiuyu in F:\Java_project\big-market\big_market)
+26-01-11.16:44:45.220 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-01-11.16:44:49.187 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-01-11.16:44:49.193 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-01-11.16:44:49.324 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 0 Redis repository interfaces.
+26-01-11.16:44:51.825 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-01-11.16:44:51.835 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-01-11.16:44:51.835 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-01-11.16:44:51.835 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-01-11.16:44:52.029 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-01-11.16:44:52.031 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6747 ms
+26-01-11.16:44:52.498 [main            ] INFO  Version                - Redisson 3.23.4
+26-01-11.16:44:53.082 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-01-11.16:44:53.102 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-01-11.16:44:58.415 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-01-11.16:44:58.590 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-01-11.16:44:58.626 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-01-11.16:44:58.627 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+26-01-11.16:44:58.788 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#215c6ec0:0/SimpleConnection@789f5552 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 53481]
+26-01-11.16:44:58.910 [main            ] INFO  Application            - Started Application in 14.628 seconds (JVM running for 15.59)
+26-01-11.16:44:59.420 [RMI TCP Connection(3)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-11.16:44:59.420 [RMI TCP Connection(2)-10.193.121.248] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-01-11.16:44:59.422 [RMI TCP Connection(2)-10.193.121.248] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-01-11.16:44:59.423 [RMI TCP Connection(2)-10.193.121.248] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-01-11.16:45:00.139 [RMI TCP Connection(3)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-11.16:45:00.166 [RMI TCP Connection(3)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-11.16:45:00.196 [RMI TCP Connection(3)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-11.16:45:03.533 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:0
+26-01-11.16:45:03.543 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:null
+26-01-11.16:45:03.543 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-01-11.16:45:03.543 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值开始 userId:null
+26-01-11.16:45:03.579 [http-nio-8091-exec-4] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-11.16:45:03.584 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:null activityId：0
+26-01-11.16:45:03.584 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户开始 userId:null activityId:0
+26-01-11.16:45:03.709 [http-nio-8091-exec-4] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-11.16:45:03.745 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:null orders.size:0
+26-01-11.16:45:03.787 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:10.00
+26-01-11.16:45:03.787 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户积分值完成 userId:null adjustAmount:10.00
+26-01-11.16:45:03.867 [http-nio-8091-exec-11] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:null limit:20
+26-01-11.16:45:03.867 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-01-11.16:45:03.885 [http-nio-8091-exec-11] ERROR RaffleActivityController - 查询用户中奖记录失败 userId:null limit:20
+cn.bugstack.types.exception.AppException: null
+	at cn.bugstack.trigger.http.RaffleActivityController.queryUserAwardRecordList(RaffleActivityController.java:560)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.Throwable: 非法参数
+	at cn.bugstack.types.exception.AppException.<init>(AppException.java:30)
+	... 53 common frames omitted
+26-01-11.16:45:04.010 [http-nio-8091-exec-10] ERROR RaffleStrategyController - 查询抽奖策略权重规则配置失败 userId:null activityId：0
+java.lang.NullPointerException: Cannot invoke "String.split(String)" because "this.ruleValue" is null
+	at cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity.getRuleWeightValues(StrategyRuleEntity.java:41)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository.queryAwardRuleWeight(StrategyRepository.java:377)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$FastClassBySpringCGLIB$$1981c8fe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.bugstack.infrastructure.persistent.repository.StrategyRepository$$EnhancerBySpringCGLIB$$a1596125.queryAwardRuleWeight(<generated>)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeight(DefaultRaffleStrategy.java:95)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.queryAwardRuleWeightByActivityId(DefaultRaffleStrategy.java:101)
+	at cn.bugstack.trigger.http.RaffleStrategyController.queryRaffleStrategyRuleWeight(RaffleStrategyController.java:160)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+26-01-11.16:45:04.450 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:0 skuProductResponseDTOS:[]
+26-01-11.16:45:04.459 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-01-11.16:45:04.459 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户完成 userId:null activityId:0 dto:{"dayCount":0,"dayCountSurplus":0,"monthCount":0,"monthCountSurplus":0,"totalCount":0,"totalCountSurplus":0}
+26-01-11.16:45:38.532 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-11.16:45:38.560 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.16:45:38.560 [http-nio-8091-exec-23] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-01-11.16:45:38.560 [http-nio-8091-exec-22] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.16:45:38.560 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-11.16:45:38.560 [http-nio-8091-exec-21] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-11.16:45:38.576 [http-nio-8091-exec-20] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:816.91
+26-01-11.16:45:38.576 [http-nio-8091-exec-22] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:816.91
+26-01-11.16:45:38.578 [http-nio-8091-exec-21] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:0
+26-01-11.16:45:38.582 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:20
+26-01-11.16:45:38.583 [http-nio-8091-exec-25] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-11.16:45:38.585 [http-nio-8091-exec-19] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1355,"monthCount":1355,"monthCountSurplus":1314,"totalCount":1355,"totalCountSurplus":605}
+26-01-11.16:45:38.651 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":750},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":750},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":750}],"info":"调用成功"}
+26-01-11.16:45:38.666 [http-nio-8091-exec-26] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:20
+26-01-11.16:45:38.669 [http-nio-8091-exec-25] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":false,"sort":5,"waitUnlockCount":3},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":false,"sort":6,"waitUnlockCount":2},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":false,"sort":7,"waitUnlockCount":1},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-11.16:45:38.671 [http-nio-8091-exec-23] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+26-01-11.16:45:41.024 [http-nio-8091-exec-27] INFO  RaffleActivityController - 日历签到返利开始 userId:zxy
+26-01-11.16:45:42.210 [http-nio-8091-exec-28] INFO  RaffleActivityController - 日历签到返利开始 userId:zxy
+26-01-11.16:45:43.339 [http-nio-8091-exec-29] INFO  RaffleActivityController - 日历签到返利开始 userId:zxy
+26-01-11.16:45:43.652 [http-nio-8091-exec-30] INFO  RaffleActivityController - 日历签到返利开始 userId:zxy
+26-01-11.16:45:45.587 [http-nio-8091-exec-28] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_sku_20260111","rebateConfig":"9014","rebateType":"sku","userId":"zxy"},"id":"44425532071","timestamp":1768121142310}
+26-01-11.16:45:45.601 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_sku_20260111","rebateConfig":"9014","rebateType":"sku","userId":"zxy"},"id":"44425532071","timestamp":1768121142310}
+26-01-11.16:45:46.860 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9014 activityId:100301
+26-01-11.16:45:46.860 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9014 activityId:100301
+26-01-11.16:45:46.865 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:9014 activityId:100301
+26-01-11.16:45:47.249 [http-nio-8091-exec-28] INFO  EventPublisher         - 发送MQ消息 topic:send_rebate message:{"data":{"bizId":"zxy_integral_20260111","rebateConfig":"10","rebateType":"integral","userId":"zxy"},"id":"32224227985","timestamp":1768121142821}
+26-01-11.16:45:47.827 [http-nio-8091-exec-28] INFO  RaffleActivityController - 日历签到返利完成 userId:zxy orderIds: ["529243045894","122883352747"]
+26-01-11.16:45:47.827 [http-nio-8091-exec-27] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: zxy
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+### The error may exist in file [F:\Java_project\big-market\big_market\big_market-app\target\classes\mybatis\mapper\user_behavior_rebate_order_mapper.xml]
+### The error may involve cn.bugstack.infrastructure.persistent.dao.IUserBehaviorRebateOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user_behavior_rebate_order_002(             user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, out_business_no, biz_id, create_time, update_time         ) values(                     ?, ?, ?, ?, ?, ?, ?, ?, now(), now()                 )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+; Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy106.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.insert(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy137.insert(Unknown Source)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:82)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:68)
+	at cn.bugstack.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
+	at cn.bugstack.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:213)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy187.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 72 common frames omitted
+26-01-11.16:45:47.827 [http-nio-8091-exec-30] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: zxy
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+### The error may exist in file [F:\Java_project\big-market\big_market\big_market-app\target\classes\mybatis\mapper\user_behavior_rebate_order_mapper.xml]
+### The error may involve cn.bugstack.infrastructure.persistent.dao.IUserBehaviorRebateOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user_behavior_rebate_order_002(             user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, out_business_no, biz_id, create_time, update_time         ) values(                     ?, ?, ?, ?, ?, ?, ?, ?, now(), now()                 )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+; Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy106.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.insert(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy137.insert(Unknown Source)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:82)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:68)
+	at cn.bugstack.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
+	at cn.bugstack.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:213)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy187.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 72 common frames omitted
+26-01-11.16:45:47.827 [http-nio-8091-exec-29] ERROR BehaviorRebateRepository - 写入返利记录，唯一索引冲突 userId: zxy
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+### The error may exist in file [F:\Java_project\big-market\big_market\big_market-app\target\classes\mybatis\mapper\user_behavior_rebate_order_mapper.xml]
+### The error may involve cn.bugstack.infrastructure.persistent.dao.IUserBehaviorRebateOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into user_behavior_rebate_order_002(             user_id, order_id, behavior_type, rebate_desc, rebate_type, rebate_config, out_business_no, biz_id, create_time, update_time         ) values(                     ?, ?, ?, ?, ?, ?, ?, ?, now(), now()                 )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+; Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at jdk.proxy2/jdk.proxy2.$Proxy106.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy136.insert(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at jdk.proxy2/jdk.proxy2.$Proxy137.insert(Unknown Source)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:82)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:68)
+	at cn.bugstack.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
+	at cn.bugstack.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:213)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'zxy_sku_20260111' for key 'user_behavior_rebate_order_002.uq_biz_id'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at jdk.proxy2/jdk.proxy2.$Proxy187.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 72 common frames omitted
+26-01-11.16:45:48.128 [http-nio-8091-exec-27] ERROR RaffleActivityController - 日历签到返利异常 userId:zxy 
+cn.bugstack.types.exception.AppException: null
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:98)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:68)
+	at cn.bugstack.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
+	at cn.bugstack.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:213)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.Throwable: 唯一索引冲突
+	at cn.bugstack.types.exception.AppException.<init>(AppException.java:30)
+	... 57 common frames omitted
+26-01-11.16:45:48.253 [http-nio-8091-exec-29] ERROR RaffleActivityController - 日历签到返利异常 userId:zxy 
+cn.bugstack.types.exception.AppException: null
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:98)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:68)
+	at cn.bugstack.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
+	at cn.bugstack.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:213)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.Throwable: 唯一索引冲突
+	at cn.bugstack.types.exception.AppException.<init>(AppException.java:30)
+	... 57 common frames omitted
+26-01-11.16:45:48.253 [http-nio-8091-exec-30] ERROR RaffleActivityController - 日历签到返利异常 userId:zxy 
+cn.bugstack.types.exception.AppException: null
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.lambda$saveUserRebateRecord$0(BehaviorRebateRepository.java:98)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.BehaviorRebateRepository.saveUserRebateRecord(BehaviorRebateRepository.java:68)
+	at cn.bugstack.domain.rebate.service.BehaviorRebateService.createOrder(BehaviorRebateService.java:84)
+	at cn.bugstack.trigger.http.RaffleActivityController.calendarSignRebate(RaffleActivityController.java:213)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:555)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.Throwable: 唯一索引冲突
+	at cn.bugstack.types.exception.AppException.<init>(AppException.java:30)
+	... 57 common frames omitted
+26-01-11.16:45:48.398 [http-nio-8091-exec-33] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-11.16:45:48.398 [http-nio-8091-exec-32] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.16:45:48.398 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-11.16:45:48.402 [http-nio-8091-exec-32] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:816.91
+26-01-11.16:45:48.403 [http-nio-8091-exec-33] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:2
+26-01-11.16:45:48.409 [http-nio-8091-exec-31] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1355,"dayCountSurplus":1355,"monthCount":1355,"monthCountSurplus":1314,"totalCount":1355,"totalCountSurplus":605}
+26-01-11.16:45:48.684 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  RebateMessageCustomer  - 监听用户行为返利消息 topic: send_rebate message: {"data":{"bizId":"zxy_integral_20260111","rebateConfig":"10","rebateType":"integral","userId":"zxy"},"id":"32224227985","timestamp":1768121142821}
+26-01-11.16:45:48.701 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditAdjustService    - 账户积分额度开始 userId:zxy tradeName:REBATE amount:10
+26-01-11.16:45:49.655 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  EventPublisher         - 发送MQ消息 topic:credit_adjust_success message:{"data":{"amount":10,"orderId":"054613857541","outBusinessNo":"zxy_integral_20260111","userId":"zxy"},"id":"26006018215","timestamp":1768121148706}
+26-01-11.16:45:49.657 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  CreditAdjustSuccessCustomer - 监听积分账户调整成功消息，进行交易商品发货 topic: credit_adjust_success message: {"data":{"amount":10,"orderId":"054613857541","outBusinessNo":"zxy_integral_20260111","userId":"zxy"},"id":"26006018215","timestamp":1768121148706}
+26-01-11.16:45:50.178 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditRepository       - 调整账户积分记录，发送MQ消息完成 userId: zxy orderId:054613857541 topic: credit_adjust_success
+26-01-11.16:45:50.178 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] INFO  CreditAdjustService    - 账户积分额度完成 userId:zxy orderId:054613857541
+26-01-11.16:46:03.593 [http-nio-8091-exec-35] INFO  RaffleActivityController - 活动抽奖开始 userId:zxy activityId:100301
+26-01-11.16:46:03.618 [http-nio-8091-exec-35] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单开始 userId:zxy activityId:100301
+26-01-11.16:46:04.505 [http-nio-8091-exec-35] INFO  AbstractRaffleActivityPartake - 创建活动抽奖单完成 userId:zxy activityId:100301 orderId:618024560504
+26-01-11.16:46:04.505 [http-nio-8091-exec-35] INFO  RaffleActivityController - 活动抽奖，创建订单 userId:zxy activityId:100301 orderId:618024560504
+26-01-11.16:46:04.618 [http-nio-8091-exec-35] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:04.623 [http-nio-8091-exec-35] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:04.623 [http-nio-8091-exec-35] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:04.626 [http-nio-8091-exec-35] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:04.626 [http-nio-8091-exec-35] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:04.815 [http-nio-8091-exec-35] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-11.16:46:04.896 [http-nio-8091-exec-35] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-11.16:46:05.545 [http-nio-8091-exec-35] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"618024560504","userId":"zxy"},"id":"86837538625","timestamp":1768121164971}
+26-01-11.16:46:05.546 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"618024560504","userId":"zxy"},"id":"86837538625","timestamp":1768121164971}
+26-01-11.16:46:06.064 [http-nio-8091-exec-35] INFO  AwardRepository        - 写入中奖记录，发送MQ消息完成 userId: zxy orderId:618024560504 topic: send_award
+26-01-11.16:46:06.064 [http-nio-8091-exec-35] INFO  AwardService           - 中奖记录保存完成 userId:zxy orderId:618024560504
+26-01-11.16:46:06.229 [http-nio-8091-exec-37] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.16:46:06.229 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-11.16:46:06.229 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-11.16:46:06.229 [http-nio-8091-exec-39] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-11.16:46:06.233 [http-nio-8091-exec-38] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:2
+26-01-11.16:46:06.233 [http-nio-8091-exec-37] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:826.91
+26-01-11.16:46:06.236 [http-nio-8091-exec-36] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1356,"dayCountSurplus":1355,"monthCount":1356,"monthCountSurplus":1314,"totalCount":1356,"totalCountSurplus":605}
+26-01-11.16:46:06.237 [http-nio-8091-exec-39] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":751},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":751},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":751}],"info":"调用成功"}
+26-01-11.16:46:06.350 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:618024560504 model:dall-e-3
+26-01-11.16:46:08.766 [http-nio-8091-exec-40] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-11.16:46:08.776 [http-nio-8091-exec-40] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":false,"sort":5,"waitUnlockCount":2},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":false,"sort":6,"waitUnlockCount":1},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-11.16:46:16.269 [http-nio-8091-exec-42] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
+26-01-11.16:46:16.269 [http-nio-8091-exec-42] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
+26-01-11.16:46:16.713 [http-nio-8091-exec-42] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
+26-01-11.16:46:16.714 [http-nio-8091-exec-42] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
+26-01-11.16:46:16.714 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.714 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.714 [pool-3-thread-1 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-2 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-3 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-4 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-5 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-7 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-6 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-9 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-8 ] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.715 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.715 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.716 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:46:16.716 [pool-3-thread-10] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:46:16.716 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.719 [pool-3-thread-4 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.719 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.719 [pool-3-thread-1 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.719 [pool-3-thread-2 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.719 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.719 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.719 [pool-3-thread-7 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.719 [pool-3-thread-5 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.719 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.719 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.720 [pool-3-thread-3 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.720 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.720 [pool-3-thread-6 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.720 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.720 [pool-3-thread-8 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.720 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.720 [pool-3-thread-9 ] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.720 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.720 [pool-3-thread-10] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:46:16.720 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:46:16.734 [pool-3-thread-2 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:46:16.734 [pool-3-thread-1 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-11.16:46:16.734 [pool-3-thread-2 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:46:16.734 [pool-3-thread-3 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:46:16.734 [pool-3-thread-1 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-11.16:46:16.734 [pool-3-thread-3 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:46:16.735 [pool-3-thread-4 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:46:16.735 [pool-3-thread-4 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:46:16.735 [pool-3-thread-10] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:46:16.735 [pool-3-thread-10] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:46:16.738 [pool-3-thread-9 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:46:16.738 [pool-3-thread-9 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:46:16.739 [pool-3-thread-5 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:46:16.739 [pool-3-thread-5 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:46:16.742 [pool-3-thread-6 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:46:16.742 [pool-3-thread-6 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:46:16.744 [pool-3-thread-7 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-11.16:46:16.744 [pool-3-thread-7 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-11.16:46:16.744 [pool-3-thread-8 ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-11.16:46:16.744 [pool-3-thread-8 ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-11.16:46:17.819 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"126423825659","userId":"zxy"},"id":"93849687934","timestamp":1768121176745}
+26-01-11.16:46:17.821 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"126423825659","userId":"zxy"},"id":"93849687934","timestamp":1768121176745}
+26-01-11.16:46:18.505 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"713902316022","userId":"zxy"},"id":"56575344536","timestamp":1768121176745}
+26-01-11.16:46:18.569 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:126423825659 model:dall-e-3
+26-01-11.16:46:18.571 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"713902316022","userId":"zxy"},"id":"56575344536","timestamp":1768121176745}
+26-01-11.16:46:19.124 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"739869487864","userId":"zxy"},"id":"24158279633","timestamp":1768121176745}
+26-01-11.16:46:19.453 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:713902316022 model:dall-e-2
+26-01-11.16:46:19.622 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"739869487864","userId":"zxy"},"id":"24158279633","timestamp":1768121176745}
+26-01-11.16:46:20.161 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:739869487864 model:dall-e-2
+26-01-11.16:46:20.274 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"357805828088","userId":"zxy"},"id":"85419926779","timestamp":1768121176745}
+26-01-11.16:46:20.277 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"357805828088","userId":"zxy"},"id":"85419926779","timestamp":1768121176745}
+26-01-11.16:46:20.700 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"112671466359","userId":"zxy"},"id":"73034433268","timestamp":1768121176745}
+26-01-11.16:46:20.753 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:357805828088 model:dall-e-2
+26-01-11.16:46:20.755 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"112671466359","userId":"zxy"},"id":"73034433268","timestamp":1768121176745}
+26-01-11.16:46:21.268 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"433142805966","userId":"zxy"},"id":"43219359464","timestamp":1768121176745}
+26-01-11.16:46:21.333 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:112671466359 model:dall-e-2
+26-01-11.16:46:21.335 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"433142805966","userId":"zxy"},"id":"43219359464","timestamp":1768121176745}
+26-01-11.16:46:21.780 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"998511529581","userId":"zxy"},"id":"53387399130","timestamp":1768121176745}
+26-01-11.16:46:21.908 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:433142805966 model:dall-e-2
+26-01-11.16:46:21.910 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"998511529581","userId":"zxy"},"id":"53387399130","timestamp":1768121176745}
+26-01-11.16:46:22.355 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"325343464818","userId":"zxy"},"id":"10080180495","timestamp":1768121176745}
+26-01-11.16:46:22.408 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:998511529581 model:dall-e-3
+26-01-11.16:46:22.410 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"325343464818","userId":"zxy"},"id":"10080180495","timestamp":1768121176745}
+26-01-11.16:46:22.947 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"526572588094","userId":"zxy"},"id":"55771311294","timestamp":1768121176745}
+26-01-11.16:46:23.058 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:325343464818 model:dall-e-3
+26-01-11.16:46:23.059 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"526572588094","userId":"zxy"},"id":"55771311294","timestamp":1768121176745}
+26-01-11.16:46:23.288 [http-nio-8091-exec-42] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"572301924120","userId":"zxy"},"id":"86939062183","timestamp":1768121176745}
+26-01-11.16:46:23.516 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:526572588094 model:dall-e-2
+26-01-11.16:46:23.518 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"572301924120","userId":"zxy"},"id":"86939062183","timestamp":1768121176745}
+26-01-11.16:46:23.686 [http-nio-8091-exec-42] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
+26-01-11.16:46:23.805 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:572301924120 model:dall-e-2
+26-01-11.16:46:23.817 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-11.16:46:23.817 [http-nio-8091-exec-44] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.16:46:23.817 [http-nio-8091-exec-45] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-11.16:46:23.817 [http-nio-8091-exec-46] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-11.16:46:23.819 [http-nio-8091-exec-44] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:837.91
+26-01-11.16:46:23.821 [http-nio-8091-exec-45] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:2
+26-01-11.16:46:23.823 [http-nio-8091-exec-43] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1356,"dayCountSurplus":1345,"monthCount":1356,"monthCountSurplus":1304,"totalCount":1356,"totalCountSurplus":595}
+26-01-11.16:46:23.824 [http-nio-8091-exec-46] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":761},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":761},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":761}],"info":"调用成功"}
+26-01-11.16:46:26.349 [http-nio-8091-exec-47] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-11.16:46:26.360 [http-nio-8091-exec-47] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-11.16:52:49.803 [http-nio-8091-exec-8] INFO  RaffleActivityController - 十连抽开始 userId:zxy activityId:100301
+26-01-11.16:52:49.803 [http-nio-8091-exec-8] INFO  AbstractRaffleActivityPartake - 创建十连抽订单开始 userId:zxy activityId:100301
+26-01-11.16:52:50.907 [http-nio-8091-exec-8] INFO  AbstractRaffleActivityPartake - 创建十连抽订单完成 userId:zxy activityId:100301
+26-01-11.16:52:50.907 [http-nio-8091-exec-8] INFO  RaffleActivityController - 十连抽，创建订单完成 userId:zxy activityId:100301 orderCount:10
+26-01-11.16:52:50.909 [pool-3-thread-11] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-12] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-11] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-12] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-11] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.909 [pool-3-thread-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.909 [pool-3-thread-13] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-13] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-13] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.909 [pool-3-thread-14] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-14] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.909 [pool-3-thread-14] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.910 [pool-3-thread-15] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-15] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-15] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.910 [pool-3-thread-16] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-16] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-17] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-17] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-16] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.910 [pool-3-thread-17] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.910 [pool-3-thread-18] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-18] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.910 [pool-3-thread-18] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.911 [pool-3-thread-19] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.911 [pool-3-thread-19] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.911 [pool-3-thread-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.911 [pool-3-thread-20] INFO  AbstractRaffleStrategy - 抽奖策略计算 userId:zxy strategyId:100006
+26-01-11.16:52:50.911 [pool-3-thread-20] INFO  DefaultRaffleStrategy  - 抽奖策略-责任链 userId:zxy strategyId:100006
+26-01-11.16:52:50.911 [pool-3-thread-20] INFO  BlackListLogicChain    - 抽奖责任链-黑名单开始 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.914 [pool-3-thread-14] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.914 [pool-3-thread-13] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.914 [pool-3-thread-18] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.914 [pool-3-thread-14] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.914 [pool-3-thread-13] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.914 [pool-3-thread-18] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.914 [pool-3-thread-16] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.914 [pool-3-thread-15] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.914 [pool-3-thread-12] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.914 [pool-3-thread-15] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.914 [pool-3-thread-16] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.914 [pool-3-thread-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.915 [pool-3-thread-11] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.915 [pool-3-thread-11] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.915 [pool-3-thread-20] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.915 [pool-3-thread-20] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.915 [pool-3-thread-17] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.915 [pool-3-thread-17] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.915 [pool-3-thread-19] INFO  BlackListLogicChain    - 抽奖责任链-黑名单放行 userId: zxy strategyId: 100006 ruleModel: rule_blacklist
+26-01-11.16:52:50.915 [pool-3-thread-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重开始 userId: zxy strategyId: 100006 ruleModel: rule_weight
+26-01-11.16:52:50.927 [pool-3-thread-14] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.927 [pool-3-thread-18] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.927 [pool-3-thread-18] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.927 [pool-3-thread-14] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.928 [pool-3-thread-15] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.928 [pool-3-thread-15] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.929 [pool-3-thread-20] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.929 [pool-3-thread-20] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.931 [pool-3-thread-17] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.931 [pool-3-thread-17] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.933 [pool-3-thread-16] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.934 [pool-3-thread-16] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.935 [pool-3-thread-13] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 107
+26-01-11.16:52:50.935 [pool-3-thread-13] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 107 rule_weight
+26-01-11.16:52:50.935 [pool-3-thread-19] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.935 [pool-3-thread-12] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.935 [pool-3-thread-19] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.935 [pool-3-thread-12] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:50.936 [pool-3-thread-11] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: zxy strategyId: 100006 ruleModel: rule_weight awardId: 106
+26-01-11.16:52:50.936 [pool-3-thread-11] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 zxy 100006 106 rule_weight
+26-01-11.16:52:51.602 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"235638294968","userId":"zxy"},"id":"28286109540","timestamp":1768121570937}
+26-01-11.16:52:51.604 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"235638294968","userId":"zxy"},"id":"28286109540","timestamp":1768121570937}
+26-01-11.16:52:52.026 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"425105005850","userId":"zxy"},"id":"22859815066","timestamp":1768121570937}
+26-01-11.16:52:52.078 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:235638294968 model:dall-e-2
+26-01-11.16:52:52.079 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"425105005850","userId":"zxy"},"id":"22859815066","timestamp":1768121570937}
+26-01-11.16:52:52.531 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"717810694188","userId":"zxy"},"id":"62732731293","timestamp":1768121570937}
+26-01-11.16:52:52.657 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:425105005850 model:dall-e-2
+26-01-11.16:52:52.660 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":107,"awardTitle":"华为耳机","orderId":"717810694188","userId":"zxy"},"id":"62732731293","timestamp":1768121570937}
+26-01-11.16:52:52.854 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"438923160807","userId":"zxy"},"id":"01734787526","timestamp":1768121570937}
+26-01-11.16:52:52.984 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:717810694188 model:dall-e-3
+26-01-11.16:52:52.985 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"438923160807","userId":"zxy"},"id":"01734787526","timestamp":1768121570937}
+26-01-11.16:52:53.283 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"140338991100","userId":"zxy"},"id":"95928958890","timestamp":1768121570937}
+26-01-11.16:52:53.373 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:438923160807 model:dall-e-2
+26-01-11.16:52:53.408 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"140338991100","userId":"zxy"},"id":"95928958890","timestamp":1768121570937}
+26-01-11.16:52:53.857 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"373055771045","userId":"zxy"},"id":"70285230933","timestamp":1768121570937}
+26-01-11.16:52:54.025 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:140338991100 model:dall-e-2
+26-01-11.16:52:54.027 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"373055771045","userId":"zxy"},"id":"70285230933","timestamp":1768121570937}
+26-01-11.16:52:54.473 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"439241726510","userId":"zxy"},"id":"59393120393","timestamp":1768121570937}
+26-01-11.16:52:54.592 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:373055771045 model:dall-e-2
+26-01-11.16:52:54.594 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"439241726510","userId":"zxy"},"id":"59393120393","timestamp":1768121570937}
+26-01-11.16:52:55.032 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"494585839305","userId":"zxy"},"id":"60144020321","timestamp":1768121570937}
+26-01-11.16:52:55.085 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:439241726510 model:dall-e-2
+26-01-11.16:52:55.086 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"494585839305","userId":"zxy"},"id":"60144020321","timestamp":1768121570937}
+26-01-11.16:52:55.533 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"748192758533","userId":"zxy"},"id":"61753361494","timestamp":1768121570937}
+26-01-11.16:52:55.586 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:494585839305 model:dall-e-2
+26-01-11.16:52:55.588 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"748192758533","userId":"zxy"},"id":"61753361494","timestamp":1768121570937}
+26-01-11.16:52:56.032 [http-nio-8091-exec-8] INFO  EventPublisher         - 发送MQ消息 topic:send_award message:{"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"949155013650","userId":"zxy"},"id":"04343461650","timestamp":1768121570937}
+26-01-11.16:52:56.085 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:748192758533 model:dall-e-2
+26-01-11.16:52:56.087 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  SendAwardCustomer      - 监听用户奖品发送消息 topic: send_award message: {"data":{"awardId":106,"awardTitle":"轻奢办公椅","orderId":"949155013650","userId":"zxy"},"id":"04343461650","timestamp":1768121570937}
+26-01-11.16:52:56.425 [http-nio-8091-exec-8] INFO  AwardService           - 批量保存中奖记录完成 userId:zxy count:10
+26-01-11.16:52:56.439 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-11.16:52:56.440 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.16:52:56.442 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-11.16:52:56.442 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-11.16:52:56.443 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:846.91
+26-01-11.16:52:56.445 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:2
+26-01-11.16:52:56.445 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1356,"dayCountSurplus":1335,"monthCount":1356,"monthCountSurplus":1294,"totalCount":1356,"totalCountSurplus":585}
+26-01-11.16:52:56.448 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":771},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":771},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":771}],"info":"调用成功"}
+26-01-11.16:52:56.718 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] INFO  OpenAIModelAward       - OpenAI模型奖品发放完成 userId:zxy orderId:949155013650 model:dall-e-2
+26-01-11.16:52:58.977 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-11.16:52:58.986 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-11.17:05:05.916 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:05:05.918 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:05:05.919 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:05:05.920 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:05:06.037 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:05:06.037 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:05:06.687 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:05:06.797 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:05:06.862 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.17:05:06.862 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.17:05:06.863 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.17:05:06.863 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.17:26:43.585 [main            ] INFO  Application            - Starting Application using Java 18.0.2 on DESKTOP-0RF5ELK with PID 39948 (F:\Java_project\big-market\big_market\big_market-app\target\classes started by zhangxiuyu in F:\Java_project\big-market\big_market)
+26-01-11.17:26:43.589 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-01-11.17:26:46.292 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-01-11.17:26:46.294 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-01-11.17:26:46.344 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+26-01-11.17:26:47.368 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-01-11.17:26:47.377 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-01-11.17:26:47.377 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-01-11.17:26:47.377 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-01-11.17:26:47.512 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-01-11.17:26:47.514 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3887 ms
+26-01-11.17:26:47.851 [main            ] INFO  Version                - Redisson 3.23.4
+26-01-11.17:26:48.216 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-01-11.17:26:48.234 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:16379
+26-01-11.17:26:51.641 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-01-11.17:26:51.726 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-01-11.17:26:51.744 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-01-11.17:26:51.746 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+26-01-11.17:26:51.818 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#637506d8:0/SimpleConnection@2686a801 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 65089]
+26-01-11.17:26:51.912 [main            ] INFO  Application            - Started Application in 8.824 seconds (JVM running for 9.501)
+26-01-11.17:26:52.396 [RMI TCP Connection(3)-10.193.121.248] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-01-11.17:26:52.396 [RMI TCP Connection(3)-10.193.121.248] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-01-11.17:26:52.397 [RMI TCP Connection(3)-10.193.121.248] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-01-11.17:26:52.398 [RMI TCP Connection(2)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-11.17:26:52.692 [RMI TCP Connection(2)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-11.17:26:52.711 [RMI TCP Connection(2)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-11.17:26:52.734 [RMI TCP Connection(2)-10.193.121.248] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-11.17:27:08.806 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询sku商品集合开始 activityId:100301
+26-01-11.17:27:09.142 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询用户是否完成日历签到返利开始 userId:zxy
+26-01-11.17:27:09.142 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.17:27:09.142 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户积分值开始 userId:zxy
+26-01-11.17:27:09.275 [http-nio-8091-exec-2] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-01-11.17:27:09.324 [http-nio-8091-exec-2] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-01-11.17:27:09.385 [http-nio-8091-exec-5] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:847.91
+26-01-11.17:27:09.385 [http-nio-8091-exec-3] INFO  RaffleActivityController - 查询用户积分值完成 userId:zxy adjustAmount:847.91
+26-01-11.17:27:09.386 [http-nio-8091-exec-4] INFO  RaffleActivityController - 查询用户是否完成日历签到返利完成 userId:zxy orders.size:2
+26-01-11.17:27:09.392 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户开始 userId:zxy activityId:100301
+26-01-11.17:27:09.392 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置开始 userId:zxy activityId：100301
+26-01-11.17:27:09.420 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:zxy activityId：100301
+26-01-11.17:27:09.440 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户中奖记录开始 userId:zxy limit:20
+26-01-11.17:27:09.461 [http-nio-8091-exec-12] INFO  RaffleActivityController - 查询用户中奖记录完成 userId:zxy count:20
+26-01-11.17:27:09.742 [http-nio-8091-exec-9] INFO  RaffleActivityController - 查询用户活动账户完成 userId:zxy activityId:100301 dto:{"dayCount":1356,"dayCountSurplus":1335,"monthCount":1356,"monthCountSurplus":1294,"totalCount":1356,"totalCountSurplus":585}
+26-01-11.17:27:09.742 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","awardUnlock":true,"sort":1,"waitUnlockCount":0},{"awardId":102,"awardTitle":"AI-Agent一周体验卡","awardUnlock":true,"sort":2,"waitUnlockCount":0},{"awardId":103,"awardTitle":"算法书籍","awardUnlock":true,"sort":3,"waitUnlockCount":0},{"awardId":104,"awardTitle":"温馨台灯","awardUnlock":true,"sort":4,"waitUnlockCount":0},{"awardId":105,"awardRuleLockCount":3,"awardSubtitle":"抽奖3次后解锁","awardTitle":"PS5","awardUnlock":true,"sort":5,"waitUnlockCount":0},{"awardId":106,"awardRuleLockCount":2,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","awardUnlock":true,"sort":6,"waitUnlockCount":0},{"awardId":107,"awardRuleLockCount":1,"awardSubtitle":"抽奖1次后解锁","awardTitle":"华为耳机","awardUnlock":true,"sort":7,"waitUnlockCount":0},{"awardId":108,"awardTitle":"温馨玩偶","awardUnlock":true,"sort":8,"waitUnlockCount":0}],"info":"调用成功"}
+26-01-11.17:27:09.742 [http-nio-8091-exec-2] INFO  RaffleActivityController - 查询sku商品集合完成 activityId:100301 skuProductResponseDTOS:[{"activityCount":{"dayCount":150,"monthCount":150,"totalCount":150},"activityCountId":11101,"productAmount":200.00,"sku":9011,"stockCount":100000,"stockCountSurplus":99887},{"activityCount":{"dayCount":50,"monthCount":50,"totalCount":50},"activityCountId":11102,"productAmount":100.00,"sku":9012,"stockCount":100000,"stockCountSurplus":99885},{"activityCount":{"dayCount":5,"monthCount":5,"totalCount":5},"activityCountId":11103,"productAmount":20.00,"sku":9013,"stockCount":100000,"stockCountSurplus":99884},{"activityCount":{"dayCount":1,"monthCount":1,"totalCount":1},"activityCountId":11104,"productAmount":5.00,"sku":9014,"stockCount":100000,"stockCountSurplus":99866}]
+26-01-11.17:27:09.743 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖策略权重规则配置完成 userId:zxy activityId：100301 response: {"code":"0000","data":[{"ruleWeightCount":70,"strategyAwards":[{"awardId":106,"awardTitle":"轻奢办公椅"},{"awardId":107,"awardTitle":"华为耳机"}],"userActivityAccountTotalUseCount":771},{"ruleWeightCount":10,"strategyAwards":[{"awardId":102,"awardTitle":"AI-Agent一周体验卡"},{"awardId":103,"awardTitle":"算法书籍"}],"userActivityAccountTotalUseCount":771},{"ruleWeightCount":1000,"strategyAwards":[{"awardId":104,"awardTitle":"温馨台灯"},{"awardId":105,"awardTitle":"PS5"}],"userActivityAccountTotalUseCount":771}],"info":"调用成功"}
+26-01-11.17:28:13.721 [http-nio-8091-exec-20] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
+26-01-11.17:28:13.823 [http-nio-8091-exec-20] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
+26-01-11.17:28:20.887 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:28:20.888 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:28:20.889 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:28:20.890 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-01-11.17:28:21.521 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:28:21.521 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:28:21.521 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:28:21.522 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-01-11.17:28:21.548 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.17:28:21.548 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.17:28:21.548 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-01-11.17:28:21.548 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped

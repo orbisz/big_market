@@ -38,6 +38,10 @@ public class StrategyRuleEntity {
      */
     public Map<String, List<Integer>> getRuleWeightValues() {
         if (!"rule_weight".equals(ruleModel)) return null;
+        // 检查 ruleValue 是否为空，防止空指针异常
+        if (ruleValue == null || ruleValue.isEmpty()) {
+            return new HashMap<>();
+        }
         String[] ruleValueGroups = ruleValue.split(Constants.SPACE);
         Map<String, List<Integer>> resultMap = new HashMap<>();
         for (String ruleValueGroup : ruleValueGroups) {

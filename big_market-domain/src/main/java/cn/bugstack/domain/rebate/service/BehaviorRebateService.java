@@ -34,7 +34,18 @@ public class BehaviorRebateService implements IBehaviorRebateService {
         List<DailyBehaviorRebateVO> dailyBehaviorRebateVOS = behaviorRebateRepository.queryDailyBehaviorRebateConfig(behaviorEntity.getBehaviorTypeVO());
         if (null == dailyBehaviorRebateVOS || dailyBehaviorRebateVOS.isEmpty()) return new ArrayList<>();
 
-        // 2. 构建聚合对象
+        // 2. 幂等性检查：查询是否已经存在今日签到记录
+        List<BehaviorRebateOrderEntity> existingOrders = behaviorRebateRepository.queryOrderByOutBusinessNo(behaviorEntity.getUserId(), behaviorEntity.getOutBusinessNo());
+        // 如果已存在记录，直接返回已存在的订单ID（幂等性处理）
+        if (existingOrders != null && !existingOrders.isEmpty()) {
+            List<String> existingOrderIds = new ArrayList<>();
+            for (BehaviorRebateOrderEntity order : existingOrders) {
+                existingOrderIds.add(order.getOrderId());
+            }
+            return existingOrderIds;
+        }
+
+        // 3. 构建聚合对象
         List<String> orderIds = new ArrayList<>();
         List<BehaviorRebateAggregate> behaviorRebateAggregates = new ArrayList<>();
         for (DailyBehaviorRebateVO dailyBehaviorRebateVO : dailyBehaviorRebateVOS) {
@@ -80,10 +91,10 @@ public class BehaviorRebateService implements IBehaviorRebateService {
             behaviorRebateAggregates.add(behaviorRebateAggregate);
         }
 
-        // 3. 存储聚合对象数据
+        // 4. 存储聚合对象数据
         behaviorRebateRepository.saveUserRebateRecord(behaviorEntity.getUserId(), behaviorRebateAggregates);
 
-        // 4. 返回订单ID集合
+        // 5. 返回订单ID集合
         return orderIds;
     }
 
