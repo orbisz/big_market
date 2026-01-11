@@ -1,4 +1,4 @@
-# Big Market 抽奖平台
+# 幸运营销汇 - 积分抽奖营销平台前端
 
 <div align="center">
 
@@ -9,7 +9,7 @@
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3.12-orange)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
-基于 DDD（领域驱动设计）的企业级抽奖平台
+基于 DDD（领域驱动设计）的抽奖营销平台
 
 [在线文档](#) · [快速开始](#快速开始) · [API 文档](#api-接口) · [常见问题](#常见问题)
 
